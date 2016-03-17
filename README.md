@@ -1,12 +1,12 @@
 # jwplayer-ios-bestPracticeApps
 
-This repository is used to present objective-c code which can be used to achieve custom functionality with your JW Player. 
-The JWBestPracticeApps XCode project is composed of several targets. Each target can be run separately as an app. 
-Each target adds a level of complexity to the target named JWBestPracticeApps, which creates a basic JW Player with minimal customization. In each target, the classes inherit from those in the more basic targets, allowing us to present relevant code in a clear way and avoid redundancy.
+This repository is used to present Objective-C code which can be used to achieve custom functionality with your JW Player. 
+The JWBestPracticeApps XCode project is composed of several targets which can be run separately as an iOS application. 
+Each target adds a level of complexity to the base target, JWBestPracticeApps, which creates a basic JW Player with minimal customization. In each target, classes inherit from classes of more basic targets, allowing us to present relevant code in a clear way while avoiding redundancy.
 
-- The target named JWAirPlay adds the necessary code to add an AirPlay button to your app, and cast via AirPlay.
+- The target named JWAirPlay presents the necessary code to add an AirPlay button to your app, and cast the video via AirPlay.
 
-- The target named JWCasting adds the code necessary to cast our JW Player to a Chrome Cast device.
+- The target named JWCasting presents the code necessary to cast our JW Player to a Chrome Cast device.
 
 - The target named JWRemoteController is an Apple Watch app capable of controlling the JW Player in the target named JWRemotePlayer.
 
