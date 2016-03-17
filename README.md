@@ -10,10 +10,10 @@ Each target adds a level of complexity to the target named JWBestPracticeApps, w
 
 - The target named JWRemoteController is an Apple Watch app capable of controlling the JW Player in the target named JWRemotePlayer.
 
-Initial Set-up:
+## Initial Set-up:
 
-Import the JW Player iOS SDK to the project and for each target add your JWPlayer key to the info.plist and link to the JWPlayer iOS SDK. For more instructions please visit the official JW Player Developer guide at http://developer.jwplayer.com/sdk/ios/docs/developer-guide/
+Import the JW Player iOS SDK to the project and for **each target** add your JWPlayer key to the info.plist and link to the JWPlayer iOS SDK. For more instructions please visit the official JW Player Developer guide at http://developer.jwplayer.com/sdk/ios/docs/developer-guide/
 
 For targets that require casting to Google ChromeCast, you must import a Google ChromeCast Framework, as well as all of its dependencies. To find out which frameworks to import please visit https://developers.google.com/cast/docs/ios_sender#setup
 
-Notes: The demo apps in this repository are intended to be used with version 2.2 of the JW Player iOS SDK.
+**Note**: The demo apps in this repository are intended to be used with **version 2.2** of the JW Player iOS SDK.
