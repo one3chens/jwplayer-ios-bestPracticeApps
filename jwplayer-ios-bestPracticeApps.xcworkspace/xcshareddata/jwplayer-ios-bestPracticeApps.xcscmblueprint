@@ -1,0 +1,29 @@
+{
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "FA40BF7D02EE37629B9B9C2890A1569F865F0BD1" : 0,
+    "2EA1016F1F4711CC41334B2214509661B4514CB7" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "4345A517-29BD-4AFD-BED0-D225D8880455",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "FA40BF7D02EE37629B9B9C2890A1569F865F0BD1" : "jwplayer-ios-customPlayer\/",
+    "2EA1016F1F4711CC41334B2214509661B4514CB7" : "jwplayer-ios-videoFeed\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "jwplayer-ios-bestPracticeApps",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "jwplayer-ios-bestPracticeApps.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/karimJWP\/jwplayer-ios-videoFeed.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "2EA1016F1F4711CC41334B2214509661B4514CB7"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/karimJWP\/jwplayer-ios-customPlayer.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "FA40BF7D02EE37629B9B9C2890A1569F865F0BD1"
+    }
+  ]
+}

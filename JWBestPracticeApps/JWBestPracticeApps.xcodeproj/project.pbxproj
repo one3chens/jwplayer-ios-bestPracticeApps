@@ -1,0 +1,1188 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8A5BA89C1C9A647C0002231F /* play-button.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A5BA89A1C9A647C0002231F /* play-button.png */; };
+		8A5BA89D1C9A647C0002231F /* pause-button.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A5BA89B1C9A647C0002231F /* pause-button.png */; };
+		8A5BA8A01C9A64A90002231F /* JWRemoteInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A5BA89F1C9A64A90002231F /* JWRemoteInterfaceController.m */; };
+		8A5BA8A21C9AF73C0002231F /* JWCastingViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A729B851C99CD8B000F03A9 /* JWCastingViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8A5BA8A31C9AF7940002231F /* JWRemotePlayerViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A729B7A1C99B576000F03A9 /* JWRemotePlayerViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8A5BA8A61C9AF9890002231F /* JWAirPlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A5BA8A51C9AF9890002231F /* JWAirPlayViewController.m */; };
+		8A5BA8A81C9AFA3D0002231F /* JWBasicVideoViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A729B5C1C99ABD2000F03A9 /* JWBasicVideoViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8A5BA8A91C9AFA4D0002231F /* JWAirPlayViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A5BA8A41C9AF9890002231F /* JWAirPlayViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8A5BA8AA1C9AFA720002231F /* JWAirPlayViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A5BA8A41C9AF9890002231F /* JWAirPlayViewController.h */; };
+		8A5BA8AB1C9AFA7E0002231F /* JWBasicVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A729B5D1C99ABD2000F03A9 /* JWBasicVideoViewController.m */; };
+		8A5BA8AC1C9AFAB40002231F /* JWCastingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A729B861C99CD8B000F03A9 /* JWCastingViewController.m */; };
+		8A729A7C1C98ACA8000F03A9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A729A7B1C98ACA8000F03A9 /* main.m */; };
+		8A729A7F1C98ACA8000F03A9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A729A7E1C98ACA8000F03A9 /* AppDelegate.m */; };
+		8A729A851C98ACA8000F03A9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A729A831C98ACA8000F03A9 /* Main.storyboard */; };
+		8A729A871C98ACA8000F03A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A729A861C98ACA8000F03A9 /* Assets.xcassets */; };
+		8A729A8A1C98ACA8000F03A9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A729A881C98ACA8000F03A9 /* LaunchScreen.storyboard */; };
+		8A729B131C98B5A6000F03A9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A729B121C98B5A6000F03A9 /* main.m */; };
+		8A729B161C98B5A6000F03A9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A729B151C98B5A6000F03A9 /* AppDelegate.m */; };
+		8A729B1C1C98B5A6000F03A9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A729B1A1C98B5A6000F03A9 /* Main.storyboard */; };
+		8A729B1E1C98B5A6000F03A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A729B1D1C98B5A6000F03A9 /* Assets.xcassets */; };
+		8A729B211C98B5A6000F03A9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A729B1F1C98B5A6000F03A9 /* LaunchScreen.storyboard */; };
+		8A729B2E1C98B5F2000F03A9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A729B2D1C98B5F2000F03A9 /* main.m */; };
+		8A729B311C98B5F2000F03A9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A729B301C98B5F2000F03A9 /* AppDelegate.m */; };
+		8A729B371C98B5F2000F03A9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A729B351C98B5F2000F03A9 /* Main.storyboard */; };
+		8A729B391C98B5F2000F03A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A729B381C98B5F2000F03A9 /* Assets.xcassets */; };
+		8A729B3C1C98B5F2000F03A9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A729B3A1C98B5F2000F03A9 /* LaunchScreen.storyboard */; };
+		8A729B5E1C99ABD2000F03A9 /* JWBasicVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A729B5D1C99ABD2000F03A9 /* JWBasicVideoViewController.m */; };
+		8A729B671C99B4A0000F03A9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A729B661C99B4A0000F03A9 /* main.m */; };
+		8A729B6A1C99B4A0000F03A9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A729B691C99B4A0000F03A9 /* AppDelegate.m */; };
+		8A729B701C99B4A0000F03A9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A729B6E1C99B4A0000F03A9 /* Main.storyboard */; };
+		8A729B721C99B4A0000F03A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A729B711C99B4A0000F03A9 /* Assets.xcassets */; };
+		8A729B751C99B4A0000F03A9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A729B731C99B4A0000F03A9 /* LaunchScreen.storyboard */; };
+		8A729B7C1C99B576000F03A9 /* JWRemotePlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A729B7B1C99B576000F03A9 /* JWRemotePlayerViewController.m */; };
+		8A729B871C99CD8B000F03A9 /* JWCastingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A729B861C99CD8B000F03A9 /* JWCastingViewController.m */; };
+		8A729B8D1C99D278000F03A9 /* cast_off.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A729B881C99D278000F03A9 /* cast_off.png */; };
+		8A729B8E1C99D278000F03A9 /* cast_on.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A729B891C99D278000F03A9 /* cast_on.png */; };
+		8A729B8F1C99D278000F03A9 /* cast_connecting0.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A729B8A1C99D278000F03A9 /* cast_connecting0.png */; };
+		8A729B901C99D278000F03A9 /* cast_connecting1.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A729B8B1C99D278000F03A9 /* cast_connecting1.png */; };
+		8A729B911C99D278000F03A9 /* cast_connecting2.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A729B8C1C99D278000F03A9 /* cast_connecting2.png */; };
+		8AF5F65D1C99F18F00C0D5E0 /* JWBasicVideoViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A729B5C1C99ABD2000F03A9 /* JWBasicVideoViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8AF5F65F1C99F1F600C0D5E0 /* JWBasicVideoViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A729B5C1C99ABD2000F03A9 /* JWBasicVideoViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8AF5F6611C99F4E900C0D5E0 /* JWCastingViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A729B851C99CD8B000F03A9 /* JWCastingViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8AF5F6641C99F50D00C0D5E0 /* JWRemotePlayerViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A729B7A1C99B576000F03A9 /* JWRemotePlayerViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8AF5F6651C99F53900C0D5E0 /* JWBasicVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A729B5D1C99ABD2000F03A9 /* JWBasicVideoViewController.m */; };
+		8AF5F6671C99F54000C0D5E0 /* JWBasicVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A729B5D1C99ABD2000F03A9 /* JWBasicVideoViewController.m */; };
+		8AF5F6D01C9A612B00C0D5E0 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AF5F6CE1C9A612B00C0D5E0 /* Interface.storyboard */; };
+		8AF5F6D21C9A612B00C0D5E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8AF5F6D11C9A612B00C0D5E0 /* Assets.xcassets */; };
+		8AF5F6D91C9A612B00C0D5E0 /* JWRemoteController Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 8AF5F6D81C9A612B00C0D5E0 /* JWRemoteController Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		8AF5F6E41C9A612B00C0D5E0 /* ExtensionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AF5F6E31C9A612B00C0D5E0 /* ExtensionDelegate.m */; };
+		8AF5F6E71C9A612B00C0D5E0 /* NotificationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AF5F6E61C9A612B00C0D5E0 /* NotificationController.m */; };
+		8AF5F6E91C9A612B00C0D5E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8AF5F6E81C9A612B00C0D5E0 /* Assets.xcassets */; };
+		8AF5F6ED1C9A612B00C0D5E0 /* JWRemoteController.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 8AF5F6CC1C9A612B00C0D5E0 /* JWRemoteController.app */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8AF5F6DA1C9A612B00C0D5E0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8A729A6F1C98ACA8000F03A9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8AF5F6D71C9A612B00C0D5E0;
+			remoteInfo = "JWRemoteController Extension";
+		};
+		8AF5F6EB1C9A612B00C0D5E0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8A729A6F1C98ACA8000F03A9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8AF5F6CB1C9A612B00C0D5E0;
+			remoteInfo = JWRemoteController;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8AF5F65C1C99F17A00C0D5E0 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 7;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8AF5F6B51C9A56F200C0D5E0 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				8AF5F6ED1C9A612B00C0D5E0 /* JWRemoteController.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8AF5F6F11C9A612B00C0D5E0 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				8AF5F6D91C9A612B00C0D5E0 /* JWRemoteController Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		8A5BA89A1C9A647C0002231F /* play-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "play-button.png"; sourceTree = "<group>"; };
+		8A5BA89B1C9A647C0002231F /* pause-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pause-button.png"; sourceTree = "<group>"; };
+		8A5BA89E1C9A64A90002231F /* JWRemoteInterfaceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWRemoteInterfaceController.h; sourceTree = "<group>"; };
+		8A5BA89F1C9A64A90002231F /* JWRemoteInterfaceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWRemoteInterfaceController.m; sourceTree = "<group>"; };
+		8A5BA8A41C9AF9890002231F /* JWAirPlayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWAirPlayViewController.h; sourceTree = "<group>"; };
+		8A5BA8A51C9AF9890002231F /* JWAirPlayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWAirPlayViewController.m; sourceTree = "<group>"; };
+		8A729A771C98ACA8000F03A9 /* JWBestPracticeApps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JWBestPracticeApps.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A729A7B1C98ACA8000F03A9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8A729A7D1C98ACA8000F03A9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8A729A7E1C98ACA8000F03A9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8A729A841C98ACA8000F03A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8A729A861C98ACA8000F03A9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8A729A891C98ACA8000F03A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8A729A8B1C98ACA8000F03A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A729B0F1C98B5A6000F03A9 /* JWCasting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JWCasting.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A729B121C98B5A6000F03A9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8A729B141C98B5A6000F03A9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8A729B151C98B5A6000F03A9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8A729B1B1C98B5A6000F03A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8A729B1D1C98B5A6000F03A9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8A729B201C98B5A6000F03A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8A729B221C98B5A6000F03A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A729B2A1C98B5F2000F03A9 /* JWAirPlay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JWAirPlay.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A729B2D1C98B5F2000F03A9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8A729B2F1C98B5F2000F03A9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8A729B301C98B5F2000F03A9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8A729B361C98B5F2000F03A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8A729B381C98B5F2000F03A9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8A729B3B1C98B5F2000F03A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8A729B3D1C98B5F2000F03A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A729B5C1C99ABD2000F03A9 /* JWBasicVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWBasicVideoViewController.h; sourceTree = "<group>"; };
+		8A729B5D1C99ABD2000F03A9 /* JWBasicVideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWBasicVideoViewController.m; sourceTree = "<group>"; };
+		8A729B631C99B4A0000F03A9 /* JWRemotePlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JWRemotePlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A729B661C99B4A0000F03A9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8A729B681C99B4A0000F03A9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8A729B691C99B4A0000F03A9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8A729B6F1C99B4A0000F03A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8A729B711C99B4A0000F03A9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8A729B741C99B4A0000F03A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8A729B761C99B4A1000F03A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A729B7A1C99B576000F03A9 /* JWRemotePlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWRemotePlayerViewController.h; sourceTree = "<group>"; };
+		8A729B7B1C99B576000F03A9 /* JWRemotePlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWRemotePlayerViewController.m; sourceTree = "<group>"; };
+		8A729B851C99CD8B000F03A9 /* JWCastingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWCastingViewController.h; sourceTree = "<group>"; };
+		8A729B861C99CD8B000F03A9 /* JWCastingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWCastingViewController.m; sourceTree = "<group>"; };
+		8A729B881C99D278000F03A9 /* cast_off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cast_off.png; sourceTree = "<group>"; };
+		8A729B891C99D278000F03A9 /* cast_on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cast_on.png; sourceTree = "<group>"; };
+		8A729B8A1C99D278000F03A9 /* cast_connecting0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cast_connecting0.png; sourceTree = "<group>"; };
+		8A729B8B1C99D278000F03A9 /* cast_connecting1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cast_connecting1.png; sourceTree = "<group>"; };
+		8A729B8C1C99D278000F03A9 /* cast_connecting2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cast_connecting2.png; sourceTree = "<group>"; };
+		8AF5F6CC1C9A612B00C0D5E0 /* JWRemoteController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JWRemoteController.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8AF5F6CF1C9A612B00C0D5E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		8AF5F6D11C9A612B00C0D5E0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8AF5F6D31C9A612B00C0D5E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8AF5F6D81C9A612B00C0D5E0 /* JWRemoteController Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "JWRemoteController Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8AF5F6DE1C9A612B00C0D5E0 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		8AF5F6E21C9A612B00C0D5E0 /* ExtensionDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExtensionDelegate.h; sourceTree = "<group>"; };
+		8AF5F6E31C9A612B00C0D5E0 /* ExtensionDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExtensionDelegate.m; sourceTree = "<group>"; };
+		8AF5F6E51C9A612B00C0D5E0 /* NotificationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationController.h; sourceTree = "<group>"; };
+		8AF5F6E61C9A612B00C0D5E0 /* NotificationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationController.m; sourceTree = "<group>"; };
+		8AF5F6E81C9A612B00C0D5E0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8AF5F6EA1C9A612B00C0D5E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8AF5F6F51C9A61DA00C0D5E0 /* JWRemoteTerminologyHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWRemoteTerminologyHelper.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8A729A741C98ACA8000F03A9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A729B0C1C98B5A6000F03A9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A729B271C98B5F2000F03A9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A729B601C99B4A0000F03A9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8AF5F6D51C9A612B00C0D5E0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8A729A6E1C98ACA8000F03A9 = {
+			isa = PBXGroup;
+			children = (
+				8A729A791C98ACA8000F03A9 /* JWBestPracticeApps */,
+				8A729B101C98B5A6000F03A9 /* JWCasting */,
+				8A729B2B1C98B5F2000F03A9 /* JWAirPlay */,
+				8A9206371C9B4E67002797FA /* Watch App */,
+				8A729A781C98ACA8000F03A9 /* Products */,
+				8AF5F6851C9A0F2100C0D5E0 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8A729A781C98ACA8000F03A9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8A729A771C98ACA8000F03A9 /* JWBestPracticeApps.app */,
+				8A729B0F1C98B5A6000F03A9 /* JWCasting.app */,
+				8A729B2A1C98B5F2000F03A9 /* JWAirPlay.app */,
+				8A729B631C99B4A0000F03A9 /* JWRemotePlayer.app */,
+				8AF5F6CC1C9A612B00C0D5E0 /* JWRemoteController.app */,
+				8AF5F6D81C9A612B00C0D5E0 /* JWRemoteController Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8A729A791C98ACA8000F03A9 /* JWBestPracticeApps */ = {
+			isa = PBXGroup;
+			children = (
+				8A729A7D1C98ACA8000F03A9 /* AppDelegate.h */,
+				8A729A7E1C98ACA8000F03A9 /* AppDelegate.m */,
+				8A729B5C1C99ABD2000F03A9 /* JWBasicVideoViewController.h */,
+				8A729B5D1C99ABD2000F03A9 /* JWBasicVideoViewController.m */,
+				8A729A831C98ACA8000F03A9 /* Main.storyboard */,
+				8A729A861C98ACA8000F03A9 /* Assets.xcassets */,
+				8A729A881C98ACA8000F03A9 /* LaunchScreen.storyboard */,
+				8A729A8B1C98ACA8000F03A9 /* Info.plist */,
+				8A729A7A1C98ACA8000F03A9 /* Supporting Files */,
+			);
+			path = JWBestPracticeApps;
+			sourceTree = "<group>";
+		};
+		8A729A7A1C98ACA8000F03A9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8A729A7B1C98ACA8000F03A9 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8A729B101C98B5A6000F03A9 /* JWCasting */ = {
+			isa = PBXGroup;
+			children = (
+				8A729B141C98B5A6000F03A9 /* AppDelegate.h */,
+				8A729B151C98B5A6000F03A9 /* AppDelegate.m */,
+				8A729B851C99CD8B000F03A9 /* JWCastingViewController.h */,
+				8A729B861C99CD8B000F03A9 /* JWCastingViewController.m */,
+				8A729B921C99D28D000F03A9 /* images */,
+				8A729B1A1C98B5A6000F03A9 /* Main.storyboard */,
+				8A729B1D1C98B5A6000F03A9 /* Assets.xcassets */,
+				8A729B1F1C98B5A6000F03A9 /* LaunchScreen.storyboard */,
+				8A729B221C98B5A6000F03A9 /* Info.plist */,
+				8A729B111C98B5A6000F03A9 /* Supporting Files */,
+			);
+			path = JWCasting;
+			sourceTree = "<group>";
+		};
+		8A729B111C98B5A6000F03A9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8A729B121C98B5A6000F03A9 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8A729B2B1C98B5F2000F03A9 /* JWAirPlay */ = {
+			isa = PBXGroup;
+			children = (
+				8A729B2F1C98B5F2000F03A9 /* AppDelegate.h */,
+				8A729B301C98B5F2000F03A9 /* AppDelegate.m */,
+				8A5BA8A41C9AF9890002231F /* JWAirPlayViewController.h */,
+				8A5BA8A51C9AF9890002231F /* JWAirPlayViewController.m */,
+				8A729B351C98B5F2000F03A9 /* Main.storyboard */,
+				8A729B381C98B5F2000F03A9 /* Assets.xcassets */,
+				8A729B3A1C98B5F2000F03A9 /* LaunchScreen.storyboard */,
+				8A729B3D1C98B5F2000F03A9 /* Info.plist */,
+				8A729B2C1C98B5F2000F03A9 /* Supporting Files */,
+			);
+			path = JWAirPlay;
+			sourceTree = "<group>";
+		};
+		8A729B2C1C98B5F2000F03A9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8A729B2D1C98B5F2000F03A9 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8A729B641C99B4A0000F03A9 /* JWRemotePlayer */ = {
+			isa = PBXGroup;
+			children = (
+				8A729B681C99B4A0000F03A9 /* AppDelegate.h */,
+				8A729B691C99B4A0000F03A9 /* AppDelegate.m */,
+				8A729B7A1C99B576000F03A9 /* JWRemotePlayerViewController.h */,
+				8A729B7B1C99B576000F03A9 /* JWRemotePlayerViewController.m */,
+				8A729B6E1C99B4A0000F03A9 /* Main.storyboard */,
+				8A729B711C99B4A0000F03A9 /* Assets.xcassets */,
+				8A729B731C99B4A0000F03A9 /* LaunchScreen.storyboard */,
+				8A729B761C99B4A1000F03A9 /* Info.plist */,
+				8A729B651C99B4A0000F03A9 /* Supporting Files */,
+			);
+			path = JWRemotePlayer;
+			sourceTree = "<group>";
+		};
+		8A729B651C99B4A0000F03A9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8A729B661C99B4A0000F03A9 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8A729B921C99D28D000F03A9 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				8A729B881C99D278000F03A9 /* cast_off.png */,
+				8A729B891C99D278000F03A9 /* cast_on.png */,
+				8A729B8A1C99D278000F03A9 /* cast_connecting0.png */,
+				8A729B8B1C99D278000F03A9 /* cast_connecting1.png */,
+				8A729B8C1C99D278000F03A9 /* cast_connecting2.png */,
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
+		8A9206371C9B4E67002797FA /* Watch App */ = {
+			isa = PBXGroup;
+			children = (
+				8A729B641C99B4A0000F03A9 /* JWRemotePlayer */,
+				8AF5F6CD1C9A612B00C0D5E0 /* JWRemoteController */,
+				8AF5F6DC1C9A612B00C0D5E0 /* JWRemoteController Extension */,
+			);
+			name = "Watch App";
+			sourceTree = "<group>";
+		};
+		8AF5F6851C9A0F2100C0D5E0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8AF5F6CD1C9A612B00C0D5E0 /* JWRemoteController */ = {
+			isa = PBXGroup;
+			children = (
+				8AF5F6CE1C9A612B00C0D5E0 /* Interface.storyboard */,
+				8A5BA89A1C9A647C0002231F /* play-button.png */,
+				8A5BA89B1C9A647C0002231F /* pause-button.png */,
+				8AF5F6D11C9A612B00C0D5E0 /* Assets.xcassets */,
+				8AF5F6D31C9A612B00C0D5E0 /* Info.plist */,
+			);
+			path = JWRemoteController;
+			sourceTree = "<group>";
+		};
+		8AF5F6DC1C9A612B00C0D5E0 /* JWRemoteController Extension */ = {
+			isa = PBXGroup;
+			children = (
+				8AF5F6F51C9A61DA00C0D5E0 /* JWRemoteTerminologyHelper.h */,
+				8A5BA89E1C9A64A90002231F /* JWRemoteInterfaceController.h */,
+				8A5BA89F1C9A64A90002231F /* JWRemoteInterfaceController.m */,
+				8AF5F6E21C9A612B00C0D5E0 /* ExtensionDelegate.h */,
+				8AF5F6E31C9A612B00C0D5E0 /* ExtensionDelegate.m */,
+				8AF5F6E51C9A612B00C0D5E0 /* NotificationController.h */,
+				8AF5F6E61C9A612B00C0D5E0 /* NotificationController.m */,
+				8AF5F6E81C9A612B00C0D5E0 /* Assets.xcassets */,
+				8AF5F6EA1C9A612B00C0D5E0 /* Info.plist */,
+				8AF5F6DD1C9A612B00C0D5E0 /* Supporting Files */,
+			);
+			path = "JWRemoteController Extension";
+			sourceTree = "<group>";
+		};
+		8AF5F6DD1C9A612B00C0D5E0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8AF5F6DE1C9A612B00C0D5E0 /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		8A5BA8A71C9AFA370002231F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A5BA8A81C9AFA3D0002231F /* JWBasicVideoViewController.h in Headers */,
+				8A5BA8A91C9AFA4D0002231F /* JWAirPlayViewController.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8AF5F65B1C99F15400C0D5E0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8AF5F65D1C99F18F00C0D5E0 /* JWBasicVideoViewController.h in Headers */,
+				8A5BA8AA1C9AFA720002231F /* JWAirPlayViewController.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8AF5F65E1C99F1EE00C0D5E0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8AF5F65F1C99F1F600C0D5E0 /* JWBasicVideoViewController.h in Headers */,
+				8AF5F6611C99F4E900C0D5E0 /* JWCastingViewController.h in Headers */,
+				8A5BA8A31C9AF7940002231F /* JWRemotePlayerViewController.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8AF5F6621C99F4FF00C0D5E0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8AF5F6641C99F50D00C0D5E0 /* JWRemotePlayerViewController.h in Headers */,
+				8A5BA8A21C9AF73C0002231F /* JWCastingViewController.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		8A729A761C98ACA8000F03A9 /* JWBestPracticeApps */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8A729A8E1C98ACA8000F03A9 /* Build configuration list for PBXNativeTarget "JWBestPracticeApps" */;
+			buildPhases = (
+				8A729A731C98ACA8000F03A9 /* Sources */,
+				8A729A741C98ACA8000F03A9 /* Frameworks */,
+				8A729A751C98ACA8000F03A9 /* Resources */,
+				8AF5F65B1C99F15400C0D5E0 /* Headers */,
+				8AF5F65C1C99F17A00C0D5E0 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JWBestPracticeApps;
+			productName = JWBestPracticeApps;
+			productReference = 8A729A771C98ACA8000F03A9 /* JWBestPracticeApps.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8A729B0E1C98B5A6000F03A9 /* JWCasting */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8A729B231C98B5A6000F03A9 /* Build configuration list for PBXNativeTarget "JWCasting" */;
+			buildPhases = (
+				8A729B0B1C98B5A6000F03A9 /* Sources */,
+				8A729B0C1C98B5A6000F03A9 /* Frameworks */,
+				8A729B0D1C98B5A6000F03A9 /* Resources */,
+				8AF5F65E1C99F1EE00C0D5E0 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JWCasting;
+			productName = JWCasting;
+			productReference = 8A729B0F1C98B5A6000F03A9 /* JWCasting.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8A729B291C98B5F2000F03A9 /* JWAirPlay */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8A729B3E1C98B5F2000F03A9 /* Build configuration list for PBXNativeTarget "JWAirPlay" */;
+			buildPhases = (
+				8A729B261C98B5F2000F03A9 /* Sources */,
+				8A729B271C98B5F2000F03A9 /* Frameworks */,
+				8A729B281C98B5F2000F03A9 /* Resources */,
+				8A5BA8A71C9AFA370002231F /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JWAirPlay;
+			productName = JWAirPlay;
+			productReference = 8A729B2A1C98B5F2000F03A9 /* JWAirPlay.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8A729B621C99B4A0000F03A9 /* JWRemotePlayer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8A729B771C99B4A1000F03A9 /* Build configuration list for PBXNativeTarget "JWRemotePlayer" */;
+			buildPhases = (
+				8A729B5F1C99B4A0000F03A9 /* Sources */,
+				8A729B601C99B4A0000F03A9 /* Frameworks */,
+				8A729B611C99B4A0000F03A9 /* Resources */,
+				8AF5F6621C99F4FF00C0D5E0 /* Headers */,
+				8AF5F6B51C9A56F200C0D5E0 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8AF5F6EC1C9A612B00C0D5E0 /* PBXTargetDependency */,
+			);
+			name = JWRemotePlayer;
+			productName = JWRemotePlayer;
+			productReference = 8A729B631C99B4A0000F03A9 /* JWRemotePlayer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8AF5F6CB1C9A612B00C0D5E0 /* JWRemoteController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8AF5F6F21C9A612B00C0D5E0 /* Build configuration list for PBXNativeTarget "JWRemoteController" */;
+			buildPhases = (
+				8AF5F6CA1C9A612B00C0D5E0 /* Resources */,
+				8AF5F6F11C9A612B00C0D5E0 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8AF5F6DB1C9A612B00C0D5E0 /* PBXTargetDependency */,
+			);
+			name = JWRemoteController;
+			productName = JWRemoteController;
+			productReference = 8AF5F6CC1C9A612B00C0D5E0 /* JWRemoteController.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		8AF5F6D71C9A612B00C0D5E0 /* JWRemoteController Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8AF5F6EE1C9A612B00C0D5E0 /* Build configuration list for PBXNativeTarget "JWRemoteController Extension" */;
+			buildPhases = (
+				8AF5F6D41C9A612B00C0D5E0 /* Sources */,
+				8AF5F6D51C9A612B00C0D5E0 /* Frameworks */,
+				8AF5F6D61C9A612B00C0D5E0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "JWRemoteController Extension";
+			productName = "JWRemoteController Extension";
+			productReference = 8AF5F6D81C9A612B00C0D5E0 /* JWRemoteController Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8A729A6F1C98ACA8000F03A9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Karim Mourra";
+				TargetAttributes = {
+					8A729A761C98ACA8000F03A9 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					8A729B0E1C98B5A6000F03A9 = {
+						CreatedOnToolsVersion = 7.2;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 0;
+							};
+						};
+					};
+					8A729B291C98B5F2000F03A9 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					8A729B621C99B4A0000F03A9 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					8AF5F6CB1C9A612B00C0D5E0 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					8AF5F6D71C9A612B00C0D5E0 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+				};
+			};
+			buildConfigurationList = 8A729A721C98ACA8000F03A9 /* Build configuration list for PBXProject "JWBestPracticeApps" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8A729A6E1C98ACA8000F03A9;
+			productRefGroup = 8A729A781C98ACA8000F03A9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8A729A761C98ACA8000F03A9 /* JWBestPracticeApps */,
+				8A729B0E1C98B5A6000F03A9 /* JWCasting */,
+				8A729B291C98B5F2000F03A9 /* JWAirPlay */,
+				8A729B621C99B4A0000F03A9 /* JWRemotePlayer */,
+				8AF5F6CB1C9A612B00C0D5E0 /* JWRemoteController */,
+				8AF5F6D71C9A612B00C0D5E0 /* JWRemoteController Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8A729A751C98ACA8000F03A9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A729A8A1C98ACA8000F03A9 /* LaunchScreen.storyboard in Resources */,
+				8A729A871C98ACA8000F03A9 /* Assets.xcassets in Resources */,
+				8A729A851C98ACA8000F03A9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A729B0D1C98B5A6000F03A9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A729B8D1C99D278000F03A9 /* cast_off.png in Resources */,
+				8A729B8F1C99D278000F03A9 /* cast_connecting0.png in Resources */,
+				8A729B211C98B5A6000F03A9 /* LaunchScreen.storyboard in Resources */,
+				8A729B911C99D278000F03A9 /* cast_connecting2.png in Resources */,
+				8A729B1E1C98B5A6000F03A9 /* Assets.xcassets in Resources */,
+				8A729B901C99D278000F03A9 /* cast_connecting1.png in Resources */,
+				8A729B8E1C99D278000F03A9 /* cast_on.png in Resources */,
+				8A729B1C1C98B5A6000F03A9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A729B281C98B5F2000F03A9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A729B3C1C98B5F2000F03A9 /* LaunchScreen.storyboard in Resources */,
+				8A729B391C98B5F2000F03A9 /* Assets.xcassets in Resources */,
+				8A729B371C98B5F2000F03A9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A729B611C99B4A0000F03A9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A729B751C99B4A0000F03A9 /* LaunchScreen.storyboard in Resources */,
+				8A729B721C99B4A0000F03A9 /* Assets.xcassets in Resources */,
+				8A729B701C99B4A0000F03A9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8AF5F6CA1C9A612B00C0D5E0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A5BA89C1C9A647C0002231F /* play-button.png in Resources */,
+				8AF5F6D21C9A612B00C0D5E0 /* Assets.xcassets in Resources */,
+				8A5BA89D1C9A647C0002231F /* pause-button.png in Resources */,
+				8AF5F6D01C9A612B00C0D5E0 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8AF5F6D61C9A612B00C0D5E0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8AF5F6E91C9A612B00C0D5E0 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8A729A731C98ACA8000F03A9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A729B5E1C99ABD2000F03A9 /* JWBasicVideoViewController.m in Sources */,
+				8A729A7F1C98ACA8000F03A9 /* AppDelegate.m in Sources */,
+				8A729A7C1C98ACA8000F03A9 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A729B0B1C98B5A6000F03A9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8AF5F6651C99F53900C0D5E0 /* JWBasicVideoViewController.m in Sources */,
+				8A729B871C99CD8B000F03A9 /* JWCastingViewController.m in Sources */,
+				8A729B161C98B5A6000F03A9 /* AppDelegate.m in Sources */,
+				8A729B131C98B5A6000F03A9 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A729B261C98B5F2000F03A9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A5BA8AB1C9AFA7E0002231F /* JWBasicVideoViewController.m in Sources */,
+				8A729B311C98B5F2000F03A9 /* AppDelegate.m in Sources */,
+				8A5BA8A61C9AF9890002231F /* JWAirPlayViewController.m in Sources */,
+				8A729B2E1C98B5F2000F03A9 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A729B5F1C99B4A0000F03A9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8AF5F6671C99F54000C0D5E0 /* JWBasicVideoViewController.m in Sources */,
+				8A729B6A1C99B4A0000F03A9 /* AppDelegate.m in Sources */,
+				8A729B7C1C99B576000F03A9 /* JWRemotePlayerViewController.m in Sources */,
+				8A729B671C99B4A0000F03A9 /* main.m in Sources */,
+				8A5BA8AC1C9AFAB40002231F /* JWCastingViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8AF5F6D41C9A612B00C0D5E0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8AF5F6E41C9A612B00C0D5E0 /* ExtensionDelegate.m in Sources */,
+				8A5BA8A01C9A64A90002231F /* JWRemoteInterfaceController.m in Sources */,
+				8AF5F6E71C9A612B00C0D5E0 /* NotificationController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8AF5F6DB1C9A612B00C0D5E0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8AF5F6D71C9A612B00C0D5E0 /* JWRemoteController Extension */;
+			targetProxy = 8AF5F6DA1C9A612B00C0D5E0 /* PBXContainerItemProxy */;
+		};
+		8AF5F6EC1C9A612B00C0D5E0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8AF5F6CB1C9A612B00C0D5E0 /* JWRemoteController */;
+			targetProxy = 8AF5F6EB1C9A612B00C0D5E0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8A729A831C98ACA8000F03A9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8A729A841C98ACA8000F03A9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8A729A881C98ACA8000F03A9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8A729A891C98ACA8000F03A9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		8A729B1A1C98B5A6000F03A9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8A729B1B1C98B5A6000F03A9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8A729B1F1C98B5A6000F03A9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8A729B201C98B5A6000F03A9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		8A729B351C98B5F2000F03A9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8A729B361C98B5F2000F03A9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8A729B3A1C98B5F2000F03A9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8A729B3B1C98B5F2000F03A9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		8A729B6E1C99B4A0000F03A9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8A729B6F1C99B4A0000F03A9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8A729B731C99B4A0000F03A9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8A729B741C99B4A0000F03A9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		8AF5F6CE1C9A612B00C0D5E0 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8AF5F6CF1C9A612B00C0D5E0 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8A729A8C1C98ACA8000F03A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-all_load";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8A729A8D1C98ACA8000F03A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "-all_load";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8A729A8F1C98ACA8000F03A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)";
+				INFOPLIST_FILE = JWBestPracticeApps/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-all_load";
+				PRODUCT_BUNDLE_IDENTIFIER = JWPlayer.JWBestPracticeApps;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		8A729A901C98ACA8000F03A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)";
+				INFOPLIST_FILE = JWBestPracticeApps/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-all_load";
+				PRODUCT_BUNDLE_IDENTIFIER = JWPlayer.JWBestPracticeApps;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		8A729B241C98B5A6000F03A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/JWCasting",
+				);
+				INFOPLIST_FILE = JWCasting/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = JWPlayer.JWCasting;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USE_HEADERMAP = YES;
+			};
+			name = Debug;
+		};
+		8A729B251C98B5A6000F03A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/JWCasting",
+				);
+				INFOPLIST_FILE = JWCasting/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = JWPlayer.JWCasting;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USE_HEADERMAP = YES;
+			};
+			name = Release;
+		};
+		8A729B3F1C98B5F2000F03A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = JWAirPlay/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-all_load";
+				PRODUCT_BUNDLE_IDENTIFIER = JWPlayer.JWAirPlay;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		8A729B401C98B5F2000F03A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = JWAirPlay/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-all_load";
+				PRODUCT_BUNDLE_IDENTIFIER = JWPlayer.JWAirPlay;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		8A729B781C99B4A1000F03A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = JWRemotePlayer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-all_load";
+				PRODUCT_BUNDLE_IDENTIFIER = JWPlayer.JWRemotePlayer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		8A729B791C99B4A1000F03A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = JWRemotePlayer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-all_load";
+				PRODUCT_BUNDLE_IDENTIFIER = JWPlayer.JWRemotePlayer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		8AF5F6EF1C9A612B00C0D5E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_BITCODE = YES;
+				INFOPLIST_FILE = "JWRemoteController Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = JWPlayer.JWRemotePlayer.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Debug;
+		};
+		8AF5F6F01C9A612B00C0D5E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_BITCODE = YES;
+				INFOPLIST_FILE = "JWRemoteController Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = JWPlayer.JWRemotePlayer.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Release;
+		};
+		8AF5F6F31C9A612B00C0D5E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_BITCODE = YES;
+				IBSC_MODULE = JWRemoteController_Extension;
+				INFOPLIST_FILE = JWRemoteController/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = JWPlayer.JWRemotePlayer.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Debug;
+		};
+		8AF5F6F41C9A612B00C0D5E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_BITCODE = YES;
+				IBSC_MODULE = JWRemoteController_Extension;
+				INFOPLIST_FILE = JWRemoteController/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = JWPlayer.JWRemotePlayer.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8A729A721C98ACA8000F03A9 /* Build configuration list for PBXProject "JWBestPracticeApps" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A729A8C1C98ACA8000F03A9 /* Debug */,
+				8A729A8D1C98ACA8000F03A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8A729A8E1C98ACA8000F03A9 /* Build configuration list for PBXNativeTarget "JWBestPracticeApps" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A729A8F1C98ACA8000F03A9 /* Debug */,
+				8A729A901C98ACA8000F03A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8A729B231C98B5A6000F03A9 /* Build configuration list for PBXNativeTarget "JWCasting" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A729B241C98B5A6000F03A9 /* Debug */,
+				8A729B251C98B5A6000F03A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8A729B3E1C98B5F2000F03A9 /* Build configuration list for PBXNativeTarget "JWAirPlay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A729B3F1C98B5F2000F03A9 /* Debug */,
+				8A729B401C98B5F2000F03A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8A729B771C99B4A1000F03A9 /* Build configuration list for PBXNativeTarget "JWRemotePlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A729B781C99B4A1000F03A9 /* Debug */,
+				8A729B791C99B4A1000F03A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8AF5F6EE1C9A612B00C0D5E0 /* Build configuration list for PBXNativeTarget "JWRemoteController Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8AF5F6EF1C9A612B00C0D5E0 /* Debug */,
+				8AF5F6F01C9A612B00C0D5E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8AF5F6F21C9A612B00C0D5E0 /* Build configuration list for PBXNativeTarget "JWRemoteController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8AF5F6F31C9A612B00C0D5E0 /* Debug */,
+				8AF5F6F41C9A612B00C0D5E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8A729A6F1C98ACA8000F03A9 /* Project object */;
+}
