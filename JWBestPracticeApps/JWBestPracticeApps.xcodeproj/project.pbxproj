@@ -59,10 +59,6 @@
 		8AF5F6E71C9A612B00C0D5E0 /* NotificationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AF5F6E61C9A612B00C0D5E0 /* NotificationController.m */; };
 		8AF5F6E91C9A612B00C0D5E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8AF5F6E81C9A612B00C0D5E0 /* Assets.xcassets */; };
 		8AF5F6ED1C9A612B00C0D5E0 /* JWRemoteController.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 8AF5F6CC1C9A612B00C0D5E0 /* JWRemoteController.app */; };
-		8AFCF50A1CB75B1A00BADC12 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8A729A8B1C98ACA8000F03A9 /* Info.plist */; };
-		8AFCF50B1CB75B1A00BADC12 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8A729A8B1C98ACA8000F03A9 /* Info.plist */; };
-		8AFCF50D1CB75B1D00BADC12 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8A729A8B1C98ACA8000F03A9 /* Info.plist */; };
-		8AFCF50E1CB75B1D00BADC12 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8A729A8B1C98ACA8000F03A9 /* Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -560,7 +556,7 @@
 		8A729A6F1C98ACA8000F03A9 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0720;
+				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = "Karim Mourra";
 				TargetAttributes = {
 					8A729A761C98ACA8000F03A9 = {
@@ -616,7 +612,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8AFCF50A1CB75B1A00BADC12 /* Info.plist in Resources */,
 				8A729A8A1C98ACA8000F03A9 /* LaunchScreen.storyboard in Resources */,
 				8A729A871C98ACA8000F03A9 /* Assets.xcassets in Resources */,
 				8A729A851C98ACA8000F03A9 /* Main.storyboard in Resources */,
@@ -629,7 +624,6 @@
 			files = (
 				8A729B8D1C99D278000F03A9 /* cast_off.png in Resources */,
 				8A729B8F1C99D278000F03A9 /* cast_connecting0.png in Resources */,
-				8AFCF50B1CB75B1A00BADC12 /* Info.plist in Resources */,
 				8A729B211C98B5A6000F03A9 /* LaunchScreen.storyboard in Resources */,
 				8A729B911C99D278000F03A9 /* cast_connecting2.png in Resources */,
 				8A729B1E1C98B5A6000F03A9 /* Assets.xcassets in Resources */,
@@ -643,7 +637,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8AFCF50D1CB75B1D00BADC12 /* Info.plist in Resources */,
 				8A729B3C1C98B5F2000F03A9 /* LaunchScreen.storyboard in Resources */,
 				8A729B391C98B5F2000F03A9 /* Assets.xcassets in Resources */,
 				8A729B371C98B5F2000F03A9 /* Main.storyboard in Resources */,
@@ -654,7 +647,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8AFCF50E1CB75B1D00BADC12 /* Info.plist in Resources */,
 				8A729B751C99B4A0000F03A9 /* LaunchScreen.storyboard in Resources */,
 				8A729B721C99B4A0000F03A9 /* Assets.xcassets in Resources */,
 				8A729B701C99B4A0000F03A9 /* Main.storyboard in Resources */,
