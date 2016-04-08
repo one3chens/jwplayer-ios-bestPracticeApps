@@ -12,7 +12,11 @@ Each target adds a level of complexity to the base target, JWBestPracticeApps, w
 
 ## Initial Set-up:
 
-Import the JW Player iOS SDK to the project and for **each target** add your JWPlayer key to the info.plist and link the JWPlayer iOS SDK. For more instructions please visit the official JW Player Developer guide at http://developer.jwplayer.com/sdk/ios/docs/developer-guide/
+Import the JW Player iOS SDK to the project, add your JWPlayer key to the info.plist in the JWBestPracticeApps target and link the JWPlayer iOS SDK. To avoid importing the JW Player iOS SDK to each target, import it once to the JWBestPracticeApps target and set its Target Membership to each target, as seen in the following screenshot:
+
+![Target Membership Screenshot](./images/target_membership.png)
+
+For more instructions please visit the official JW Player Developer guide at http://developer.jwplayer.com/sdk/ios/docs/developer-guide/
 
 For targets that require casting to Google ChromeCast, you must import a Google ChromeCast Framework, as well as all of its depending frameworks. For the list of necessary frameworks please visit https://developers.google.com/cast/docs/ios_sender#setup
 
