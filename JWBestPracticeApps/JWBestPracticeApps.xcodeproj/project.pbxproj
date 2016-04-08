@@ -59,6 +59,10 @@
 		8AF5F6E71C9A612B00C0D5E0 /* NotificationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AF5F6E61C9A612B00C0D5E0 /* NotificationController.m */; };
 		8AF5F6E91C9A612B00C0D5E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8AF5F6E81C9A612B00C0D5E0 /* Assets.xcassets */; };
 		8AF5F6ED1C9A612B00C0D5E0 /* JWRemoteController.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 8AF5F6CC1C9A612B00C0D5E0 /* JWRemoteController.app */; };
+		8AFCF50A1CB75B1A00BADC12 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8A729A8B1C98ACA8000F03A9 /* Info.plist */; };
+		8AFCF50B1CB75B1A00BADC12 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8A729A8B1C98ACA8000F03A9 /* Info.plist */; };
+		8AFCF50D1CB75B1D00BADC12 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8A729A8B1C98ACA8000F03A9 /* Info.plist */; };
+		8AFCF50E1CB75B1D00BADC12 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8A729A8B1C98ACA8000F03A9 /* Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -134,7 +138,6 @@
 		8A729B1B1C98B5A6000F03A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8A729B1D1C98B5A6000F03A9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8A729B201C98B5A6000F03A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		8A729B221C98B5A6000F03A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8A729B2A1C98B5F2000F03A9 /* JWAirPlay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JWAirPlay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A729B2D1C98B5F2000F03A9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8A729B2F1C98B5F2000F03A9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -142,7 +145,6 @@
 		8A729B361C98B5F2000F03A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8A729B381C98B5F2000F03A9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8A729B3B1C98B5F2000F03A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		8A729B3D1C98B5F2000F03A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8A729B5C1C99ABD2000F03A9 /* JWBasicVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWBasicVideoViewController.h; sourceTree = "<group>"; };
 		8A729B5D1C99ABD2000F03A9 /* JWBasicVideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWBasicVideoViewController.m; sourceTree = "<group>"; };
 		8A729B631C99B4A0000F03A9 /* JWRemotePlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JWRemotePlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -152,7 +154,6 @@
 		8A729B6F1C99B4A0000F03A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8A729B711C99B4A0000F03A9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8A729B741C99B4A0000F03A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		8A729B761C99B4A1000F03A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8A729B7A1C99B576000F03A9 /* JWRemotePlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWRemotePlayerViewController.h; sourceTree = "<group>"; };
 		8A729B7B1C99B576000F03A9 /* JWRemotePlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWRemotePlayerViewController.m; sourceTree = "<group>"; };
 		8A729B851C99CD8B000F03A9 /* JWCastingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWCastingViewController.h; sourceTree = "<group>"; };
@@ -276,7 +277,6 @@
 				8A729B1A1C98B5A6000F03A9 /* Main.storyboard */,
 				8A729B1D1C98B5A6000F03A9 /* Assets.xcassets */,
 				8A729B1F1C98B5A6000F03A9 /* LaunchScreen.storyboard */,
-				8A729B221C98B5A6000F03A9 /* Info.plist */,
 				8A729B111C98B5A6000F03A9 /* Supporting Files */,
 			);
 			path = JWCasting;
@@ -300,7 +300,6 @@
 				8A729B351C98B5F2000F03A9 /* Main.storyboard */,
 				8A729B381C98B5F2000F03A9 /* Assets.xcassets */,
 				8A729B3A1C98B5F2000F03A9 /* LaunchScreen.storyboard */,
-				8A729B3D1C98B5F2000F03A9 /* Info.plist */,
 				8A729B2C1C98B5F2000F03A9 /* Supporting Files */,
 			);
 			path = JWAirPlay;
@@ -324,7 +323,6 @@
 				8A729B6E1C99B4A0000F03A9 /* Main.storyboard */,
 				8A729B711C99B4A0000F03A9 /* Assets.xcassets */,
 				8A729B731C99B4A0000F03A9 /* LaunchScreen.storyboard */,
-				8A729B761C99B4A1000F03A9 /* Info.plist */,
 				8A729B651C99B4A0000F03A9 /* Supporting Files */,
 			);
 			path = JWRemotePlayer;
@@ -618,6 +616,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8AFCF50A1CB75B1A00BADC12 /* Info.plist in Resources */,
 				8A729A8A1C98ACA8000F03A9 /* LaunchScreen.storyboard in Resources */,
 				8A729A871C98ACA8000F03A9 /* Assets.xcassets in Resources */,
 				8A729A851C98ACA8000F03A9 /* Main.storyboard in Resources */,
@@ -630,6 +629,7 @@
 			files = (
 				8A729B8D1C99D278000F03A9 /* cast_off.png in Resources */,
 				8A729B8F1C99D278000F03A9 /* cast_connecting0.png in Resources */,
+				8AFCF50B1CB75B1A00BADC12 /* Info.plist in Resources */,
 				8A729B211C98B5A6000F03A9 /* LaunchScreen.storyboard in Resources */,
 				8A729B911C99D278000F03A9 /* cast_connecting2.png in Resources */,
 				8A729B1E1C98B5A6000F03A9 /* Assets.xcassets in Resources */,
@@ -643,6 +643,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8AFCF50D1CB75B1D00BADC12 /* Info.plist in Resources */,
 				8A729B3C1C98B5F2000F03A9 /* LaunchScreen.storyboard in Resources */,
 				8A729B391C98B5F2000F03A9 /* Assets.xcassets in Resources */,
 				8A729B371C98B5F2000F03A9 /* Main.storyboard in Resources */,
@@ -653,6 +654,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8AFCF50E1CB75B1D00BADC12 /* Info.plist in Resources */,
 				8A729B751C99B4A0000F03A9 /* LaunchScreen.storyboard in Resources */,
 				8A729B721C99B4A0000F03A9 /* Assets.xcassets in Resources */,
 				8A729B701C99B4A0000F03A9 /* Main.storyboard in Resources */,
