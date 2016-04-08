@@ -953,7 +953,7 @@
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/JWCasting",
 				);
-				INFOPLIST_FILE = JWCasting/Info.plist;
+				INFOPLIST_FILE = JWBestPracticeApps/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"-all_load",
@@ -974,7 +974,7 @@
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/JWCasting",
 				);
-				INFOPLIST_FILE = JWCasting/Info.plist;
+				INFOPLIST_FILE = JWBestPracticeApps/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"-all_load",
@@ -994,7 +994,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
-				INFOPLIST_FILE = JWAirPlay/Info.plist;
+				INFOPLIST_FILE = JWBestPracticeApps/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_BUNDLE_IDENTIFIER = JWPlayer.JWAirPlay;
@@ -1010,7 +1010,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
-				INFOPLIST_FILE = JWAirPlay/Info.plist;
+				INFOPLIST_FILE = JWBestPracticeApps/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_BUNDLE_IDENTIFIER = JWPlayer.JWAirPlay;
@@ -1027,7 +1027,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
-				INFOPLIST_FILE = JWRemotePlayer/Info.plist;
+				INFOPLIST_FILE = JWBestPracticeApps/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_BUNDLE_IDENTIFIER = JWPlayer.JWRemotePlayer;
@@ -1044,7 +1044,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
-				INFOPLIST_FILE = JWRemotePlayer/Info.plist;
+				INFOPLIST_FILE = JWBestPracticeApps/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_BUNDLE_IDENTIFIER = JWPlayer.JWRemotePlayer;
