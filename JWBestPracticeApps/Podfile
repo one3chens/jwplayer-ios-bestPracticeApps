@@ -1,0 +1,29 @@
+# Uncomment this line to define a global platform for your project
+# platform :ios, '8.0'
+# Uncomment this line if you're using Swift
+# use_frameworks!
+
+target 'JWBestPracticeApps' do
+
+end
+
+target 'JWCasting' do
+
+end
+
+target 'JWAirPlay' do
+
+end
+
+target 'JWRemotePlayer' do
+
+end
+
+target 'JWRemoteController' do
+
+end
+
+target 'JWRemoteController Extension' do
+
+end
+
