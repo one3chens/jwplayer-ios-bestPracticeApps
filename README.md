@@ -1,4 +1,4 @@
-# jwplayer-ios-bestPracticeApps
+# JW Player iOS Best Practice Apps
 
 This repository is used to present Objective-C code which can be used to achieve custom functionality with your JW Player. 
 The JWBestPracticeApps XCode project is composed of several targets which can be run as separate iOS applications. 
@@ -10,7 +10,7 @@ Each target adds a level of complexity to the base target, JWBestPracticeApps, w
 
 - The target named JWRemoteController is an Apple Watch app capable of controlling the JW Player in the iOS App named JWRemotePlayer.
 
-## Initial Set-up:
+## Initial Setup:
 
 Import the JW Player iOS SDK to the project, add your JWPlayer key to the info.plist in the JWBestPracticeApps target and link the JWPlayer iOS SDK. To avoid importing the JW Player iOS SDK to each target, import it once to the JWBestPracticeApps target and set its Target Membership to each target, as seen in the following screenshot:
 
