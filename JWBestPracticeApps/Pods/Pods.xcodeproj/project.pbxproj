@@ -11,12 +11,12 @@
 		26BDB85548838068F99EC08C8CF81C8C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB21402F2628AE5AD7FE931E3C014436 /* Foundation.framework */; };
 		34D5726E999C93149243F17789E0BF75 /* CastFrameworkAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3732118757E32E0F436250726F4C8F6D /* CastFrameworkAssets.xcassets */; };
 		375164F8BB3DFFCCA87B2928E96E59AD /* Pods-JWRemoteController Extension-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 53B6FB5F114318B57C732572261CE98E /* Pods-JWRemoteController Extension-dummy.m */; };
-		7322814A5E5E6FF00716E1621C97BC2A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A136DB53B8E99DF02F7BC3BDCD940258 /* Foundation.framework */; };
+		52EA063AC8121282F164F55E4C030211 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A136DB53B8E99DF02F7BC3BDCD940258 /* Foundation.framework */; };
 		AF9A8D050AE4465CCC11A5659CBB9733 /* Pods-JWBestPracticeApps-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B72C080A5E875F917188948509C3A4D /* Pods-JWBestPracticeApps-dummy.m */; };
 		B11C3EFD7C50ABF430E18FDBC7DB3139 /* Pods-JWAirPlay-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E44C621322E18B96C321A3DDE7FBC44C /* Pods-JWAirPlay-dummy.m */; };
 		B3B35ECE862FC3F8159D6EE31F6B8FE1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A136DB53B8E99DF02F7BC3BDCD940258 /* Foundation.framework */; };
 		D3BD909B65695CA329F6DFC0DFFD2753 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB21402F2628AE5AD7FE931E3C014436 /* Foundation.framework */; };
-		D664DBE09F5C6E74D317D9A7D26B266B /* Pods-JWRemotePlayer-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 59A31AFFA364C3410F43DC2CAD8388D8 /* Pods-JWRemotePlayer-dummy.m */; };
+		E5A3BAC63A9CAF556CB7B05ECB7CB23F /* Pods-JWRemotePlayer-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 59A31AFFA364C3410F43DC2CAD8388D8 /* Pods-JWRemotePlayer-dummy.m */; };
 		EDDBB90F6961D09A75B00D4B8F80CCD0 /* Pods-JWCasting-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 39941815C9309DC168376E1EF3FB18F4 /* Pods-JWCasting-dummy.m */; };
 		FE5A5E76DACA58717B3166F5C2BD7DF5 /* Pods-JWRemoteController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AD580C5B792164A567AF74097E5E605 /* Pods-JWRemoteController-dummy.m */; };
 		FEE88B394F9DBD1E1222BF53F1CA6A91 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A136DB53B8E99DF02F7BC3BDCD940258 /* Foundation.framework */; };
@@ -24,6 +24,13 @@
 
 /* Begin PBXContainerItemProxy section */
 		645C56AA35BB9D1FE666041FDB775A5A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0E876B1EFB87AAE5B8BA551A5930A7A4;
+			remoteInfo = "google-cast-sdk-CastFrameworkAssets";
+		};
+		A4221A53A909EFFFA9B1FB7362E44247 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
@@ -136,14 +143,6 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		1C1973430181B7B243E5160AA8BBF38E /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7322814A5E5E6FF00716E1621C97BC2A /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		5DB87F1ED9C304D49EDE055385BC3A9B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -165,6 +164,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				FEE88B394F9DBD1E1222BF53F1CA6A91 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4E58FD43DABF9FF9631196F5FDBDAC9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52EA063AC8121282F164F55E4C030211 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -560,16 +567,17 @@
 			productReference = D691CF795BBF7B9472DB6234814B42B0 /* libPods-JWCasting.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		67F4C4FC7072B1651E33AE1D5141100E /* Pods-JWRemotePlayer */ = {
+		736E4EB5A7019D996AFF7D8D70FF2C73 /* Pods-JWRemotePlayer */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F14194C3DFAB6AC1FDDF789F5B072824 /* Build configuration list for PBXNativeTarget "Pods-JWRemotePlayer" */;
+			buildConfigurationList = 350EE520984324C8B8DB98555DCD9EAA /* Build configuration list for PBXNativeTarget "Pods-JWRemotePlayer" */;
 			buildPhases = (
-				4B9C0BEACA84FCA6514768811919A56F /* Sources */,
-				1C1973430181B7B243E5160AA8BBF38E /* Frameworks */,
+				3D49C70FD47AEB4ED934DFEB9CEB9C1D /* Sources */,
+				A4E58FD43DABF9FF9631196F5FDBDAC9 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				21A68AD16096326E2E2A1F05685C8387 /* PBXTargetDependency */,
 			);
 			name = "Pods-JWRemotePlayer";
 			productName = "Pods-JWRemotePlayer";
@@ -619,7 +627,7 @@
 				5D336EE2487CA9953117C3077AC8ABAC /* Pods-JWCasting */,
 				34A64FF7733E2BAA7B83E6186C198324 /* Pods-JWRemoteController */,
 				B7447AD8B5B64FBD5E46AB76B068ED6D /* Pods-JWRemoteController Extension */,
-				67F4C4FC7072B1651E33AE1D5141100E /* Pods-JWRemotePlayer */,
+				736E4EB5A7019D996AFF7D8D70FF2C73 /* Pods-JWRemotePlayer */,
 			);
 		};
 /* End PBXProject section */
@@ -667,11 +675,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4B9C0BEACA84FCA6514768811919A56F /* Sources */ = {
+		3D49C70FD47AEB4ED934DFEB9CEB9C1D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D664DBE09F5C6E74D317D9A7D26B266B /* Pods-JWRemotePlayer-dummy.m in Sources */,
+				E5A3BAC63A9CAF556CB7B05ECB7CB23F /* Pods-JWRemotePlayer-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -694,6 +702,12 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		21A68AD16096326E2E2A1F05685C8387 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "google-cast-sdk-CastFrameworkAssets";
+			target = 0E876B1EFB87AAE5B8BA551A5930A7A4 /* google-cast-sdk-CastFrameworkAssets */;
+			targetProxy = A4221A53A909EFFFA9B1FB7362E44247 /* PBXContainerItemProxy */;
+		};
 		76691E63D902B6A42C6687EC5A6BC184 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "google-cast-sdk-CastFrameworkAssets";
@@ -722,27 +736,6 @@
 		2F8163F6BC31A67B2FBF50960EAAB6B1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 93C2952ACA74541B3E008C6DFCC38749 /* Pods-JWAirPlay.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
-				MACH_O_TYPE = staticlib;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		36AA870F143407089A0C555AC9D6EA31 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3C182642B9E08ACD0575D57FAB854CFD /* Pods-JWRemotePlayer.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -801,6 +794,27 @@
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
+		};
+		6461560DF92BE2EC00985A2AD12BF1F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE44AED7E90B1E55C1BA0ACC337C38F0 /* Pods-JWRemotePlayer.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
 		};
 		6745BC5E88A5CFD6ED87DCC52E266C9D /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -865,6 +879,27 @@
 				WATCHOS_DEPLOYMENT_TARGET = 2.1;
 			};
 			name = Debug;
+		};
+		71F2E5DECD9DAC67208C53C36B37B576 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C182642B9E08ACD0575D57FAB854CFD /* Pods-JWRemotePlayer.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
 		};
 		7AD4AAF1810BBAADD48F27799A2D5543 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -961,27 +996,6 @@
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
-		};
-		9E5C8E511E21B9940AB041404E4C7E87 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = CE44AED7E90B1E55C1BA0ACC337C38F0 /* Pods-JWRemotePlayer.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
-				MACH_O_TYPE = staticlib;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
 		};
 		B36B9864C1DE6A783652988BA2B703C6 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -1095,6 +1109,15 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		350EE520984324C8B8DB98555DCD9EAA /* Build configuration list for PBXNativeTarget "Pods-JWRemotePlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6461560DF92BE2EC00985A2AD12BF1F5 /* Debug */,
+				71F2E5DECD9DAC67208C53C36B37B576 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		568D34B3003A9BC2244DAB9D8FAA5B27 /* Build configuration list for PBXNativeTarget "Pods-JWAirPlay" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1127,15 +1150,6 @@
 			buildConfigurations = (
 				00125510D056CA0C9A75CE7428255A60 /* Debug */,
 				7AD4AAF1810BBAADD48F27799A2D5543 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		F14194C3DFAB6AC1FDDF789F5B072824 /* Build configuration list for PBXNativeTarget "Pods-JWRemotePlayer" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				9E5C8E511E21B9940AB041404E4C7E87 /* Debug */,
-				36AA870F143407089A0C555AC9D6EA31 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
