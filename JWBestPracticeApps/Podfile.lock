@@ -1,1 +1,20 @@
-COCOAPODS: 0.39.0
+PODS:
+  - google-cast-sdk (2.10.0):
+    - google-cast-sdk/Assets (= 2.10.0)
+    - google-cast-sdk/Core (= 2.10.0)
+  - google-cast-sdk/Assets (2.10.0):
+    - google-cast-sdk/Core
+  - google-cast-sdk/Core (2.10.0)
+  - JWPlayer-SDK (2.2.1)
+
+DEPENDENCIES:
+  - google-cast-sdk (<= 2.10.0.4070)
+  - JWPlayer-SDK (~> 2.0)
+
+SPEC CHECKSUMS:
+  google-cast-sdk: 1911d498a11a8fbb7a91ce0e0f50cf0d4fe6e3b6
+  JWPlayer-SDK: 3417864300c55b3858d28b2ff8b9f0eec889b74d
+
+PODFILE CHECKSUM: 22dce9dbb701399da01b0611bd272c68035c0053
+
+COCOAPODS: 1.0.0
