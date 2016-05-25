@@ -12,11 +12,11 @@ Each target adds a level of complexity to the base target, JWBestPracticeApps, w
 
 ## Initial Setup:
 
-### With CocoaPods
+### Via CocoaPods
 
 The JW Player iOS SDK as well as the Google Cast SDK required for JWCasting can be retrieved using CocoaPods. Navigate to the JWBestPracticeApps folder and with the command line run 'pod install'. When installation is complete, please use the xcworkspace, not the xcodeproj. Remember to add your JWPlayer key to the info.plist in the JWBestPracticeApps target.
 
-### Manual Framework installation
+### Via Manual Framework installation
 
 Import the JW Player iOS SDK to the project, add your JWPlayer key to the info.plist in the JWBestPracticeApps target and link the JWPlayer iOS SDK. To avoid importing the JW Player iOS SDK to each target, import it once to the JWBestPracticeApps target and set its Target Membership to each target, as seen in the following screenshot:
 
