@@ -1,1 +1,0 @@
-../../../JWPlayer-SDK/Headers/JWAdConfig.h

@@ -1,1 +1,0 @@
-../../../JWPlayer-SDK/Headers/JWConfig.h
