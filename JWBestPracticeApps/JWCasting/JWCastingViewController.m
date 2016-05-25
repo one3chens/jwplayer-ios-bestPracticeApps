@@ -66,8 +66,11 @@
     [self updateForCastDeviceConnection];
 }
 
--(void)onConnectionFailed
+-(void)onConnectionFailed:(NSError *)error
 {
+    if(error) {
+        NSLog(@"Connection Error: %@", error);
+    }
     [self updateForCastDeviceDisconnection];
 }
 
@@ -76,13 +79,19 @@
     [self updateForCasting];
 }
 
--(void)onCastingEnded
+-(void)onCastingEnded:(NSError *)error
 {
+    if(error) {
+        NSLog(@"Casting Error: %@", error);
+    }
     [self updateForCastingEnd];
 }
 
--(void)onCastingFailed
+-(void)onCastingFailed:(NSError *)error
 {
+    if(error) {
+        NSLog(@"Casting Error: %@", error);
+    }
     [self updateForCastingEnd];
 }
 

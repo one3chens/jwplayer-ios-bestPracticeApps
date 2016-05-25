@@ -32,3 +32,5 @@ DerivedData
 *.ipa
 *.xcuserstate
 *.xcscmblueprint
+Pods/
+

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		03F7161471F9D3F882B5C20B /* libPods-JWCasting.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 18B46F999BDD3032B9BCB1F4 /* libPods-JWCasting.a */; };
+		5BFDE0F3954AAFFAC1F38A76 /* libPods-JWRemoteController.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C53086B079689F858B02A42A /* libPods-JWRemoteController.a */; };
 		8A5BA89C1C9A647C0002231F /* play-button.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A5BA89A1C9A647C0002231F /* play-button.png */; };
 		8A5BA89D1C9A647C0002231F /* pause-button.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A5BA89B1C9A647C0002231F /* pause-button.png */; };
 		8A5BA8A01C9A64A90002231F /* JWRemoteInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A5BA89F1C9A64A90002231F /* JWRemoteInterfaceController.m */; };
@@ -59,6 +61,10 @@
 		8AF5F6E71C9A612B00C0D5E0 /* NotificationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AF5F6E61C9A612B00C0D5E0 /* NotificationController.m */; };
 		8AF5F6E91C9A612B00C0D5E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8AF5F6E81C9A612B00C0D5E0 /* Assets.xcassets */; };
 		8AF5F6ED1C9A612B00C0D5E0 /* JWRemoteController.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 8AF5F6CC1C9A612B00C0D5E0 /* JWRemoteController.app */; };
+		AB341B6EC61DFD6B46F068D6 /* libPods-JWBestPracticeApps.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BCE25B16DE011FFE47951517 /* libPods-JWBestPracticeApps.a */; };
+		C24874D002C8E9721BA8E61F /* libPods-JWRemotePlayer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 36BCA1345113D7AE624BEB2D /* libPods-JWRemotePlayer.a */; };
+		D37413B333297461C0FD0791 /* libPods-JWRemoteController Extension.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 787B849139DF8B66FA89FA5C /* libPods-JWRemoteController Extension.a */; };
+		FD9F7946BEE377EE83454E7D /* libPods-JWAirPlay.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5866385BBD927C92F367DB7C /* libPods-JWAirPlay.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -113,6 +119,16 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		05D9449F562C9B71FFCC02D0 /* Pods-JWCasting.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JWCasting.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JWCasting/Pods-JWCasting.debug.xcconfig"; sourceTree = "<group>"; };
+		18B46F999BDD3032B9BCB1F4 /* libPods-JWCasting.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JWCasting.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		22C2C3C040DFF795E877393C /* Pods-JWRemotePlayer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JWRemotePlayer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JWRemotePlayer/Pods-JWRemotePlayer.debug.xcconfig"; sourceTree = "<group>"; };
+		25CB234896380D6434A8A9B2 /* Pods-JWRemoteController.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JWRemoteController.release.xcconfig"; path = "Pods/Target Support Files/Pods-JWRemoteController/Pods-JWRemoteController.release.xcconfig"; sourceTree = "<group>"; };
+		36BCA1345113D7AE624BEB2D /* libPods-JWRemotePlayer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JWRemotePlayer.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		43033E540B089A5B3BCDBCC6 /* Pods-JWBestPracticeApps.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JWBestPracticeApps.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JWBestPracticeApps/Pods-JWBestPracticeApps.debug.xcconfig"; sourceTree = "<group>"; };
+		469A6375B85247D4516142AE /* Pods-JWRemoteController Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JWRemoteController Extension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JWRemoteController Extension/Pods-JWRemoteController Extension.debug.xcconfig"; sourceTree = "<group>"; };
+		56A46499C09525FA3C058938 /* Pods-JWAirPlay.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JWAirPlay.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JWAirPlay/Pods-JWAirPlay.debug.xcconfig"; sourceTree = "<group>"; };
+		5866385BBD927C92F367DB7C /* libPods-JWAirPlay.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JWAirPlay.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		787B849139DF8B66FA89FA5C /* libPods-JWRemoteController Extension.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JWRemoteController Extension.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A5BA89A1C9A647C0002231F /* play-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "play-button.png"; sourceTree = "<group>"; };
 		8A5BA89B1C9A647C0002231F /* pause-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pause-button.png"; sourceTree = "<group>"; };
 		8A5BA89E1C9A64A90002231F /* JWRemoteInterfaceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWRemoteInterfaceController.h; sourceTree = "<group>"; };
@@ -172,6 +188,14 @@
 		8AF5F6E81C9A612B00C0D5E0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8AF5F6EA1C9A612B00C0D5E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8AF5F6F51C9A61DA00C0D5E0 /* JWRemoteTerminologyHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWRemoteTerminologyHelper.h; sourceTree = "<group>"; };
+		969799C36851B711451E6914 /* Pods-JWBestPracticeApps.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JWBestPracticeApps.release.xcconfig"; path = "Pods/Target Support Files/Pods-JWBestPracticeApps/Pods-JWBestPracticeApps.release.xcconfig"; sourceTree = "<group>"; };
+		9EB18D2E0C98F9B2F6BD446A /* Pods-JWRemoteController.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JWRemoteController.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JWRemoteController/Pods-JWRemoteController.debug.xcconfig"; sourceTree = "<group>"; };
+		BCE25B16DE011FFE47951517 /* libPods-JWBestPracticeApps.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JWBestPracticeApps.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C53086B079689F858B02A42A /* libPods-JWRemoteController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JWRemoteController.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D105B1FA43E9E53897B57083 /* Pods-JWCasting.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JWCasting.release.xcconfig"; path = "Pods/Target Support Files/Pods-JWCasting/Pods-JWCasting.release.xcconfig"; sourceTree = "<group>"; };
+		D7032B38C013D2CF344515F5 /* Pods-JWRemotePlayer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JWRemotePlayer.release.xcconfig"; path = "Pods/Target Support Files/Pods-JWRemotePlayer/Pods-JWRemotePlayer.release.xcconfig"; sourceTree = "<group>"; };
+		DE458D874713A4FEA898FC11 /* Pods-JWAirPlay.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JWAirPlay.release.xcconfig"; path = "Pods/Target Support Files/Pods-JWAirPlay/Pods-JWAirPlay.release.xcconfig"; sourceTree = "<group>"; };
+		FC281FF062456D619081111F /* Pods-JWRemoteController Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JWRemoteController Extension.release.xcconfig"; path = "Pods/Target Support Files/Pods-JWRemoteController Extension/Pods-JWRemoteController Extension.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,6 +203,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB341B6EC61DFD6B46F068D6 /* libPods-JWBestPracticeApps.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -186,6 +211,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03F7161471F9D3F882B5C20B /* libPods-JWCasting.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -193,6 +219,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD9F7946BEE377EE83454E7D /* libPods-JWAirPlay.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,6 +227,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C24874D002C8E9721BA8E61F /* libPods-JWRemotePlayer.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -207,12 +235,53 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D37413B333297461C0FD0791 /* libPods-JWRemoteController Extension.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE52F8BFBF4E79028A7DA29D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5BFDE0F3954AAFFAC1F38A76 /* libPods-JWRemoteController.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		148A822693302715DF542B54 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				56A46499C09525FA3C058938 /* Pods-JWAirPlay.debug.xcconfig */,
+				DE458D874713A4FEA898FC11 /* Pods-JWAirPlay.release.xcconfig */,
+				43033E540B089A5B3BCDBCC6 /* Pods-JWBestPracticeApps.debug.xcconfig */,
+				969799C36851B711451E6914 /* Pods-JWBestPracticeApps.release.xcconfig */,
+				05D9449F562C9B71FFCC02D0 /* Pods-JWCasting.debug.xcconfig */,
+				D105B1FA43E9E53897B57083 /* Pods-JWCasting.release.xcconfig */,
+				9EB18D2E0C98F9B2F6BD446A /* Pods-JWRemoteController.debug.xcconfig */,
+				25CB234896380D6434A8A9B2 /* Pods-JWRemoteController.release.xcconfig */,
+				469A6375B85247D4516142AE /* Pods-JWRemoteController Extension.debug.xcconfig */,
+				FC281FF062456D619081111F /* Pods-JWRemoteController Extension.release.xcconfig */,
+				22C2C3C040DFF795E877393C /* Pods-JWRemotePlayer.debug.xcconfig */,
+				D7032B38C013D2CF344515F5 /* Pods-JWRemotePlayer.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		52AC3655A45B0438BEB4426C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5866385BBD927C92F367DB7C /* libPods-JWAirPlay.a */,
+				BCE25B16DE011FFE47951517 /* libPods-JWBestPracticeApps.a */,
+				18B46F999BDD3032B9BCB1F4 /* libPods-JWCasting.a */,
+				C53086B079689F858B02A42A /* libPods-JWRemoteController.a */,
+				787B849139DF8B66FA89FA5C /* libPods-JWRemoteController Extension.a */,
+				36BCA1345113D7AE624BEB2D /* libPods-JWRemotePlayer.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8A729A6E1C98ACA8000F03A9 = {
 			isa = PBXGroup;
 			children = (
@@ -221,7 +290,8 @@
 				8A729B2B1C98B5F2000F03A9 /* JWAirPlay */,
 				8A9206371C9B4E67002797FA /* Watch App */,
 				8A729A781C98ACA8000F03A9 /* Products */,
-				8AF5F6851C9A0F2100C0D5E0 /* Frameworks */,
+				148A822693302715DF542B54 /* Pods */,
+				52AC3655A45B0438BEB4426C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -354,13 +424,6 @@
 			name = "Watch App";
 			sourceTree = "<group>";
 		};
-		8AF5F6851C9A0F2100C0D5E0 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		8AF5F6CD1C9A612B00C0D5E0 /* JWRemoteController */ = {
 			isa = PBXGroup;
 			children = (
@@ -445,11 +508,14 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8A729A8E1C98ACA8000F03A9 /* Build configuration list for PBXNativeTarget "JWBestPracticeApps" */;
 			buildPhases = (
+				73C5A63A476C9A7364C34BE0 /* 📦 Check Pods Manifest.lock */,
 				8A729A731C98ACA8000F03A9 /* Sources */,
 				8A729A741C98ACA8000F03A9 /* Frameworks */,
 				8A729A751C98ACA8000F03A9 /* Resources */,
 				8AF5F65B1C99F15400C0D5E0 /* Headers */,
 				8AF5F65C1C99F17A00C0D5E0 /* CopyFiles */,
+				913D57B68FE759D9DF023CCF /* 📦 Embed Pods Frameworks */,
+				BF7C3D6BA8E0B1BF4B4FB54B /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -464,10 +530,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8A729B231C98B5A6000F03A9 /* Build configuration list for PBXNativeTarget "JWCasting" */;
 			buildPhases = (
+				D8C5D0DDCB9F57712020D253 /* 📦 Check Pods Manifest.lock */,
 				8A729B0B1C98B5A6000F03A9 /* Sources */,
 				8A729B0C1C98B5A6000F03A9 /* Frameworks */,
 				8A729B0D1C98B5A6000F03A9 /* Resources */,
 				8AF5F65E1C99F1EE00C0D5E0 /* Headers */,
+				03C65EC9F6744AC2F0CDD3E4 /* 📦 Embed Pods Frameworks */,
+				037B8FCEBE5268BFA2AACFB2 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -482,10 +551,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8A729B3E1C98B5F2000F03A9 /* Build configuration list for PBXNativeTarget "JWAirPlay" */;
 			buildPhases = (
+				371E68D98909341D478FC1E6 /* 📦 Check Pods Manifest.lock */,
 				8A729B261C98B5F2000F03A9 /* Sources */,
 				8A729B271C98B5F2000F03A9 /* Frameworks */,
 				8A729B281C98B5F2000F03A9 /* Resources */,
 				8A5BA8A71C9AFA370002231F /* Headers */,
+				9CA3482367C439F0CDBB6E4B /* 📦 Embed Pods Frameworks */,
+				5A4341540D0B52EDE34034E7 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -500,11 +572,14 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8A729B771C99B4A1000F03A9 /* Build configuration list for PBXNativeTarget "JWRemotePlayer" */;
 			buildPhases = (
+				3172047F5E4CDE730F1C8E36 /* 📦 Check Pods Manifest.lock */,
 				8A729B5F1C99B4A0000F03A9 /* Sources */,
 				8A729B601C99B4A0000F03A9 /* Frameworks */,
 				8A729B611C99B4A0000F03A9 /* Resources */,
 				8AF5F6621C99F4FF00C0D5E0 /* Headers */,
 				8AF5F6B51C9A56F200C0D5E0 /* Embed Watch Content */,
+				F9C88D4CDF49BB9AF8573501 /* 📦 Embed Pods Frameworks */,
+				770E1BA7B7C214544BDA3C5E /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -520,8 +595,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8AF5F6F21C9A612B00C0D5E0 /* Build configuration list for PBXNativeTarget "JWRemoteController" */;
 			buildPhases = (
+				DF721C5C13BF36C4E082FF7F /* 📦 Check Pods Manifest.lock */,
 				8AF5F6CA1C9A612B00C0D5E0 /* Resources */,
 				8AF5F6F11C9A612B00C0D5E0 /* Embed App Extensions */,
+				DE52F8BFBF4E79028A7DA29D /* Frameworks */,
+				5AC05EE046DAF3213B1AA9B1 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -537,9 +615,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8AF5F6EE1C9A612B00C0D5E0 /* Build configuration list for PBXNativeTarget "JWRemoteController Extension" */;
 			buildPhases = (
+				5B8EB63E3022D951CF175410 /* 📦 Check Pods Manifest.lock */,
 				8AF5F6D41C9A612B00C0D5E0 /* Sources */,
 				8AF5F6D51C9A612B00C0D5E0 /* Frameworks */,
 				8AF5F6D61C9A612B00C0D5E0 /* Resources */,
+				2E6E72D37E1CAF711ACA2B22 /* 📦 Embed Pods Frameworks */,
+				957118E253D60D999AD92FA5 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -673,6 +754,264 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		037B8FCEBE5268BFA2AACFB2 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JWCasting/Pods-JWCasting-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		03C65EC9F6744AC2F0CDD3E4 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JWCasting/Pods-JWCasting-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2E6E72D37E1CAF711ACA2B22 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JWRemoteController Extension/Pods-JWRemoteController Extension-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3172047F5E4CDE730F1C8E36 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		371E68D98909341D478FC1E6 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5A4341540D0B52EDE34034E7 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JWAirPlay/Pods-JWAirPlay-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5AC05EE046DAF3213B1AA9B1 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JWRemoteController/Pods-JWRemoteController-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5B8EB63E3022D951CF175410 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		73C5A63A476C9A7364C34BE0 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		770E1BA7B7C214544BDA3C5E /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JWRemotePlayer/Pods-JWRemotePlayer-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		913D57B68FE759D9DF023CCF /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JWBestPracticeApps/Pods-JWBestPracticeApps-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		957118E253D60D999AD92FA5 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JWRemoteController Extension/Pods-JWRemoteController Extension-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9CA3482367C439F0CDBB6E4B /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JWAirPlay/Pods-JWAirPlay-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BF7C3D6BA8E0B1BF4B4FB54B /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JWBestPracticeApps/Pods-JWBestPracticeApps-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D8C5D0DDCB9F57712020D253 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DF721C5C13BF36C4E082FF7F /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F9C88D4CDF49BB9AF8573501 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JWRemotePlayer/Pods-JWRemotePlayer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8A729A731C98ACA8000F03A9 /* Sources */ = {
@@ -843,7 +1182,7 @@
 				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				FRAMEWORK_SEARCH_PATHS = "";
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -861,7 +1200,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				OTHER_LDFLAGS = "-all_load";
+				OTHER_LDFLAGS = "$(inherited)";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -890,7 +1229,7 @@
 				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				FRAMEWORK_SEARCH_PATHS = "";
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -901,7 +1240,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "-all_load";
+				OTHER_LDFLAGS = "$(inherited)";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -910,13 +1249,17 @@
 		};
 		8A729A8F1C98ACA8000F03A9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 43033E540B089A5B3BCDBCC6 /* Pods-JWBestPracticeApps.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = JWBestPracticeApps/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				OTHER_LDFLAGS = "-all_load";
+				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = JWPlayer.JWBestPracticeApps;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -924,13 +1267,17 @@
 		};
 		8A729A901C98ACA8000F03A9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 969799C36851B711451E6914 /* Pods-JWBestPracticeApps.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = JWBestPracticeApps/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				OTHER_LDFLAGS = "-all_load";
+				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = JWPlayer.JWBestPracticeApps;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -938,19 +1285,14 @@
 		};
 		8A729B241C98B5A6000F03A9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 05D9449F562C9B71FFCC02D0 /* Pods-JWCasting.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ENABLE_BITCODE = NO;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(PROJECT_DIR)",
-					"$(PROJECT_DIR)/JWCasting",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = JWBestPracticeApps/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				OTHER_LDFLAGS = (
-					"-all_load",
-					"-ObjC",
-				);
+				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = JWPlayer.JWCasting;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				USE_HEADERMAP = YES;
@@ -959,19 +1301,14 @@
 		};
 		8A729B251C98B5A6000F03A9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D105B1FA43E9E53897B57083 /* Pods-JWCasting.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ENABLE_BITCODE = NO;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(PROJECT_DIR)",
-					"$(PROJECT_DIR)/JWCasting",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = JWBestPracticeApps/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				OTHER_LDFLAGS = (
-					"-all_load",
-					"-ObjC",
-				);
+				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = JWPlayer.JWCasting;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				USE_HEADERMAP = YES;
@@ -980,6 +1317,7 @@
 		};
 		8A729B3F1C98B5F2000F03A9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 56A46499C09525FA3C058938 /* Pods-JWAirPlay.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -988,7 +1326,7 @@
 				);
 				INFOPLIST_FILE = JWBestPracticeApps/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				OTHER_LDFLAGS = "-all_load";
+				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = JWPlayer.JWAirPlay;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -996,6 +1334,7 @@
 		};
 		8A729B401C98B5F2000F03A9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE458D874713A4FEA898FC11 /* Pods-JWAirPlay.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -1004,7 +1343,7 @@
 				);
 				INFOPLIST_FILE = JWBestPracticeApps/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				OTHER_LDFLAGS = "-all_load";
+				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = JWPlayer.JWAirPlay;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -1012,6 +1351,7 @@
 		};
 		8A729B781C99B4A1000F03A9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 22C2C3C040DFF795E877393C /* Pods-JWRemotePlayer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -1021,7 +1361,7 @@
 				);
 				INFOPLIST_FILE = JWBestPracticeApps/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				OTHER_LDFLAGS = "-all_load";
+				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = JWPlayer.JWRemotePlayer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -1029,6 +1369,7 @@
 		};
 		8A729B791C99B4A1000F03A9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D7032B38C013D2CF344515F5 /* Pods-JWRemotePlayer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -1038,7 +1379,7 @@
 				);
 				INFOPLIST_FILE = JWBestPracticeApps/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				OTHER_LDFLAGS = "-all_load";
+				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = JWPlayer.JWRemotePlayer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -1046,6 +1387,7 @@
 		};
 		8AF5F6EF1C9A612B00C0D5E0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 469A6375B85247D4516142AE /* Pods-JWRemoteController Extension.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				ENABLE_BITCODE = YES;
@@ -1062,6 +1404,7 @@
 		};
 		8AF5F6F01C9A612B00C0D5E0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC281FF062456D619081111F /* Pods-JWRemoteController Extension.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				ENABLE_BITCODE = YES;
@@ -1078,6 +1421,7 @@
 		};
 		8AF5F6F31C9A612B00C0D5E0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9EB18D2E0C98F9B2F6BD446A /* Pods-JWRemoteController.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -1095,6 +1439,7 @@
 		};
 		8AF5F6F41C9A612B00C0D5E0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 25CB234896380D6434A8A9B2 /* Pods-JWRemoteController.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
