@@ -19,4 +19,8 @@
 #define JWROnTimeDuration @"duration"
 #define JWRStatusRequest @"statusRequest"
 
+#define JWRCastDevicesAvailable @"castDevicesAvailable"
+#define JWRCastDeviceConnected @"castDeviceConnected"
+#define JWRCastDeviceCasting @"castDeviceCasting"
+
 #endif /* JWRemoteTerminologyHelper_h */

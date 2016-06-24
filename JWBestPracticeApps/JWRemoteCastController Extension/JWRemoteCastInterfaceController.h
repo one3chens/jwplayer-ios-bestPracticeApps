@@ -1,15 +1,16 @@
 //
-//  JWRemoteInterfaceController.h
+//  JWRemoteCastInterfaceController.h
 //  JWBestPracticeApps
 //
-//  Created by Karim Mourra on 3/17/16.
+//  Created by Karim Mourra on 6/24/16.
 //  Copyright © 2016 Karim Mourra. All rights reserved.
 //
 
 #import <WatchKit/WatchKit.h>
-#import <WatchConnectivity/WatchConnectivity.h>
+#import <Foundation/Foundation.h>
+#import "JWRemoteInterfaceController.h"
 
-@interface JWRemoteInterfaceController : WKInterfaceController <WCSessionDelegate>
+@interface JWRemoteCastInterfaceController : JWRemoteInterfaceController <WCSessionDelegate>
 
 @property (unsafe_unretained, nonatomic) IBOutlet WKInterfaceButton *controls;
 @property (unsafe_unretained, nonatomic) IBOutlet WKInterfaceSlider *seekBar;

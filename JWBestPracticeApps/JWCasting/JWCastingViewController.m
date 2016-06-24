@@ -21,6 +21,7 @@
 @implementation JWCastingViewController
 
 - (void)viewDidLoad {
+    NSLog(@"3");
     [super viewDidLoad];
     self.navigationController.navigationBar.barTintColor =[UIColor grayColor];
     [self setUpCastController];

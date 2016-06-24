@@ -7,10 +7,9 @@
 //
 
 #import "JWRemotePlayerViewController.h"
-#import <WatchConnectivity/WatchConnectivity.h>
 #import "JWRemoteTerminologyHelper.h"
 
-@interface JWRemotePlayerViewController ()<WCSessionDelegate>
+@interface JWRemotePlayerViewController ()
 
 @property (nonatomic) WCSession *session;
 
@@ -19,6 +18,7 @@
 @implementation JWRemotePlayerViewController
 
 - (void)viewDidLoad {
+    NSLog(@"2");
     [super viewDidLoad];
     self.player.config.autostart = NO;
     [self setUpSession];

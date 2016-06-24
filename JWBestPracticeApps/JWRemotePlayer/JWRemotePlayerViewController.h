@@ -7,8 +7,9 @@
 //
 
 #import "JWCastingViewController.h"
+#import <WatchConnectivity/WatchConnectivity.h>
 
 
-@interface JWRemotePlayerViewController : JWCastingViewController
+@interface JWRemotePlayerViewController : JWCastingViewController <WCSessionDelegate>
 
 @end

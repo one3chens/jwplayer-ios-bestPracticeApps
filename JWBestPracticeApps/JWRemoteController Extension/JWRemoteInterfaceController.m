@@ -7,25 +7,14 @@
 //
 
 #import "JWRemoteInterfaceController.h"
-#import <WatchConnectivity/WatchConnectivity.h>
 #import "JWRemoteTerminologyHelper.h"
 
 #define playIconName @"play-button.png"
 #define pauseIconName @"pause-button.png"
 
-@interface JWRemoteInterfaceController () <WCSessionDelegate>
+@interface JWRemoteInterfaceController ()
 
 @property (nonatomic) WCSession *session;
-
-@property (unsafe_unretained, nonatomic) IBOutlet WKInterfaceButton *controls;
-@property (unsafe_unretained, nonatomic) IBOutlet WKInterfaceSlider *seekBar;
-@property (unsafe_unretained, nonatomic) IBOutlet WKInterfacePicker *hiddenSeeker;
-
-@property (nonatomic) BOOL videoIsPaused;
-@property (nonatomic) BOOL seeking;
-
-@property (nonatomic) NSInteger seekToPercentage;
-@property (nonatomic) NSInteger currentTimePercentage;
 
 @end
 
