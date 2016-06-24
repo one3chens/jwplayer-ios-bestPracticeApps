@@ -16,67 +16,79 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    NSLog(@"1");
 }
 
 #pragma Mark - Session delegate methods
 
--(void)session:(WCSession *)session didReceiveMessage:(NSDictionary<NSString *,id> *)message replyHandler:(void (^)(NSDictionary<NSString *,id> * _Nonnull))replyHandler
+- (void)sessionReachabilityDidChange:(WCSession *)session
 {
-    __weak JWRemotePlayerViewController *weakSelf = self;
-    if (message[JWRControlMessage]) {
-        dispatch_sync(dispatch_get_main_queue(), ^{
-            [weakSelf.player performSelector:NSSelectorFromString(message[JWRControlMessage])];
-        });
-    } else if (message[JWRSeekMessage]) {
-        NSNumber *seekPercentage = message[JWRSeekMessage];
-        CGFloat seekTime = (seekPercentage.floatValue / 100) * self.player.duration;
-        dispatch_sync(dispatch_get_main_queue(), ^{
-            [weakSelf.player seek:seekTime];
-        });
+//    NSLog(@"activation complete");
+    if (self.availableDevices.count && session.reachable) {
+//        NSLog(@"reachable");
+        [self updateDeviceListOnWatch:self.availableDevices];
     }
-    [super session:session didReceiveMessage:message replyHandler:replyHandler];
 }
 
-#pragma Mark - Player delegate methods
-
--(void)onPlay
+-(void)session:(WCSession *)session didReceiveMessage:(NSDictionary<NSString *,id> *)message replyHandler:(void (^)(NSDictionary<NSString *,id> * _Nonnull))replyHandler
 {
-    [self.session sendMessage:@{JWRCallbackMessage: JWROnPlayCallback}
-                 replyHandler:^(NSDictionary<NSString *,id> * _Nonnull replyMessage) {}
-                 errorHandler:^(NSError * _Nonnull error) {}];
+    if (message[JWRCastDeviceDisconnect]) {
+        dispatch_sync(dispatch_get_main_queue(), ^{
+            [self.castController disconnect];
+        });
+    } else if (message[JWRCastDeviceSelected]) {
+        dispatch_sync(dispatch_get_main_queue(), ^{
+            NSInteger index = ((NSNumber *)message[JWRCastDeviceSelected]).integerValue;
+            [self.castController connectToDevice:self.availableDevices[index]];
+        });
+    } else {
+        [super session:session didReceiveMessage:message replyHandler:replyHandler];
+    }
 }
 
 #pragma Mark - Casting delegate methods
 
 -(void)onCastingDevicesAvailable:(NSArray *)devices
 {
-    if(devices.count > 0 && !self.castingItem) {
-        [self setUpCastingButton];
-        [self updateForCastDeviceDisconnection];
-    } else if(devices.count == 0) {
-        self.navigationItem.rightBarButtonItems = nil;
-    }
+    NSLog(@"onCastingDevicesAvailable");
+    [self updateDeviceListOnWatch:devices];
+    [super onCastingDevicesAvailable:devices];
+}
+
+- (void)updateDeviceListOnWatch:(NSArray *)devices
+{
+    NSMutableArray *deviceNames = [NSMutableArray new];
+    [devices enumerateObjectsUsingBlock:^(JWCastingDevice *device, NSUInteger idx, BOOL * _Nonnull stop) {
+        [deviceNames addObject:device.name];
+    }];
+    [self.session sendMessage:@{JWRCastDevicesAvailableCallback: deviceNames}
+                 replyHandler:^(NSDictionary<NSString *,id> * _Nonnull replyMessage) {}
+                 errorHandler:^(NSError * _Nonnull error) {}];
 }
 
 -(void)onConnectedToCastingDevice:(JWCastingDevice *)device
 {
-    [self updateForCastDeviceConnection];
+//    [self updateForCastDeviceConnection];
+    [super onConnectedToCastingDevice:device];
+    [self.castController cast];
 }
 
--(void)onDisconnectedFromCastingDevice
+-(void)onDisconnectedFromCastingDevice:(NSError *)error
 {
-    [self updateForCastDeviceDisconnection];
+//    [self updateForCastDeviceDisconnection];
+    
+    [super onDisconnectedFromCastingDevice:error];
 }
 
 -(void)onConnectionTemporarilySuspended
 {
-    [self updateWhenConnectingToCastDevice];
+//    [self updateWhenConnectingToCastDevice];
+    [super onConnectionTemporarilySuspended];
 }
 
 -(void)onConnectionRecovered
 {
-    [self updateForCastDeviceConnection];
+//    [self updateForCastDeviceConnection];
+    [super onConnectionRecovered];
 }
 
 -(void)onConnectionFailed:(NSError *)error
@@ -84,12 +96,15 @@
     if(error) {
         NSLog(@"Connection Error: %@", error);
     }
-    [self updateForCastDeviceDisconnection];
+//    [self updateForCastDeviceDisconnection];
+    [super onConnectionFailed:error];
 }
 
 -(void)onCasting
 {
-    [self updateForCasting];
+//    [self updateForCasting];
+    [super onCasting];
+    [self.player play];
 }
 
 -(void)onCastingEnded:(NSError *)error
@@ -97,7 +112,9 @@
     if(error) {
         NSLog(@"Casting Error: %@", error);
     }
-    [self updateForCastingEnd];
+//    [self updateForCastingEnd];
+    [self.castController disconnect];
+    [super onCastingEnded:error];
 }
 
 -(void)onCastingFailed:(NSError *)error
@@ -105,7 +122,8 @@
     if(error) {
         NSLog(@"Casting Error: %@", error);
     }
-    [self updateForCastingEnd];
+//    [self updateForCastingEnd];
+    [super onCastingFailed:error];
 }
 
 @end

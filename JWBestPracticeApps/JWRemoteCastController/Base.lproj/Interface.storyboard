@@ -55,6 +55,32 @@
             </objects>
             <point key="canvasLocation" x="220" y="643"/>
         </scene>
+        <!--JWRemoteCastingDevices-->
+        <scene sceneID="lwB-2V-RkZ">
+            <objects>
+                <controller identifier="JWRemoteCastingDevices" id="6jN-14-qGt" customClass="JWRemoteCastingDevicesController">
+                    <items>
+                        <picker width="1" height="0.80000000000000004" alignment="left" focusStyle="stack" indicatorMode="shownWhileFocused" id="Czx-xw-LTM">
+                            <connections>
+                                <action selector="devicePicked:" destination="6jN-14-qGt" id="ppV-dJ-qmn"/>
+                            </connections>
+                        </picker>
+                        <button height="0.20000000000000001" alignment="center" verticalAlignment="bottom" title="Cast" id="Gi6-Iu-NPK">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="font" type="system" weight="black" pointSize="27"/>
+                            <connections>
+                                <action selector="castTapped" destination="6jN-14-qGt" id="e4N-ui-Hnc"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="availableDevicesPicker" destination="Czx-xw-LTM" id="Hc1-VM-5ve"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="544" y="343"/>
+        </scene>
         <!--Notification Controller-->
         <scene sceneID="ZPc-GJ-vnh">
             <objects>

@@ -7,14 +7,11 @@
 //
 
 #import "JWRemoteInterfaceController.h"
-#import "JWRemoteTerminologyHelper.h"
 
 #define playIconName @"play-button.png"
 #define pauseIconName @"pause-button.png"
 
 @interface JWRemoteInterfaceController ()
-
-@property (nonatomic) WCSession *session;
 
 @end
 

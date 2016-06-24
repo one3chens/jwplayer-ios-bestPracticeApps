@@ -9,9 +9,8 @@
 #import "JWCastingViewController.h"
 #import <GoogleCast/GoogleCast.h>
 
-@interface JWCastingViewController ()<UIActionSheetDelegate, JWCastingDelegate>
+@interface JWCastingViewController ()<UIActionSheetDelegate>
 
-@property (nonatomic) JWCastController *castController;
 @property (nonatomic) UIButton *castingButton;
 @property (nonatomic) UIBarButtonItem *castingItem;
 @property (nonatomic) BOOL casting;
@@ -21,7 +20,6 @@
 @implementation JWCastingViewController
 
 - (void)viewDidLoad {
-    NSLog(@"3");
     [super viewDidLoad];
     self.navigationController.navigationBar.barTintColor =[UIColor grayColor];
     [self setUpCastController];
@@ -39,6 +37,7 @@
 
 -(void)onCastingDevicesAvailable:(NSArray *)devices
 {
+    self.availableDevices = devices;
     if(devices.count > 0 && !self.castingItem) {
         [self setUpCastingButton];
         [self updateForCastDeviceDisconnection];

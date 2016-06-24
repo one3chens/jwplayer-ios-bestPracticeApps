@@ -8,6 +8,6 @@
 
 #import "JWRemotePlayerViewController.h"
 
-@interface JWRemoteCastPlayerViewController : JWRemotePlayerViewController
+@interface JWRemoteCastPlayerViewController : JWRemotePlayerViewController <WCSessionDelegate, JWCastingDelegate>
 
 @end

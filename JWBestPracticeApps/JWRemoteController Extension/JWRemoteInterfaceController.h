@@ -8,8 +8,11 @@
 
 #import <WatchKit/WatchKit.h>
 #import <WatchConnectivity/WatchConnectivity.h>
+#import "JWRemoteTerminologyHelper.h"
 
 @interface JWRemoteInterfaceController : WKInterfaceController <WCSessionDelegate>
+
+@property (nonatomic) WCSession *session;
 
 @property (unsafe_unretained, nonatomic) IBOutlet WKInterfaceButton *controls;
 @property (unsafe_unretained, nonatomic) IBOutlet WKInterfaceSlider *seekBar;

@@ -10,6 +10,10 @@
 
 @interface JWRemoteCastInterfaceController ()
 
+@property (nonatomic) NSArray *availableDevices;
+@property (nonatomic) BOOL casting;
+@property (nonatomic) BOOL castButtonDisplayed;
+
 @end
 
 @implementation JWRemoteCastInterfaceController
@@ -26,30 +30,67 @@
     [super didDeactivate];
 }
 
-#pragma Mark - Handle user activity on phone
+#pragma Mark - Handle Cast Status From Phone
 
 -(void)session:(WCSession *)session didReceiveMessage:(NSDictionary<NSString *,id> *)message replyHandler:(void (^)(NSDictionary<NSString *,id> * _Nonnull))replyHandler
 {
-    __weak JWRemoteInterfaceController* weakSelf = self;
-    if (message[JWRCallbackMessage]) {
-        NSString *callback = message[JWRCallbackMessage];
-        if ([callback isEqualToString:JWROnTimeCallback]) {
-            NSNumber *position = message[JWROnTimePosition];
-            NSNumber *duration = message[JWROnTimeDuration];
-            self.currentTimePercentage = (position.floatValue/duration.floatValue)*100;
-            if (!self.seeking) {
-                [self.hiddenSeeker setSelectedItemIndex:self.currentTimePercentage];
-            }
-        } else if ([callback isEqualToString:JWROnPlayCallback]) {
-            dispatch_sync(dispatch_get_main_queue(), ^{
-                [weakSelf handleVideoPlay];
-            });
-        } else if ([callback isEqualToString:JWROnPauseCallback]) {
-            dispatch_sync(dispatch_get_main_queue(), ^{
-                [weakSelf handleVideoPause];
-            });
-        }
+    if (message[JWRCastDeviceCastingCallback]) {
+        self.casting = ((NSNumber *)message[JWRCastDeviceCastingCallback]).boolValue;
+        [self handleCastingCallback];
+    } else if (message[JWRCastDevicesAvailableCallback]) {
+        self.availableDevices = message[JWRCastDevicesAvailableCallback];
+        [self handleCastDevicesAvailableCallback];
     }
+    [super session:session didReceiveMessage:message replyHandler:replyHandler];
+}
+
+- (void)handleCastingCallback
+{
+    if (self.casting) {
+        [self removeCastMenuItem];
+        [self addMenuItemWithImageNamed:@"stopCasting" title:@"stopCast" action:@selector(stopCasting)];
+    } else {
+        [self addCastMenuItem];
+    }
+}
+
+- (void)handleCastDevicesAvailableCallback
+{
+    if (!self.castButtonDisplayed) {
+        [self addCastMenuItem];
+    } else if (self.availableDevices.count == 0) {
+        [self removeCastMenuItem];
+    }
+}
+
+#pragma Mark - Manage Menu Items
+
+- (void)addCastMenuItem
+{
+    if (self.availableDevices.count > 0) {
+        [self addMenuItemWithImageNamed:@"miniCastIcon" title:@"Cast" action:@selector(presentAvailableDevices)];
+        self.castButtonDisplayed = YES;
+    }
+}
+
+- (void)removeCastMenuItem
+{
+    [self clearAllMenuItems];
+    self.castButtonDisplayed = NO;
+}
+
+#pragma Mark - Menu Item Actions
+
+- (void)presentAvailableDevices
+{
+    [self pushControllerWithName:@"JWRemoteCastingDevices" context:self.availableDevices];
+}
+
+- (void)stopCasting
+{
+    [self.session sendMessage:@{JWRCastDeviceDisconnect: @0}
+                 replyHandler:^(NSDictionary<NSString *,id> * _Nonnull replyMessage) {}
+                 errorHandler:^(NSError * _Nonnull error) {}];
 }
 
 @end
