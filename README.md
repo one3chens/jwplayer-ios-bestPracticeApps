@@ -10,6 +10,8 @@ Each target adds a level of complexity to the base target, JWBestPracticeApps, w
 
 - The target named JWRemoteController is an Apple Watch app capable of controlling the JW Player in the iOS App named JWRemotePlayer.
 
+- The target named JWRemoteCastController is an Apple Watch app capable of casting the video being reproduced in the iOS App named JWRemoteCastPlayer to a Chrome Cast device.
+
 ## Initial Setup:
 
 ### Via CocoaPods
