@@ -7,8 +7,16 @@
 //
 
 #import "JWCastingViewController.h"
+#import <WatchConnectivity/WatchConnectivity.h>
+#import "JWRemoteTerminologyHelper.h"
 
 
-@interface JWRemotePlayerViewController : JWCastingViewController
+@interface JWRemotePlayerViewController : JWCastingViewController <WCSessionDelegate, JWCastingDelegate>
+
+@property (nonatomic) WCSession *session;
+
+- (void)onPlay;
+-(void)onPause;
+-(void)onTime:(double)position ofDuration:(double)duration;
 
 @end

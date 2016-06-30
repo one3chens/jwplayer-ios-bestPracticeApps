@@ -7,12 +7,8 @@
 //
 
 #import "JWRemotePlayerViewController.h"
-#import <WatchConnectivity/WatchConnectivity.h>
-#import "JWRemoteTerminologyHelper.h"
 
-@interface JWRemotePlayerViewController ()<WCSessionDelegate>
-
-@property (nonatomic) WCSession *session;
+@interface JWRemotePlayerViewController ()
 
 @end
 

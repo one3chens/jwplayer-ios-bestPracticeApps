@@ -9,9 +9,8 @@
 #import "JWCastingViewController.h"
 #import <GoogleCast/GoogleCast.h>
 
-@interface JWCastingViewController ()<UIActionSheetDelegate, JWCastingDelegate>
+@interface JWCastingViewController ()<UIActionSheetDelegate>
 
-@property (nonatomic) JWCastController *castController;
 @property (nonatomic) UIButton *castingButton;
 @property (nonatomic) UIBarButtonItem *castingItem;
 @property (nonatomic) BOOL casting;
@@ -38,6 +37,7 @@
 
 -(void)onCastingDevicesAvailable:(NSArray *)devices
 {
+    self.availableDevices = devices;
     if(devices.count > 0 && !self.castingItem) {
         [self setUpCastingButton];
         [self updateForCastDeviceDisconnection];
@@ -51,7 +51,7 @@
     [self updateForCastDeviceConnection];
 }
 
--(void)onDisconnectedFromCastingDevice
+-(void)onDisconnectedFromCastingDevice:(NSError *)error
 {
     [self updateForCastDeviceDisconnection];
 }

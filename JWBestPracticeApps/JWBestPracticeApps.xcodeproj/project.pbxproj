@@ -8,12 +8,59 @@
 
 /* Begin PBXBuildFile section */
 		03F7161471F9D3F882B5C20B /* libPods-JWCasting.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 18B46F999BDD3032B9BCB1F4 /* libPods-JWCasting.a */; };
+		2F6660756A2BC13A41B87E12 /* libPods-JWRemoteCastController Extension.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F6F521C80198C3CF424CC542 /* libPods-JWRemoteCastController Extension.a */; };
 		5BFDE0F3954AAFFAC1F38A76 /* libPods-JWRemoteController.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C53086B079689F858B02A42A /* libPods-JWRemoteController.a */; };
+		5C3FFB15941ABE636744FD6B /* libPods-JWRemoteCastController.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0952719B40B38A7563CAD16F /* libPods-JWRemoteCastController.a */; };
+		8A3734741D1DC2A80008FE59 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A3734731D1DC2A80008FE59 /* main.m */; };
+		8A3734771D1DC2A80008FE59 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A3734761D1DC2A80008FE59 /* AppDelegate.m */; };
+		8A37347D1D1DC2A80008FE59 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A37347B1D1DC2A80008FE59 /* Main.storyboard */; };
+		8A37347F1D1DC2A80008FE59 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A37347E1D1DC2A80008FE59 /* Assets.xcassets */; };
+		8A3734821D1DC2A80008FE59 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A3734801D1DC2A80008FE59 /* LaunchScreen.storyboard */; };
+		8A3734901D1DC2E70008FE59 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A37348F1D1DC2E70008FE59 /* Assets.xcassets */; };
+		8A3734971D1DC2E70008FE59 /* JWRemoteCastController Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 8A3734961D1DC2E70008FE59 /* JWRemoteCastController Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		8A3734A21D1DC2E70008FE59 /* ExtensionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A3734A11D1DC2E70008FE59 /* ExtensionDelegate.m */; };
+		8A3734A51D1DC2E70008FE59 /* NotificationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A3734A41D1DC2E70008FE59 /* NotificationController.m */; };
+		8A3734A71D1DC2E70008FE59 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A3734A61D1DC2E70008FE59 /* Assets.xcassets */; };
+		8A3734AB1D1DC2E70008FE59 /* JWRemoteCastController.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 8A37348A1D1DC2E70008FE59 /* JWRemoteCastController.app */; };
+		8A3734BF1D1DCEBC0008FE59 /* JWRemoteTerminologyHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 8AF5F6F51C9A61DA00C0D5E0 /* JWRemoteTerminologyHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8A3734C31D1DD6E30008FE59 /* JWRemoteCastPlayerViewController.h in Sources */ = {isa = PBXBuildFile; fileRef = 8A3734B41D1DC3820008FE59 /* JWRemoteCastPlayerViewController.h */; };
+		8A3734C61D1DD7A60008FE59 /* JWRemoteCastPlayerViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A3734B41D1DC3820008FE59 /* JWRemoteCastPlayerViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8A3734C71D1DD7D00008FE59 /* JWCastingViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A729B851C99CD8B000F03A9 /* JWCastingViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8A3734C81D1DD7E00008FE59 /* JWRemotePlayerViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A729B7A1C99B576000F03A9 /* JWRemotePlayerViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8A3734C91D1DD89A0008FE59 /* cast_off.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A729B881C99D278000F03A9 /* cast_off.png */; };
+		8A3734CA1D1DD89B0008FE59 /* cast_off.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A729B881C99D278000F03A9 /* cast_off.png */; };
+		8A3734CB1D1DD8A00008FE59 /* cast_on.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A729B891C99D278000F03A9 /* cast_on.png */; };
+		8A3734CC1D1DD8A10008FE59 /* cast_on.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A729B891C99D278000F03A9 /* cast_on.png */; };
+		8A3734CD1D1DD8A70008FE59 /* cast_connecting0.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A729B8A1C99D278000F03A9 /* cast_connecting0.png */; };
+		8A3734CE1D1DD8A70008FE59 /* cast_connecting1.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A729B8B1C99D278000F03A9 /* cast_connecting1.png */; };
+		8A3734CF1D1DD8A70008FE59 /* cast_connecting2.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A729B8C1C99D278000F03A9 /* cast_connecting2.png */; };
+		8A3734D01D1DD8A80008FE59 /* cast_connecting0.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A729B8A1C99D278000F03A9 /* cast_connecting0.png */; };
+		8A3734D11D1DD8A80008FE59 /* cast_connecting1.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A729B8B1C99D278000F03A9 /* cast_connecting1.png */; };
+		8A3734D21D1DD8A80008FE59 /* cast_connecting2.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A729B8C1C99D278000F03A9 /* cast_connecting2.png */; };
+		8A3734D61D1DD9800008FE59 /* JWRemoteCastPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A3734B51D1DC3820008FE59 /* JWRemoteCastPlayerViewController.m */; };
+		8A3734D71D1DD9960008FE59 /* JWRemotePlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A729B7B1C99B576000F03A9 /* JWRemotePlayerViewController.m */; };
+		8A3734D81D1DD9A50008FE59 /* JWCastingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A729B861C99CD8B000F03A9 /* JWCastingViewController.m */; };
+		8A3734D91D1DD9B80008FE59 /* JWBasicVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A729B5D1C99ABD2000F03A9 /* JWBasicVideoViewController.m */; };
+		8A3734DA1D1DD9C00008FE59 /* JWBasicVideoViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A729B5C1C99ABD2000F03A9 /* JWBasicVideoViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8A3734DB1D1DD9C10008FE59 /* JWBasicVideoViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A729B5C1C99ABD2000F03A9 /* JWBasicVideoViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8A3734DF1D1DEDBE0008FE59 /* JWRemoteCastInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A3734B91D1DC7360008FE59 /* JWRemoteCastInterfaceController.m */; };
+		8A3734E01D1DEE060008FE59 /* JWRemoteInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A5BA89F1C9A64A90002231F /* JWRemoteInterfaceController.m */; };
+		8A3734E41D21C3320008FE59 /* pause-button.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A5BA89B1C9A647C0002231F /* pause-button.png */; };
+		8A3734E51D21C3360008FE59 /* play-button.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A5BA89A1C9A647C0002231F /* play-button.png */; };
+		8A3734E61D21C4D10008FE59 /* cast_on.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A729B891C99D278000F03A9 /* cast_on.png */; };
+		8A3734E71D21C5B90008FE59 /* cast_on.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A729B891C99D278000F03A9 /* cast_on.png */; };
+		8A4F5E721D2455C800C0B449 /* JWAvailableCastingDevicesController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A3734E91D22E4290008FE59 /* JWAvailableCastingDevicesController.m */; };
+		8A4F5E7C1D24705E00C0B449 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A37348C1D1DC2E70008FE59 /* Interface.storyboard */; };
+		8A4F5E7E1D24BD2A00C0B449 /* miniCastIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A4F5E7D1D24BD2A00C0B449 /* miniCastIcon.png */; };
+		8A4F5E7F1D24BD2A00C0B449 /* miniCastIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A4F5E7D1D24BD2A00C0B449 /* miniCastIcon.png */; };
+		8A4F5E841D24C1A000C0B449 /* stopCasting.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A4F5E831D24C1A000C0B449 /* stopCasting.png */; };
+		8A4F5E851D24C1A000C0B449 /* stopCasting.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A4F5E831D24C1A000C0B449 /* stopCasting.png */; };
+		8A4F5E861D25688300C0B449 /* stopCasting.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A4F5E831D24C1A000C0B449 /* stopCasting.png */; };
+		8A4F5E871D25688B00C0B449 /* miniCastIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A4F5E7D1D24BD2A00C0B449 /* miniCastIcon.png */; };
 		8A5BA89C1C9A647C0002231F /* play-button.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A5BA89A1C9A647C0002231F /* play-button.png */; };
 		8A5BA89D1C9A647C0002231F /* pause-button.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A5BA89B1C9A647C0002231F /* pause-button.png */; };
 		8A5BA8A01C9A64A90002231F /* JWRemoteInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A5BA89F1C9A64A90002231F /* JWRemoteInterfaceController.m */; };
 		8A5BA8A21C9AF73C0002231F /* JWCastingViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A729B851C99CD8B000F03A9 /* JWCastingViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8A5BA8A31C9AF7940002231F /* JWRemotePlayerViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A729B7A1C99B576000F03A9 /* JWRemotePlayerViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8A5BA8A61C9AF9890002231F /* JWAirPlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A5BA8A51C9AF9890002231F /* JWAirPlayViewController.m */; };
 		8A5BA8A81C9AFA3D0002231F /* JWBasicVideoViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A729B5C1C99ABD2000F03A9 /* JWBasicVideoViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8A5BA8A91C9AFA4D0002231F /* JWAirPlayViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A5BA8A41C9AF9890002231F /* JWAirPlayViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -64,10 +111,25 @@
 		AB341B6EC61DFD6B46F068D6 /* libPods-JWBestPracticeApps.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BCE25B16DE011FFE47951517 /* libPods-JWBestPracticeApps.a */; };
 		C24874D002C8E9721BA8E61F /* libPods-JWRemotePlayer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 36BCA1345113D7AE624BEB2D /* libPods-JWRemotePlayer.a */; };
 		D37413B333297461C0FD0791 /* libPods-JWRemoteController Extension.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 787B849139DF8B66FA89FA5C /* libPods-JWRemoteController Extension.a */; };
+		F6841AEF9C8AEA3DED8AA298 /* libPods-JWRemoteCastPlayer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 73D5AFFCD082D3F92A3671CF /* libPods-JWRemoteCastPlayer.a */; };
 		FD9F7946BEE377EE83454E7D /* libPods-JWAirPlay.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5866385BBD927C92F367DB7C /* libPods-JWAirPlay.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		8A3734981D1DC2E70008FE59 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8A729A6F1C98ACA8000F03A9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8A3734951D1DC2E70008FE59;
+			remoteInfo = "JWRemoteCastController Extension";
+		};
+		8A3734A91D1DC2E70008FE59 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8A729A6F1C98ACA8000F03A9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8A3734891D1DC2E70008FE59;
+			remoteInfo = JWRemoteCastController;
+		};
 		8AF5F6DA1C9A612B00C0D5E0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 8A729A6F1C98ACA8000F03A9 /* Project object */;
@@ -85,6 +147,28 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		8A3734AF1D1DC2E70008FE59 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				8A3734971D1DC2E70008FE59 /* JWRemoteCastController Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A3734B31D1DC2E70008FE59 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				8A3734AB1D1DC2E70008FE59 /* JWRemoteCastController.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8AF5F65C1C99F17A00C0D5E0 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -120,15 +204,47 @@
 
 /* Begin PBXFileReference section */
 		05D9449F562C9B71FFCC02D0 /* Pods-JWCasting.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JWCasting.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JWCasting/Pods-JWCasting.debug.xcconfig"; sourceTree = "<group>"; };
+		0952719B40B38A7563CAD16F /* libPods-JWRemoteCastController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JWRemoteCastController.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		18B46F999BDD3032B9BCB1F4 /* libPods-JWCasting.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JWCasting.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		22C2C3C040DFF795E877393C /* Pods-JWRemotePlayer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JWRemotePlayer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JWRemotePlayer/Pods-JWRemotePlayer.debug.xcconfig"; sourceTree = "<group>"; };
 		25CB234896380D6434A8A9B2 /* Pods-JWRemoteController.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JWRemoteController.release.xcconfig"; path = "Pods/Target Support Files/Pods-JWRemoteController/Pods-JWRemoteController.release.xcconfig"; sourceTree = "<group>"; };
+		33F770C1ED73AB810248CB9C /* Pods-JWRemoteCastPlayer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JWRemoteCastPlayer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JWRemoteCastPlayer/Pods-JWRemoteCastPlayer.debug.xcconfig"; sourceTree = "<group>"; };
 		36BCA1345113D7AE624BEB2D /* libPods-JWRemotePlayer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JWRemotePlayer.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		43033E540B089A5B3BCDBCC6 /* Pods-JWBestPracticeApps.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JWBestPracticeApps.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JWBestPracticeApps/Pods-JWBestPracticeApps.debug.xcconfig"; sourceTree = "<group>"; };
 		469A6375B85247D4516142AE /* Pods-JWRemoteController Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JWRemoteController Extension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JWRemoteController Extension/Pods-JWRemoteController Extension.debug.xcconfig"; sourceTree = "<group>"; };
 		56A46499C09525FA3C058938 /* Pods-JWAirPlay.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JWAirPlay.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JWAirPlay/Pods-JWAirPlay.debug.xcconfig"; sourceTree = "<group>"; };
 		5866385BBD927C92F367DB7C /* libPods-JWAirPlay.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JWAirPlay.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		73D5AFFCD082D3F92A3671CF /* libPods-JWRemoteCastPlayer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JWRemoteCastPlayer.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7749A5E7085C50853FC4FD3F /* Pods-JWRemoteCastController.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JWRemoteCastController.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JWRemoteCastController/Pods-JWRemoteCastController.debug.xcconfig"; sourceTree = "<group>"; };
 		787B849139DF8B66FA89FA5C /* libPods-JWRemoteController Extension.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JWRemoteController Extension.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A3734701D1DC2A80008FE59 /* JWRemoteCastPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JWRemoteCastPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A3734731D1DC2A80008FE59 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8A3734751D1DC2A80008FE59 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8A3734761D1DC2A80008FE59 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8A37347C1D1DC2A80008FE59 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8A37347E1D1DC2A80008FE59 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8A3734811D1DC2A80008FE59 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8A3734831D1DC2A80008FE59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A37348A1D1DC2E70008FE59 /* JWRemoteCastController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JWRemoteCastController.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A37348D1D1DC2E70008FE59 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		8A37348F1D1DC2E70008FE59 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8A3734911D1DC2E70008FE59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A3734961D1DC2E70008FE59 /* JWRemoteCastController Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "JWRemoteCastController Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A37349C1D1DC2E70008FE59 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		8A3734A01D1DC2E70008FE59 /* ExtensionDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExtensionDelegate.h; sourceTree = "<group>"; };
+		8A3734A11D1DC2E70008FE59 /* ExtensionDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExtensionDelegate.m; sourceTree = "<group>"; };
+		8A3734A31D1DC2E70008FE59 /* NotificationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationController.h; sourceTree = "<group>"; };
+		8A3734A41D1DC2E70008FE59 /* NotificationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationController.m; sourceTree = "<group>"; };
+		8A3734A61D1DC2E70008FE59 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8A3734A81D1DC2E70008FE59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A3734B41D1DC3820008FE59 /* JWRemoteCastPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWRemoteCastPlayerViewController.h; sourceTree = "<group>"; };
+		8A3734B51D1DC3820008FE59 /* JWRemoteCastPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWRemoteCastPlayerViewController.m; sourceTree = "<group>"; };
+		8A3734B81D1DC7360008FE59 /* JWRemoteCastInterfaceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWRemoteCastInterfaceController.h; sourceTree = "<group>"; };
+		8A3734B91D1DC7360008FE59 /* JWRemoteCastInterfaceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWRemoteCastInterfaceController.m; sourceTree = "<group>"; };
+		8A3734E81D22E4290008FE59 /* JWAvailableCastingDevicesController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWAvailableCastingDevicesController.h; sourceTree = "<group>"; };
+		8A3734E91D22E4290008FE59 /* JWAvailableCastingDevicesController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWAvailableCastingDevicesController.m; sourceTree = "<group>"; };
+		8A4F5E7D1D24BD2A00C0B449 /* miniCastIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = miniCastIcon.png; sourceTree = "<group>"; };
+		8A4F5E831D24C1A000C0B449 /* stopCasting.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stopCasting.png; sourceTree = "<group>"; };
 		8A5BA89A1C9A647C0002231F /* play-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "play-button.png"; sourceTree = "<group>"; };
 		8A5BA89B1C9A647C0002231F /* pause-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pause-button.png"; sourceTree = "<group>"; };
 		8A5BA89E1C9A64A90002231F /* JWRemoteInterfaceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWRemoteInterfaceController.h; sourceTree = "<group>"; };
@@ -175,6 +291,7 @@
 		8A729B8A1C99D278000F03A9 /* cast_connecting0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cast_connecting0.png; sourceTree = "<group>"; };
 		8A729B8B1C99D278000F03A9 /* cast_connecting1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cast_connecting1.png; sourceTree = "<group>"; };
 		8A729B8C1C99D278000F03A9 /* cast_connecting2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cast_connecting2.png; sourceTree = "<group>"; };
+		8AB274596913835758B1017D /* Pods-JWRemoteCastController Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JWRemoteCastController Extension.release.xcconfig"; path = "Pods/Target Support Files/Pods-JWRemoteCastController Extension/Pods-JWRemoteCastController Extension.release.xcconfig"; sourceTree = "<group>"; };
 		8AF5F6CC1C9A612B00C0D5E0 /* JWRemoteController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JWRemoteController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AF5F6CF1C9A612B00C0D5E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		8AF5F6D11C9A612B00C0D5E0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -186,19 +303,38 @@
 		8AF5F6E51C9A612B00C0D5E0 /* NotificationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationController.h; sourceTree = "<group>"; };
 		8AF5F6E61C9A612B00C0D5E0 /* NotificationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationController.m; sourceTree = "<group>"; };
 		8AF5F6E81C9A612B00C0D5E0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		8AF5F6EA1C9A612B00C0D5E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8AF5F6F51C9A61DA00C0D5E0 /* JWRemoteTerminologyHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWRemoteTerminologyHelper.h; sourceTree = "<group>"; };
 		969799C36851B711451E6914 /* Pods-JWBestPracticeApps.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JWBestPracticeApps.release.xcconfig"; path = "Pods/Target Support Files/Pods-JWBestPracticeApps/Pods-JWBestPracticeApps.release.xcconfig"; sourceTree = "<group>"; };
 		9EB18D2E0C98F9B2F6BD446A /* Pods-JWRemoteController.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JWRemoteController.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JWRemoteController/Pods-JWRemoteController.debug.xcconfig"; sourceTree = "<group>"; };
+		AE13619DC752730AA54E1307 /* Pods-JWRemoteCastController Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JWRemoteCastController Extension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JWRemoteCastController Extension/Pods-JWRemoteCastController Extension.debug.xcconfig"; sourceTree = "<group>"; };
+		AFA47BF6BEBC875452177758 /* Pods-JWRemoteCastController.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JWRemoteCastController.release.xcconfig"; path = "Pods/Target Support Files/Pods-JWRemoteCastController/Pods-JWRemoteCastController.release.xcconfig"; sourceTree = "<group>"; };
 		BCE25B16DE011FFE47951517 /* libPods-JWBestPracticeApps.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JWBestPracticeApps.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C53086B079689F858B02A42A /* libPods-JWRemoteController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JWRemoteController.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CACD41ACE46043F115BD3DDB /* Pods-JWRemoteCastPlayer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JWRemoteCastPlayer.release.xcconfig"; path = "Pods/Target Support Files/Pods-JWRemoteCastPlayer/Pods-JWRemoteCastPlayer.release.xcconfig"; sourceTree = "<group>"; };
 		D105B1FA43E9E53897B57083 /* Pods-JWCasting.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JWCasting.release.xcconfig"; path = "Pods/Target Support Files/Pods-JWCasting/Pods-JWCasting.release.xcconfig"; sourceTree = "<group>"; };
 		D7032B38C013D2CF344515F5 /* Pods-JWRemotePlayer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JWRemotePlayer.release.xcconfig"; path = "Pods/Target Support Files/Pods-JWRemotePlayer/Pods-JWRemotePlayer.release.xcconfig"; sourceTree = "<group>"; };
 		DE458D874713A4FEA898FC11 /* Pods-JWAirPlay.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JWAirPlay.release.xcconfig"; path = "Pods/Target Support Files/Pods-JWAirPlay/Pods-JWAirPlay.release.xcconfig"; sourceTree = "<group>"; };
+		F6F521C80198C3CF424CC542 /* libPods-JWRemoteCastController Extension.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JWRemoteCastController Extension.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC281FF062456D619081111F /* Pods-JWRemoteController Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JWRemoteController Extension.release.xcconfig"; path = "Pods/Target Support Files/Pods-JWRemoteController Extension/Pods-JWRemoteController Extension.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		8A37346D1D1DC2A80008FE59 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6841AEF9C8AEA3DED8AA298 /* libPods-JWRemoteCastPlayer.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A3734931D1DC2E70008FE59 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F6660756A2BC13A41B87E12 /* libPods-JWRemoteCastController Extension.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8A729A741C98ACA8000F03A9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -239,6 +375,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CF9B3ABE814B0C3D19B478B0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C3FFB15941ABE636744FD6B /* libPods-JWRemoteCastController.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DE52F8BFBF4E79028A7DA29D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -265,6 +409,12 @@
 				FC281FF062456D619081111F /* Pods-JWRemoteController Extension.release.xcconfig */,
 				22C2C3C040DFF795E877393C /* Pods-JWRemotePlayer.debug.xcconfig */,
 				D7032B38C013D2CF344515F5 /* Pods-JWRemotePlayer.release.xcconfig */,
+				7749A5E7085C50853FC4FD3F /* Pods-JWRemoteCastController.debug.xcconfig */,
+				AFA47BF6BEBC875452177758 /* Pods-JWRemoteCastController.release.xcconfig */,
+				AE13619DC752730AA54E1307 /* Pods-JWRemoteCastController Extension.debug.xcconfig */,
+				8AB274596913835758B1017D /* Pods-JWRemoteCastController Extension.release.xcconfig */,
+				33F770C1ED73AB810248CB9C /* Pods-JWRemoteCastPlayer.debug.xcconfig */,
+				CACD41ACE46043F115BD3DDB /* Pods-JWRemoteCastPlayer.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -278,8 +428,83 @@
 				C53086B079689F858B02A42A /* libPods-JWRemoteController.a */,
 				787B849139DF8B66FA89FA5C /* libPods-JWRemoteController Extension.a */,
 				36BCA1345113D7AE624BEB2D /* libPods-JWRemotePlayer.a */,
+				0952719B40B38A7563CAD16F /* libPods-JWRemoteCastController.a */,
+				F6F521C80198C3CF424CC542 /* libPods-JWRemoteCastController Extension.a */,
+				73D5AFFCD082D3F92A3671CF /* libPods-JWRemoteCastPlayer.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8A3734711D1DC2A80008FE59 /* JWRemoteCastPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				8A3734751D1DC2A80008FE59 /* AppDelegate.h */,
+				8A3734761D1DC2A80008FE59 /* AppDelegate.m */,
+				8A3734B41D1DC3820008FE59 /* JWRemoteCastPlayerViewController.h */,
+				8A3734B51D1DC3820008FE59 /* JWRemoteCastPlayerViewController.m */,
+				8A37347B1D1DC2A80008FE59 /* Main.storyboard */,
+				8A37347E1D1DC2A80008FE59 /* Assets.xcassets */,
+				8A3734801D1DC2A80008FE59 /* LaunchScreen.storyboard */,
+				8A3734831D1DC2A80008FE59 /* Info.plist */,
+				8A3734721D1DC2A80008FE59 /* Supporting Files */,
+			);
+			path = JWRemoteCastPlayer;
+			sourceTree = "<group>";
+		};
+		8A3734721D1DC2A80008FE59 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8A3734731D1DC2A80008FE59 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8A3734871D1DC2B10008FE59 /* Watch Cast App */ = {
+			isa = PBXGroup;
+			children = (
+				8A3734711D1DC2A80008FE59 /* JWRemoteCastPlayer */,
+				8A37348B1D1DC2E70008FE59 /* JWRemoteCastController */,
+				8A37349A1D1DC2E70008FE59 /* JWRemoteCastController Extension */,
+			);
+			name = "Watch Cast App";
+			sourceTree = "<group>";
+		};
+		8A37348B1D1DC2E70008FE59 /* JWRemoteCastController */ = {
+			isa = PBXGroup;
+			children = (
+				8A37348C1D1DC2E70008FE59 /* Interface.storyboard */,
+				8A37348F1D1DC2E70008FE59 /* Assets.xcassets */,
+				8A3734911D1DC2E70008FE59 /* Info.plist */,
+			);
+			path = JWRemoteCastController;
+			sourceTree = "<group>";
+		};
+		8A37349A1D1DC2E70008FE59 /* JWRemoteCastController Extension */ = {
+			isa = PBXGroup;
+			children = (
+				8A4F5E7D1D24BD2A00C0B449 /* miniCastIcon.png */,
+				8A4F5E831D24C1A000C0B449 /* stopCasting.png */,
+				8A3734B81D1DC7360008FE59 /* JWRemoteCastInterfaceController.h */,
+				8A3734B91D1DC7360008FE59 /* JWRemoteCastInterfaceController.m */,
+				8A3734E81D22E4290008FE59 /* JWAvailableCastingDevicesController.h */,
+				8A3734E91D22E4290008FE59 /* JWAvailableCastingDevicesController.m */,
+				8A3734A01D1DC2E70008FE59 /* ExtensionDelegate.h */,
+				8A3734A11D1DC2E70008FE59 /* ExtensionDelegate.m */,
+				8A3734A31D1DC2E70008FE59 /* NotificationController.h */,
+				8A3734A41D1DC2E70008FE59 /* NotificationController.m */,
+				8A3734A61D1DC2E70008FE59 /* Assets.xcassets */,
+				8A3734A81D1DC2E70008FE59 /* Info.plist */,
+				8A37349B1D1DC2E70008FE59 /* Supporting Files */,
+			);
+			path = "JWRemoteCastController Extension";
+			sourceTree = "<group>";
+		};
+		8A37349B1D1DC2E70008FE59 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8A37349C1D1DC2E70008FE59 /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		8A729A6E1C98ACA8000F03A9 = {
@@ -289,6 +514,7 @@
 				8A729B101C98B5A6000F03A9 /* JWCasting */,
 				8A729B2B1C98B5F2000F03A9 /* JWAirPlay */,
 				8A9206371C9B4E67002797FA /* Watch App */,
+				8A3734871D1DC2B10008FE59 /* Watch Cast App */,
 				8A729A781C98ACA8000F03A9 /* Products */,
 				148A822693302715DF542B54 /* Pods */,
 				52AC3655A45B0438BEB4426C /* Frameworks */,
@@ -304,6 +530,9 @@
 				8A729B631C99B4A0000F03A9 /* JWRemotePlayer.app */,
 				8AF5F6CC1C9A612B00C0D5E0 /* JWRemoteController.app */,
 				8AF5F6D81C9A612B00C0D5E0 /* JWRemoteController Extension.appex */,
+				8A3734701D1DC2A80008FE59 /* JWRemoteCastPlayer.app */,
+				8A37348A1D1DC2E70008FE59 /* JWRemoteCastController.app */,
+				8A3734961D1DC2E70008FE59 /* JWRemoteCastController Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -447,7 +676,6 @@
 				8AF5F6E51C9A612B00C0D5E0 /* NotificationController.h */,
 				8AF5F6E61C9A612B00C0D5E0 /* NotificationController.m */,
 				8AF5F6E81C9A612B00C0D5E0 /* Assets.xcassets */,
-				8AF5F6EA1C9A612B00C0D5E0 /* Info.plist */,
 				8AF5F6DD1C9A612B00C0D5E0 /* Supporting Files */,
 			);
 			path = "JWRemoteController Extension";
@@ -464,6 +692,18 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		8A3734BE1D1DCEAC0008FE59 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A3734C61D1DD7A60008FE59 /* JWRemoteCastPlayerViewController.h in Headers */,
+				8A3734DB1D1DD9C10008FE59 /* JWBasicVideoViewController.h in Headers */,
+				8A3734BF1D1DCEBC0008FE59 /* JWRemoteTerminologyHelper.h in Headers */,
+				8A3734C71D1DD7D00008FE59 /* JWCastingViewController.h in Headers */,
+				8A3734C81D1DD7E00008FE59 /* JWRemotePlayerViewController.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8A5BA8A71C9AFA370002231F /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -488,7 +728,6 @@
 			files = (
 				8AF5F65F1C99F1F600C0D5E0 /* JWBasicVideoViewController.h in Headers */,
 				8AF5F6611C99F4E900C0D5E0 /* JWCastingViewController.h in Headers */,
-				8A5BA8A31C9AF7940002231F /* JWRemotePlayerViewController.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -496,6 +735,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A3734DA1D1DD9C00008FE59 /* JWBasicVideoViewController.h in Headers */,
 				8AF5F6641C99F50D00C0D5E0 /* JWRemotePlayerViewController.h in Headers */,
 				8A5BA8A21C9AF73C0002231F /* JWCastingViewController.h in Headers */,
 			);
@@ -504,6 +744,69 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		8A37346F1D1DC2A80008FE59 /* JWRemoteCastPlayer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8A3734861D1DC2A80008FE59 /* Build configuration list for PBXNativeTarget "JWRemoteCastPlayer" */;
+			buildPhases = (
+				777AA6ACB02E60E836EC594F /* 📦 Check Pods Manifest.lock */,
+				8A37346C1D1DC2A80008FE59 /* Sources */,
+				8A37346D1D1DC2A80008FE59 /* Frameworks */,
+				8A37346E1D1DC2A80008FE59 /* Resources */,
+				8A3734B31D1DC2E70008FE59 /* Embed Watch Content */,
+				8A3734BE1D1DCEAC0008FE59 /* Headers */,
+				0126D5445CF6C21674DF35C0 /* 📦 Embed Pods Frameworks */,
+				C644EAE82B765E5CC4C8400E /* 📦 Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8A3734AA1D1DC2E70008FE59 /* PBXTargetDependency */,
+			);
+			name = JWRemoteCastPlayer;
+			productName = JWRemoteCastPlayer;
+			productReference = 8A3734701D1DC2A80008FE59 /* JWRemoteCastPlayer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8A3734891D1DC2E70008FE59 /* JWRemoteCastController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8A3734B01D1DC2E70008FE59 /* Build configuration list for PBXNativeTarget "JWRemoteCastController" */;
+			buildPhases = (
+				00D79D067345FAEF7B8DA5CC /* 📦 Check Pods Manifest.lock */,
+				8A3734881D1DC2E70008FE59 /* Resources */,
+				8A3734AF1D1DC2E70008FE59 /* Embed App Extensions */,
+				CF9B3ABE814B0C3D19B478B0 /* Frameworks */,
+				B9CEAAC4CF36C303A8B0143E /* 📦 Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8A3734991D1DC2E70008FE59 /* PBXTargetDependency */,
+			);
+			name = JWRemoteCastController;
+			productName = JWRemoteCastController;
+			productReference = 8A37348A1D1DC2E70008FE59 /* JWRemoteCastController.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		8A3734951D1DC2E70008FE59 /* JWRemoteCastController Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8A3734AC1D1DC2E70008FE59 /* Build configuration list for PBXNativeTarget "JWRemoteCastController Extension" */;
+			buildPhases = (
+				779035C0867212D9A6ADFDD0 /* 📦 Check Pods Manifest.lock */,
+				8A3734921D1DC2E70008FE59 /* Sources */,
+				8A3734931D1DC2E70008FE59 /* Frameworks */,
+				8A3734941D1DC2E70008FE59 /* Resources */,
+				5719F25286ED1CDC29A85ACD /* 📦 Embed Pods Frameworks */,
+				DF3E9EFCDCA122CBBF5C14F3 /* 📦 Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "JWRemoteCastController Extension";
+			productName = "JWRemoteCastController Extension";
+			productReference = 8A3734961D1DC2E70008FE59 /* JWRemoteCastController Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
 		8A729A761C98ACA8000F03A9 /* JWBestPracticeApps */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8A729A8E1C98ACA8000F03A9 /* Build configuration list for PBXNativeTarget "JWBestPracticeApps" */;
@@ -640,6 +943,15 @@
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = "Karim Mourra";
 				TargetAttributes = {
+					8A37346F1D1DC2A80008FE59 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					8A3734891D1DC2E70008FE59 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					8A3734951D1DC2E70008FE59 = {
+						CreatedOnToolsVersion = 7.3;
+					};
 					8A729A761C98ACA8000F03A9 = {
 						CreatedOnToolsVersion = 7.2;
 					};
@@ -684,11 +996,56 @@
 				8A729B621C99B4A0000F03A9 /* JWRemotePlayer */,
 				8AF5F6CB1C9A612B00C0D5E0 /* JWRemoteController */,
 				8AF5F6D71C9A612B00C0D5E0 /* JWRemoteController Extension */,
+				8A37346F1D1DC2A80008FE59 /* JWRemoteCastPlayer */,
+				8A3734891D1DC2E70008FE59 /* JWRemoteCastController */,
+				8A3734951D1DC2E70008FE59 /* JWRemoteCastController Extension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		8A37346E1D1DC2A80008FE59 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A3734CA1D1DD89B0008FE59 /* cast_off.png in Resources */,
+				8A3734D01D1DD8A80008FE59 /* cast_connecting0.png in Resources */,
+				8A3734821D1DC2A80008FE59 /* LaunchScreen.storyboard in Resources */,
+				8A3734D21D1DD8A80008FE59 /* cast_connecting2.png in Resources */,
+				8A37347F1D1DC2A80008FE59 /* Assets.xcassets in Resources */,
+				8A3734D11D1DD8A80008FE59 /* cast_connecting1.png in Resources */,
+				8A3734CC1D1DD8A10008FE59 /* cast_on.png in Resources */,
+				8A37347D1D1DC2A80008FE59 /* Main.storyboard in Resources */,
+				8A4F5E7E1D24BD2A00C0B449 /* miniCastIcon.png in Resources */,
+				8A4F5E841D24C1A000C0B449 /* stopCasting.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A3734881D1DC2E70008FE59 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A3734901D1DC2E70008FE59 /* Assets.xcassets in Resources */,
+				8A3734E51D21C3360008FE59 /* play-button.png in Resources */,
+				8A3734E41D21C3320008FE59 /* pause-button.png in Resources */,
+				8A4F5E861D25688300C0B449 /* stopCasting.png in Resources */,
+				8A4F5E7C1D24705E00C0B449 /* Interface.storyboard in Resources */,
+				8A3734E71D21C5B90008FE59 /* cast_on.png in Resources */,
+				8A4F5E871D25688B00C0B449 /* miniCastIcon.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A3734941D1DC2E70008FE59 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A3734A71D1DC2E70008FE59 /* Assets.xcassets in Resources */,
+				8A4F5E851D24C1A000C0B449 /* stopCasting.png in Resources */,
+				8A3734E61D21C4D10008FE59 /* cast_on.png in Resources */,
+				8A4F5E7F1D24BD2A00C0B449 /* miniCastIcon.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8A729A751C98ACA8000F03A9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -728,8 +1085,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A3734C91D1DD89A0008FE59 /* cast_off.png in Resources */,
+				8A3734CD1D1DD8A70008FE59 /* cast_connecting0.png in Resources */,
 				8A729B751C99B4A0000F03A9 /* LaunchScreen.storyboard in Resources */,
+				8A3734CF1D1DD8A70008FE59 /* cast_connecting2.png in Resources */,
 				8A729B721C99B4A0000F03A9 /* Assets.xcassets in Resources */,
+				8A3734CE1D1DD8A70008FE59 /* cast_connecting1.png in Resources */,
+				8A3734CB1D1DD8A00008FE59 /* cast_on.png in Resources */,
 				8A729B701C99B4A0000F03A9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -756,6 +1118,36 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		00D79D067345FAEF7B8DA5CC /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		0126D5445CF6C21674DF35C0 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JWRemoteCastPlayer/Pods-JWRemoteCastPlayer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		037B8FCEBE5268BFA2AACFB2 /* 📦 Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -829,6 +1221,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5719F25286ED1CDC29A85ACD /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JWRemoteCastController Extension/Pods-JWRemoteCastController Extension-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		5A4341540D0B52EDE34034E7 /* 📦 Copy Pods Resources */ = {
@@ -906,6 +1313,36 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JWRemotePlayer/Pods-JWRemotePlayer-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		777AA6ACB02E60E836EC594F /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		779035C0867212D9A6ADFDD0 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 		913D57B68FE759D9DF023CCF /* 📦 Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -951,6 +1388,21 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JWAirPlay/Pods-JWAirPlay-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		B9CEAAC4CF36C303A8B0143E /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JWRemoteCastController/Pods-JWRemoteCastController-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		BF7C3D6BA8E0B1BF4B4FB54B /* 📦 Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -966,6 +1418,21 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JWBestPracticeApps/Pods-JWBestPracticeApps-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		C644EAE82B765E5CC4C8400E /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JWRemoteCastPlayer/Pods-JWRemoteCastPlayer-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		D8C5D0DDCB9F57712020D253 /* 📦 Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -979,6 +1446,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DF3E9EFCDCA122CBBF5C14F3 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JWRemoteCastController Extension/Pods-JWRemoteCastController Extension-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		DF721C5C13BF36C4E082FF7F /* 📦 Check Pods Manifest.lock */ = {
@@ -1014,6 +1496,32 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		8A37346C1D1DC2A80008FE59 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A3734D91D1DD9B80008FE59 /* JWBasicVideoViewController.m in Sources */,
+				8A3734D71D1DD9960008FE59 /* JWRemotePlayerViewController.m in Sources */,
+				8A3734D61D1DD9800008FE59 /* JWRemoteCastPlayerViewController.m in Sources */,
+				8A3734C31D1DD6E30008FE59 /* JWRemoteCastPlayerViewController.h in Sources */,
+				8A3734D81D1DD9A50008FE59 /* JWCastingViewController.m in Sources */,
+				8A3734771D1DC2A80008FE59 /* AppDelegate.m in Sources */,
+				8A3734741D1DC2A80008FE59 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A3734921D1DC2E70008FE59 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A3734A21D1DC2E70008FE59 /* ExtensionDelegate.m in Sources */,
+				8A4F5E721D2455C800C0B449 /* JWAvailableCastingDevicesController.m in Sources */,
+				8A3734DF1D1DEDBE0008FE59 /* JWRemoteCastInterfaceController.m in Sources */,
+				8A3734E01D1DEE060008FE59 /* JWRemoteInterfaceController.m in Sources */,
+				8A3734A51D1DC2E70008FE59 /* NotificationController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8A729A731C98ACA8000F03A9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1071,6 +1579,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		8A3734991D1DC2E70008FE59 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8A3734951D1DC2E70008FE59 /* JWRemoteCastController Extension */;
+			targetProxy = 8A3734981D1DC2E70008FE59 /* PBXContainerItemProxy */;
+		};
+		8A3734AA1D1DC2E70008FE59 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8A3734891D1DC2E70008FE59 /* JWRemoteCastController */;
+			targetProxy = 8A3734A91D1DC2E70008FE59 /* PBXContainerItemProxy */;
+		};
 		8AF5F6DB1C9A612B00C0D5E0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 8AF5F6D71C9A612B00C0D5E0 /* JWRemoteController Extension */;
@@ -1084,6 +1602,30 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		8A37347B1D1DC2A80008FE59 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8A37347C1D1DC2A80008FE59 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8A3734801D1DC2A80008FE59 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8A3734811D1DC2A80008FE59 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		8A37348C1D1DC2E70008FE59 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8A37348D1D1DC2E70008FE59 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
 		8A729A831C98ACA8000F03A9 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -1159,6 +1701,106 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		8A3734841D1DC2A80008FE59 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 33F770C1ED73AB810248CB9C /* Pods-JWRemoteCastPlayer.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = JWBestPracticeApps/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = JWPlayer.JWRemoteCastPlayer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		8A3734851D1DC2A80008FE59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CACD41ACE46043F115BD3DDB /* Pods-JWRemoteCastPlayer.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = JWBestPracticeApps/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = JWPlayer.JWRemoteCastPlayer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		8A3734AD1D1DC2E70008FE59 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE13619DC752730AA54E1307 /* Pods-JWRemoteCastController Extension.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				ENABLE_BITCODE = YES;
+				INFOPLIST_FILE = "JWRemoteCastController Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = JWPlayer.JWRemoteCastPlayer.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Debug;
+		};
+		8A3734AE1D1DC2E70008FE59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8AB274596913835758B1017D /* Pods-JWRemoteCastController Extension.release.xcconfig */;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				ENABLE_BITCODE = YES;
+				INFOPLIST_FILE = "JWRemoteCastController Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = JWPlayer.JWRemoteCastPlayer.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Release;
+		};
+		8A3734B11D1DC2E70008FE59 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7749A5E7085C50853FC4FD3F /* Pods-JWRemoteCastController.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				ENABLE_BITCODE = YES;
+				IBSC_MODULE = JWRemoteCastController_Extension;
+				INFOPLIST_FILE = JWRemoteCastController/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = JWPlayer.JWRemoteCastPlayer.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Debug;
+		};
+		8A3734B21D1DC2E70008FE59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AFA47BF6BEBC875452177758 /* Pods-JWRemoteCastController.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				ENABLE_BITCODE = YES;
+				IBSC_MODULE = JWRemoteCastController_Extension;
+				INFOPLIST_FILE = JWRemoteCastController/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = JWPlayer.JWRemoteCastPlayer.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Release;
+		};
 		8A729A8C1C98ACA8000F03A9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1458,6 +2100,33 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		8A3734861D1DC2A80008FE59 /* Build configuration list for PBXNativeTarget "JWRemoteCastPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A3734841D1DC2A80008FE59 /* Debug */,
+				8A3734851D1DC2A80008FE59 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8A3734AC1D1DC2E70008FE59 /* Build configuration list for PBXNativeTarget "JWRemoteCastController Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A3734AD1D1DC2E70008FE59 /* Debug */,
+				8A3734AE1D1DC2E70008FE59 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8A3734B01D1DC2E70008FE59 /* Build configuration list for PBXNativeTarget "JWRemoteCastController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A3734B11D1DC2E70008FE59 /* Debug */,
+				8A3734B21D1DC2E70008FE59 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		8A729A721C98ACA8000F03A9 /* Build configuration list for PBXProject "JWBestPracticeApps" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

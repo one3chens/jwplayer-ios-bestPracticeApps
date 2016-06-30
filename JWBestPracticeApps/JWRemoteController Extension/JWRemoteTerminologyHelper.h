@@ -12,11 +12,18 @@
 #define JWRCallbackMessage @"callback"
 #define JWRControlMessage @"control"
 #define JWRSeekMessage @"seek"
+
 #define JWROnPlayCallback @"onPlay"
 #define JWROnPauseCallback @"onPause"
 #define JWROnTimeCallback @"onTime"
+
 #define JWROnTimePosition @"position"
 #define JWROnTimeDuration @"duration"
 #define JWRStatusRequest @"statusRequest"
+
+#define JWRCastDeviceSelected @"castDeviceSelected"
+#define JWRCastDeviceDisconnect @"castDeviceDisconnect"
+#define JWRCastDevicesAvailableCallback @"castDevicesAvailable"
+#define JWRCastDeviceCastingCallback @"castDeviceCasting"
 
 #endif /* JWRemoteTerminologyHelper_h */

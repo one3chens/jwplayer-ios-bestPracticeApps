@@ -5,7 +5,7 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleDisplayName</key>
-	<string>JWRemoteController Extension</string>
+	<string>JWRemoteCastController Extension</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -27,13 +27,11 @@
 		<key>NSExtensionAttributes</key>
 		<dict>
 			<key>WKAppBundleIdentifier</key>
-			<string>JWPlayer.JWRemotePlayer.watchkitapp</string>
+			<string>JWPlayer.JWRemoteCastPlayer.watchkitapp</string>
 		</dict>
 		<key>NSExtensionPointIdentifier</key>
 		<string>com.apple.watchkit</string>
 	</dict>
-	<key>RemoteInterfacePrincipalClass</key>
-	<string>InterfaceController</string>
 	<key>WKExtensionDelegateClassName</key>
 	<string>ExtensionDelegate</string>
 </dict>

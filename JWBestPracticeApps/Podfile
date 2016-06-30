@@ -37,5 +37,20 @@ target 'JWRemoteController Extension' do
 
 end
 
+target 'JWRemoteCastPlayer' do
+
+pod 'JWPlayer-SDK', '~> 2.0'
+pod 'google-cast-sdk', '<= 2.10.0.4070'
+
+end
+
+target 'JWRemoteCastController' do
+
+end
+
+target 'JWRemoteCastController Extension' do
+
+end
+
 workspace 'JWBestPracticeApps'
 

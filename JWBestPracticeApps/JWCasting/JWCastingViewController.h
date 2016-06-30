@@ -8,6 +8,9 @@
 
 #import "JWBasicVideoViewController.h"
 
-@interface JWCastingViewController : JWBasicVideoViewController
+@interface JWCastingViewController : JWBasicVideoViewController <JWCastingDelegate>
+
+@property (nonatomic) NSArray *availableDevices;
+@property (nonatomic) JWCastController *castController;
 
 @end
