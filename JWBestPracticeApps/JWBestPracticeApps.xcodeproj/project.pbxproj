@@ -13,7 +13,6 @@
 		5C3FFB15941ABE636744FD6B /* libPods-JWRemoteCastController.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0952719B40B38A7563CAD16F /* libPods-JWRemoteCastController.a */; };
 		8A3734741D1DC2A80008FE59 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A3734731D1DC2A80008FE59 /* main.m */; };
 		8A3734771D1DC2A80008FE59 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A3734761D1DC2A80008FE59 /* AppDelegate.m */; };
-		8A37347A1D1DC2A80008FE59 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A3734791D1DC2A80008FE59 /* ViewController.m */; };
 		8A37347D1D1DC2A80008FE59 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A37347B1D1DC2A80008FE59 /* Main.storyboard */; };
 		8A37347F1D1DC2A80008FE59 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A37347E1D1DC2A80008FE59 /* Assets.xcassets */; };
 		8A3734821D1DC2A80008FE59 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A3734801D1DC2A80008FE59 /* LaunchScreen.storyboard */; };
@@ -50,7 +49,7 @@
 		8A3734E51D21C3360008FE59 /* play-button.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A5BA89A1C9A647C0002231F /* play-button.png */; };
 		8A3734E61D21C4D10008FE59 /* cast_on.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A729B891C99D278000F03A9 /* cast_on.png */; };
 		8A3734E71D21C5B90008FE59 /* cast_on.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A729B891C99D278000F03A9 /* cast_on.png */; };
-		8A4F5E721D2455C800C0B449 /* JWRemoteCastingDevicesController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A3734E91D22E4290008FE59 /* JWRemoteCastingDevicesController.m */; };
+		8A4F5E721D2455C800C0B449 /* JWAvailableCastingDevicesController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A3734E91D22E4290008FE59 /* JWAvailableCastingDevicesController.m */; };
 		8A4F5E7C1D24705E00C0B449 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A37348C1D1DC2E70008FE59 /* Interface.storyboard */; };
 		8A4F5E7E1D24BD2A00C0B449 /* miniCastIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A4F5E7D1D24BD2A00C0B449 /* miniCastIcon.png */; };
 		8A4F5E7F1D24BD2A00C0B449 /* miniCastIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A4F5E7D1D24BD2A00C0B449 /* miniCastIcon.png */; };
@@ -222,8 +221,6 @@
 		8A3734731D1DC2A80008FE59 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8A3734751D1DC2A80008FE59 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8A3734761D1DC2A80008FE59 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		8A3734781D1DC2A80008FE59 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		8A3734791D1DC2A80008FE59 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		8A37347C1D1DC2A80008FE59 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8A37347E1D1DC2A80008FE59 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8A3734811D1DC2A80008FE59 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -244,8 +241,8 @@
 		8A3734B51D1DC3820008FE59 /* JWRemoteCastPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWRemoteCastPlayerViewController.m; sourceTree = "<group>"; };
 		8A3734B81D1DC7360008FE59 /* JWRemoteCastInterfaceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWRemoteCastInterfaceController.h; sourceTree = "<group>"; };
 		8A3734B91D1DC7360008FE59 /* JWRemoteCastInterfaceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWRemoteCastInterfaceController.m; sourceTree = "<group>"; };
-		8A3734E81D22E4290008FE59 /* JWRemoteCastingDevicesController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWRemoteCastingDevicesController.h; sourceTree = "<group>"; };
-		8A3734E91D22E4290008FE59 /* JWRemoteCastingDevicesController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWRemoteCastingDevicesController.m; sourceTree = "<group>"; };
+		8A3734E81D22E4290008FE59 /* JWAvailableCastingDevicesController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWAvailableCastingDevicesController.h; sourceTree = "<group>"; };
+		8A3734E91D22E4290008FE59 /* JWAvailableCastingDevicesController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWAvailableCastingDevicesController.m; sourceTree = "<group>"; };
 		8A4F5E7D1D24BD2A00C0B449 /* miniCastIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = miniCastIcon.png; sourceTree = "<group>"; };
 		8A4F5E831D24C1A000C0B449 /* stopCasting.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stopCasting.png; sourceTree = "<group>"; };
 		8A5BA89A1C9A647C0002231F /* play-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "play-button.png"; sourceTree = "<group>"; };
@@ -445,8 +442,6 @@
 				8A3734761D1DC2A80008FE59 /* AppDelegate.m */,
 				8A3734B41D1DC3820008FE59 /* JWRemoteCastPlayerViewController.h */,
 				8A3734B51D1DC3820008FE59 /* JWRemoteCastPlayerViewController.m */,
-				8A3734781D1DC2A80008FE59 /* ViewController.h */,
-				8A3734791D1DC2A80008FE59 /* ViewController.m */,
 				8A37347B1D1DC2A80008FE59 /* Main.storyboard */,
 				8A37347E1D1DC2A80008FE59 /* Assets.xcassets */,
 				8A3734801D1DC2A80008FE59 /* LaunchScreen.storyboard */,
@@ -491,8 +486,8 @@
 				8A4F5E831D24C1A000C0B449 /* stopCasting.png */,
 				8A3734B81D1DC7360008FE59 /* JWRemoteCastInterfaceController.h */,
 				8A3734B91D1DC7360008FE59 /* JWRemoteCastInterfaceController.m */,
-				8A3734E81D22E4290008FE59 /* JWRemoteCastingDevicesController.h */,
-				8A3734E91D22E4290008FE59 /* JWRemoteCastingDevicesController.m */,
+				8A3734E81D22E4290008FE59 /* JWAvailableCastingDevicesController.h */,
+				8A3734E91D22E4290008FE59 /* JWAvailableCastingDevicesController.m */,
 				8A3734A01D1DC2E70008FE59 /* ExtensionDelegate.h */,
 				8A3734A11D1DC2E70008FE59 /* ExtensionDelegate.m */,
 				8A3734A31D1DC2E70008FE59 /* NotificationController.h */,
@@ -1510,7 +1505,6 @@
 				8A3734D61D1DD9800008FE59 /* JWRemoteCastPlayerViewController.m in Sources */,
 				8A3734C31D1DD6E30008FE59 /* JWRemoteCastPlayerViewController.h in Sources */,
 				8A3734D81D1DD9A50008FE59 /* JWCastingViewController.m in Sources */,
-				8A37347A1D1DC2A80008FE59 /* ViewController.m in Sources */,
 				8A3734771D1DC2A80008FE59 /* AppDelegate.m in Sources */,
 				8A3734741D1DC2A80008FE59 /* main.m in Sources */,
 			);
@@ -1521,7 +1515,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8A3734A21D1DC2E70008FE59 /* ExtensionDelegate.m in Sources */,
-				8A4F5E721D2455C800C0B449 /* JWRemoteCastingDevicesController.m in Sources */,
+				8A4F5E721D2455C800C0B449 /* JWAvailableCastingDevicesController.m in Sources */,
 				8A3734DF1D1DEDBE0008FE59 /* JWRemoteCastInterfaceController.m in Sources */,
 				8A3734E01D1DEE060008FE59 /* JWRemoteInterfaceController.m in Sources */,
 				8A3734A51D1DC2E70008FE59 /* NotificationController.m in Sources */,

@@ -58,7 +58,7 @@
         <!--JWRemoteCastingDevices-->
         <scene sceneID="lwB-2V-RkZ">
             <objects>
-                <controller identifier="JWRemoteCastingDevices" id="6jN-14-qGt" customClass="JWRemoteCastingDevicesController">
+                <controller identifier="JWRemoteCastingDevices" id="6jN-14-qGt" customClass="JWAvailableCastingDevicesController">
                     <items>
                         <picker width="1" height="0.80000000000000004" alignment="left" focusStyle="stack" indicatorMode="shownWhileFocused" id="Czx-xw-LTM">
                             <connections>

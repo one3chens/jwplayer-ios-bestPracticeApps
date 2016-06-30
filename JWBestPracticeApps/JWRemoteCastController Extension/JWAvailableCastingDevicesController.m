@@ -6,11 +6,11 @@
 //  Copyright © 2016 Karim Mourra. All rights reserved.
 //
 
-#import "JWRemoteCastingDevicesController.h"
+#import "JWAvailableCastingDevicesController.h"
 #import <WatchConnectivity/WatchConnectivity.h>
 #import "JWRemoteTerminologyHelper.h"
 
-@interface JWRemoteCastingDevicesController () <WCSessionDelegate>
+@interface JWAvailableCastingDevicesController () <WCSessionDelegate>
 
 @property (nonatomic) WCSession *session;
 @property (nonatomic) NSArray *availableDevices;
@@ -21,7 +21,7 @@
 
 @end
 
-@implementation JWRemoteCastingDevicesController
+@implementation JWAvailableCastingDevicesController
 
 - (void)awakeWithContext:(id)context {
     [super awakeWithContext:context];

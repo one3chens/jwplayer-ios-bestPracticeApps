@@ -9,7 +9,7 @@
 #import <WatchKit/WatchKit.h>
 #import <Foundation/Foundation.h>
 
-@interface JWRemoteCastingDevicesController : WKInterfaceController
+@interface JWAvailableCastingDevicesController : WKInterfaceController
 
 @property (unsafe_unretained, nonatomic) IBOutlet WKInterfacePicker *availableDevicesPicker;
 
