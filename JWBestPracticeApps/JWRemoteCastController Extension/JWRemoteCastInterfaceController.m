@@ -46,10 +46,10 @@
 
 - (void)handleCastingCallback
 {
+    [self removeCastMenuItem];
     if (self.casting) {
-        [self removeCastMenuItem];
-        [self addMenuItemWithImageNamed:@"stopCasting" title:@"stopCast" action:@selector(stopCasting)];
-    } else {
+        [self addMenuItemWithImageNamed:@"stopCasting" title:@"Stop Casting" action:@selector(stopCasting)];
+    } else if (!self.castButtonDisplayed) {
         [self addCastMenuItem];
     }
 }

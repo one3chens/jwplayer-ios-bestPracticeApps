@@ -56,6 +56,8 @@
 		8A4F5E7F1D24BD2A00C0B449 /* miniCastIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A4F5E7D1D24BD2A00C0B449 /* miniCastIcon.png */; };
 		8A4F5E841D24C1A000C0B449 /* stopCasting.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A4F5E831D24C1A000C0B449 /* stopCasting.png */; };
 		8A4F5E851D24C1A000C0B449 /* stopCasting.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A4F5E831D24C1A000C0B449 /* stopCasting.png */; };
+		8A4F5E861D25688300C0B449 /* stopCasting.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A4F5E831D24C1A000C0B449 /* stopCasting.png */; };
+		8A4F5E871D25688B00C0B449 /* miniCastIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A4F5E7D1D24BD2A00C0B449 /* miniCastIcon.png */; };
 		8A5BA89C1C9A647C0002231F /* play-button.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A5BA89A1C9A647C0002231F /* play-button.png */; };
 		8A5BA89D1C9A647C0002231F /* pause-button.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A5BA89B1C9A647C0002231F /* pause-button.png */; };
 		8A5BA8A01C9A64A90002231F /* JWRemoteInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A5BA89F1C9A64A90002231F /* JWRemoteInterfaceController.m */; };
@@ -1031,8 +1033,10 @@
 				8A3734901D1DC2E70008FE59 /* Assets.xcassets in Resources */,
 				8A3734E51D21C3360008FE59 /* play-button.png in Resources */,
 				8A3734E41D21C3320008FE59 /* pause-button.png in Resources */,
+				8A4F5E861D25688300C0B449 /* stopCasting.png in Resources */,
 				8A4F5E7C1D24705E00C0B449 /* Interface.storyboard in Resources */,
 				8A3734E71D21C5B90008FE59 /* cast_on.png in Resources */,
+				8A4F5E871D25688B00C0B449 /* miniCastIcon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

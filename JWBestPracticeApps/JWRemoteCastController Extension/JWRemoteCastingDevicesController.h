@@ -10,6 +10,7 @@
 #import <Foundation/Foundation.h>
 
 @interface JWRemoteCastingDevicesController : WKInterfaceController
+
 @property (unsafe_unretained, nonatomic) IBOutlet WKInterfacePicker *availableDevicesPicker;
 
 @end

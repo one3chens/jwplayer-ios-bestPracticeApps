@@ -39,7 +39,6 @@
     self.player.forceLandscapeOnFullScreen = YES;
     self.player.forceFullScreenOnLandscape = YES;
     self.player.view.center = self.view.center;
-    NSLog(@"player delegate set");
     self.player.delegate = self;
 }
 
