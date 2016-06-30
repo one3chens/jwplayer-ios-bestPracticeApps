@@ -21,11 +21,9 @@
 #define JWROnTimeDuration @"duration"
 #define JWRStatusRequest @"statusRequest"
 
-#define JWRCastMessage @"castMessage"
 #define JWRCastDeviceSelected @"castDeviceSelected"
 #define JWRCastDeviceDisconnect @"castDeviceDisconnect"
 #define JWRCastDevicesAvailableCallback @"castDevicesAvailable"
-#define JWRCastDeviceConnectedCallback @"castDeviceConnected"
 #define JWRCastDeviceCastingCallback @"castDeviceCasting"
 
 #endif /* JWRemoteTerminologyHelper_h */

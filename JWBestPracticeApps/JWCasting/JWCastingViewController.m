@@ -51,7 +51,7 @@
     [self updateForCastDeviceConnection];
 }
 
--(void)onDisconnectedFromCastingDevice
+-(void)onDisconnectedFromCastingDevice:(NSError *)error
 {
     [self updateForCastDeviceDisconnection];
 }

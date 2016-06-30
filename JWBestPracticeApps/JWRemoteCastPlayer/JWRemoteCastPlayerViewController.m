@@ -22,9 +22,7 @@
 
 - (void)sessionReachabilityDidChange:(WCSession *)session
 {
-//    NSLog(@"activation complete");
     if (self.availableDevices.count && session.reachable) {
-//        NSLog(@"reachable");
         [self updateDeviceListOnWatch:self.availableDevices];
     }
 }
@@ -37,8 +35,8 @@
         });
     } else if (message[JWRCastDeviceSelected]) {
         dispatch_sync(dispatch_get_main_queue(), ^{
-            NSInteger index = ((NSNumber *)message[JWRCastDeviceSelected]).integerValue;
-            [self.castController connectToDevice:self.availableDevices[index]];
+            NSInteger deviceIndex = ((NSNumber *)message[JWRCastDeviceSelected]).integerValue;
+            [self.castController connectToDevice:self.availableDevices[deviceIndex]];
         });
     } else {
         [super session:session didReceiveMessage:message replyHandler:replyHandler];
@@ -49,7 +47,6 @@
 
 -(void)onCastingDevicesAvailable:(NSArray *)devices
 {
-    NSLog(@"onCastingDevicesAvailable");
     [self updateDeviceListOnWatch:devices];
     [super onCastingDevicesAvailable:devices];
 }
@@ -67,63 +64,40 @@
 
 -(void)onConnectedToCastingDevice:(JWCastingDevice *)device
 {
-//    [self updateForCastDeviceConnection];
     [super onConnectedToCastingDevice:device];
     [self.castController cast];
 }
 
--(void)onDisconnectedFromCastingDevice:(NSError *)error
-{
-//    [self updateForCastDeviceDisconnection];
-    
-    [super onDisconnectedFromCastingDevice:error];
-}
-
--(void)onConnectionTemporarilySuspended
-{
-//    [self updateWhenConnectingToCastDevice];
-    [super onConnectionTemporarilySuspended];
-}
-
--(void)onConnectionRecovered
-{
-//    [self updateForCastDeviceConnection];
-    [super onConnectionRecovered];
-}
-
--(void)onConnectionFailed:(NSError *)error
-{
-    if(error) {
-        NSLog(@"Connection Error: %@", error);
-    }
-//    [self updateForCastDeviceDisconnection];
-    [super onConnectionFailed:error];
-}
-
 -(void)onCasting
 {
-//    [self updateForCasting];
     [super onCasting];
+    [self notifyWatchOfCastingStatus:YES];
     [self.player play];
 }
 
 -(void)onCastingEnded:(NSError *)error
 {
-    if(error) {
-        NSLog(@"Casting Error: %@", error);
-    }
-//    [self updateForCastingEnd];
-    [self.castController disconnect];
     [super onCastingEnded:error];
+    [self.castController disconnect];
 }
 
 -(void)onCastingFailed:(NSError *)error
 {
-    if(error) {
-        NSLog(@"Casting Error: %@", error);
-    }
-//    [self updateForCastingEnd];
     [super onCastingFailed:error];
+    [self.castController disconnect];
+}
+
+-(void)onDisconnectedFromCastingDevice:(NSError *)error
+{
+    [super onDisconnectedFromCastingDevice:error];
+    [self notifyWatchOfCastingStatus:NO];
+}
+
+- (void)notifyWatchOfCastingStatus:(BOOL)status
+{
+    [self.session sendMessage:@{JWRCastDeviceCastingCallback: @(status)}
+                 replyHandler:^(NSDictionary<NSString *,id> * _Nonnull replyMessage) {}
+                 errorHandler:^(NSError * _Nonnull error) {}];
 }
 
 @end
