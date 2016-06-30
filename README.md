@@ -28,6 +28,6 @@ For more instructions please visit the official JW Player Developer guide at htt
 
 For targets that require casting to Google ChromeCast, you must import a Google ChromeCast Framework, as well as all of its depending frameworks. Our SDK is compatible with the 2.10.0.4070 version of the Google Cast SDK. For the list of necessary frameworks please visit https://developers.google.com/cast/docs/ios_sender#setup
 
-**Note**: The demo apps in this repository are intended to be used with **version 2.2** of the JW Player iOS SDK.
+**Note**: The demo apps in this repository are intended to be used with **version 2.4** of the JW Player iOS SDK.
 
 **Feedback**: Was this repository helpful? How can we improve it? Please send your feedback to support+sdk@jwplayer.com.
