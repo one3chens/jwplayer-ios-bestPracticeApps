@@ -7,8 +7,6 @@
 //
 
 import UIKit
-import JWBasicVideoViewController
-
 
 class ViewController: UIViewController {
 
