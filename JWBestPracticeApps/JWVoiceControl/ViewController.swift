@@ -2,11 +2,13 @@
 //  ViewController.swift
 //  JWVoiceControl
 //
-//  Created by JWP Admin on 9/9/16.
+//  Created by Karim Mourra on 9/9/16.
 //  Copyright © 2016 Karim Mourra. All rights reserved.
 //
 
 import UIKit
+import JWBasicVideoViewController
+
 
 class ViewController: UIViewController {
 
