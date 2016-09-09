@@ -109,6 +109,11 @@
 		8AF5F6E91C9A612B00C0D5E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8AF5F6E81C9A612B00C0D5E0 /* Assets.xcassets */; };
 		8AF5F6ED1C9A612B00C0D5E0 /* JWRemoteController.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 8AF5F6CC1C9A612B00C0D5E0 /* JWRemoteController.app */; };
 		AB341B6EC61DFD6B46F068D6 /* libPods-JWBestPracticeApps.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BCE25B16DE011FFE47951517 /* libPods-JWBestPracticeApps.a */; };
+		B53A0DF51D8355CF00893252 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53A0DF41D8355CF00893252 /* AppDelegate.swift */; };
+		B53A0DF71D8355CF00893252 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53A0DF61D8355CF00893252 /* ViewController.swift */; };
+		B53A0DFA1D8355CF00893252 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B53A0DF81D8355CF00893252 /* Main.storyboard */; };
+		B53A0DFC1D8355CF00893252 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B53A0DFB1D8355CF00893252 /* Assets.xcassets */; };
+		B53A0DFF1D8355CF00893252 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B53A0DFD1D8355CF00893252 /* LaunchScreen.storyboard */; };
 		C24874D002C8E9721BA8E61F /* libPods-JWRemotePlayer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 36BCA1345113D7AE624BEB2D /* libPods-JWRemotePlayer.a */; };
 		D37413B333297461C0FD0791 /* libPods-JWRemoteController Extension.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 787B849139DF8B66FA89FA5C /* libPods-JWRemoteController Extension.a */; };
 		F6841AEF9C8AEA3DED8AA298 /* libPods-JWRemoteCastPlayer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 73D5AFFCD082D3F92A3671CF /* libPods-JWRemoteCastPlayer.a */; };
@@ -308,6 +313,13 @@
 		9EB18D2E0C98F9B2F6BD446A /* Pods-JWRemoteController.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JWRemoteController.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JWRemoteController/Pods-JWRemoteController.debug.xcconfig"; sourceTree = "<group>"; };
 		AE13619DC752730AA54E1307 /* Pods-JWRemoteCastController Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JWRemoteCastController Extension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JWRemoteCastController Extension/Pods-JWRemoteCastController Extension.debug.xcconfig"; sourceTree = "<group>"; };
 		AFA47BF6BEBC875452177758 /* Pods-JWRemoteCastController.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JWRemoteCastController.release.xcconfig"; path = "Pods/Target Support Files/Pods-JWRemoteCastController/Pods-JWRemoteCastController.release.xcconfig"; sourceTree = "<group>"; };
+		B53A0DF21D8355CF00893252 /* JWVoiceControl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JWVoiceControl.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B53A0DF41D8355CF00893252 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B53A0DF61D8355CF00893252 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B53A0DF91D8355CF00893252 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B53A0DFB1D8355CF00893252 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B53A0DFE1D8355CF00893252 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B53A0E001D8355CF00893252 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BCE25B16DE011FFE47951517 /* libPods-JWBestPracticeApps.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JWBestPracticeApps.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C53086B079689F858B02A42A /* libPods-JWRemoteController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JWRemoteController.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CACD41ACE46043F115BD3DDB /* Pods-JWRemoteCastPlayer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JWRemoteCastPlayer.release.xcconfig"; path = "Pods/Target Support Files/Pods-JWRemoteCastPlayer/Pods-JWRemoteCastPlayer.release.xcconfig"; sourceTree = "<group>"; };
@@ -372,6 +384,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				D37413B333297461C0FD0791 /* libPods-JWRemoteController Extension.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B53A0DEF1D8355CF00893252 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -515,6 +534,7 @@
 				8A729B2B1C98B5F2000F03A9 /* JWAirPlay */,
 				8A9206371C9B4E67002797FA /* Watch App */,
 				8A3734871D1DC2B10008FE59 /* Watch Cast App */,
+				B53A0DF31D8355CF00893252 /* JWVoiceControl */,
 				8A729A781C98ACA8000F03A9 /* Products */,
 				148A822693302715DF542B54 /* Pods */,
 				52AC3655A45B0438BEB4426C /* Frameworks */,
@@ -533,6 +553,7 @@
 				8A3734701D1DC2A80008FE59 /* JWRemoteCastPlayer.app */,
 				8A37348A1D1DC2E70008FE59 /* JWRemoteCastController.app */,
 				8A3734961D1DC2E70008FE59 /* JWRemoteCastController Extension.appex */,
+				B53A0DF21D8355CF00893252 /* JWVoiceControl.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -689,6 +710,19 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		B53A0DF31D8355CF00893252 /* JWVoiceControl */ = {
+			isa = PBXGroup;
+			children = (
+				B53A0DF41D8355CF00893252 /* AppDelegate.swift */,
+				B53A0DF61D8355CF00893252 /* ViewController.swift */,
+				B53A0DF81D8355CF00893252 /* Main.storyboard */,
+				B53A0DFB1D8355CF00893252 /* Assets.xcassets */,
+				B53A0DFD1D8355CF00893252 /* LaunchScreen.storyboard */,
+				B53A0E001D8355CF00893252 /* Info.plist */,
+			);
+			path = JWVoiceControl;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -748,14 +782,14 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8A3734861D1DC2A80008FE59 /* Build configuration list for PBXNativeTarget "JWRemoteCastPlayer" */;
 			buildPhases = (
-				777AA6ACB02E60E836EC594F /* 📦 Check Pods Manifest.lock */,
+				777AA6ACB02E60E836EC594F /* [CP] Check Pods Manifest.lock */,
 				8A37346C1D1DC2A80008FE59 /* Sources */,
 				8A37346D1D1DC2A80008FE59 /* Frameworks */,
 				8A37346E1D1DC2A80008FE59 /* Resources */,
 				8A3734B31D1DC2E70008FE59 /* Embed Watch Content */,
 				8A3734BE1D1DCEAC0008FE59 /* Headers */,
-				0126D5445CF6C21674DF35C0 /* 📦 Embed Pods Frameworks */,
-				C644EAE82B765E5CC4C8400E /* 📦 Copy Pods Resources */,
+				0126D5445CF6C21674DF35C0 /* [CP] Embed Pods Frameworks */,
+				C644EAE82B765E5CC4C8400E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -771,11 +805,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8A3734B01D1DC2E70008FE59 /* Build configuration list for PBXNativeTarget "JWRemoteCastController" */;
 			buildPhases = (
-				00D79D067345FAEF7B8DA5CC /* 📦 Check Pods Manifest.lock */,
+				00D79D067345FAEF7B8DA5CC /* [CP] Check Pods Manifest.lock */,
 				8A3734881D1DC2E70008FE59 /* Resources */,
 				8A3734AF1D1DC2E70008FE59 /* Embed App Extensions */,
 				CF9B3ABE814B0C3D19B478B0 /* Frameworks */,
-				B9CEAAC4CF36C303A8B0143E /* 📦 Copy Pods Resources */,
+				B9CEAAC4CF36C303A8B0143E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -791,12 +825,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8A3734AC1D1DC2E70008FE59 /* Build configuration list for PBXNativeTarget "JWRemoteCastController Extension" */;
 			buildPhases = (
-				779035C0867212D9A6ADFDD0 /* 📦 Check Pods Manifest.lock */,
+				779035C0867212D9A6ADFDD0 /* [CP] Check Pods Manifest.lock */,
 				8A3734921D1DC2E70008FE59 /* Sources */,
 				8A3734931D1DC2E70008FE59 /* Frameworks */,
 				8A3734941D1DC2E70008FE59 /* Resources */,
-				5719F25286ED1CDC29A85ACD /* 📦 Embed Pods Frameworks */,
-				DF3E9EFCDCA122CBBF5C14F3 /* 📦 Copy Pods Resources */,
+				5719F25286ED1CDC29A85ACD /* [CP] Embed Pods Frameworks */,
+				DF3E9EFCDCA122CBBF5C14F3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -811,14 +845,14 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8A729A8E1C98ACA8000F03A9 /* Build configuration list for PBXNativeTarget "JWBestPracticeApps" */;
 			buildPhases = (
-				73C5A63A476C9A7364C34BE0 /* 📦 Check Pods Manifest.lock */,
+				73C5A63A476C9A7364C34BE0 /* [CP] Check Pods Manifest.lock */,
 				8A729A731C98ACA8000F03A9 /* Sources */,
 				8A729A741C98ACA8000F03A9 /* Frameworks */,
 				8A729A751C98ACA8000F03A9 /* Resources */,
 				8AF5F65B1C99F15400C0D5E0 /* Headers */,
 				8AF5F65C1C99F17A00C0D5E0 /* CopyFiles */,
-				913D57B68FE759D9DF023CCF /* 📦 Embed Pods Frameworks */,
-				BF7C3D6BA8E0B1BF4B4FB54B /* 📦 Copy Pods Resources */,
+				913D57B68FE759D9DF023CCF /* [CP] Embed Pods Frameworks */,
+				BF7C3D6BA8E0B1BF4B4FB54B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -833,13 +867,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8A729B231C98B5A6000F03A9 /* Build configuration list for PBXNativeTarget "JWCasting" */;
 			buildPhases = (
-				D8C5D0DDCB9F57712020D253 /* 📦 Check Pods Manifest.lock */,
+				D8C5D0DDCB9F57712020D253 /* [CP] Check Pods Manifest.lock */,
 				8A729B0B1C98B5A6000F03A9 /* Sources */,
 				8A729B0C1C98B5A6000F03A9 /* Frameworks */,
 				8A729B0D1C98B5A6000F03A9 /* Resources */,
 				8AF5F65E1C99F1EE00C0D5E0 /* Headers */,
-				03C65EC9F6744AC2F0CDD3E4 /* 📦 Embed Pods Frameworks */,
-				037B8FCEBE5268BFA2AACFB2 /* 📦 Copy Pods Resources */,
+				03C65EC9F6744AC2F0CDD3E4 /* [CP] Embed Pods Frameworks */,
+				037B8FCEBE5268BFA2AACFB2 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -854,13 +888,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8A729B3E1C98B5F2000F03A9 /* Build configuration list for PBXNativeTarget "JWAirPlay" */;
 			buildPhases = (
-				371E68D98909341D478FC1E6 /* 📦 Check Pods Manifest.lock */,
+				371E68D98909341D478FC1E6 /* [CP] Check Pods Manifest.lock */,
 				8A729B261C98B5F2000F03A9 /* Sources */,
 				8A729B271C98B5F2000F03A9 /* Frameworks */,
 				8A729B281C98B5F2000F03A9 /* Resources */,
 				8A5BA8A71C9AFA370002231F /* Headers */,
-				9CA3482367C439F0CDBB6E4B /* 📦 Embed Pods Frameworks */,
-				5A4341540D0B52EDE34034E7 /* 📦 Copy Pods Resources */,
+				9CA3482367C439F0CDBB6E4B /* [CP] Embed Pods Frameworks */,
+				5A4341540D0B52EDE34034E7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -875,14 +909,14 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8A729B771C99B4A1000F03A9 /* Build configuration list for PBXNativeTarget "JWRemotePlayer" */;
 			buildPhases = (
-				3172047F5E4CDE730F1C8E36 /* 📦 Check Pods Manifest.lock */,
+				3172047F5E4CDE730F1C8E36 /* [CP] Check Pods Manifest.lock */,
 				8A729B5F1C99B4A0000F03A9 /* Sources */,
 				8A729B601C99B4A0000F03A9 /* Frameworks */,
 				8A729B611C99B4A0000F03A9 /* Resources */,
 				8AF5F6621C99F4FF00C0D5E0 /* Headers */,
 				8AF5F6B51C9A56F200C0D5E0 /* Embed Watch Content */,
-				F9C88D4CDF49BB9AF8573501 /* 📦 Embed Pods Frameworks */,
-				770E1BA7B7C214544BDA3C5E /* 📦 Copy Pods Resources */,
+				F9C88D4CDF49BB9AF8573501 /* [CP] Embed Pods Frameworks */,
+				770E1BA7B7C214544BDA3C5E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -898,11 +932,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8AF5F6F21C9A612B00C0D5E0 /* Build configuration list for PBXNativeTarget "JWRemoteController" */;
 			buildPhases = (
-				DF721C5C13BF36C4E082FF7F /* 📦 Check Pods Manifest.lock */,
+				DF721C5C13BF36C4E082FF7F /* [CP] Check Pods Manifest.lock */,
 				8AF5F6CA1C9A612B00C0D5E0 /* Resources */,
 				8AF5F6F11C9A612B00C0D5E0 /* Embed App Extensions */,
 				DE52F8BFBF4E79028A7DA29D /* Frameworks */,
-				5AC05EE046DAF3213B1AA9B1 /* 📦 Copy Pods Resources */,
+				5AC05EE046DAF3213B1AA9B1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -918,12 +952,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8AF5F6EE1C9A612B00C0D5E0 /* Build configuration list for PBXNativeTarget "JWRemoteController Extension" */;
 			buildPhases = (
-				5B8EB63E3022D951CF175410 /* 📦 Check Pods Manifest.lock */,
+				5B8EB63E3022D951CF175410 /* [CP] Check Pods Manifest.lock */,
 				8AF5F6D41C9A612B00C0D5E0 /* Sources */,
 				8AF5F6D51C9A612B00C0D5E0 /* Frameworks */,
 				8AF5F6D61C9A612B00C0D5E0 /* Resources */,
-				2E6E72D37E1CAF711ACA2B22 /* 📦 Embed Pods Frameworks */,
-				957118E253D60D999AD92FA5 /* 📦 Copy Pods Resources */,
+				2E6E72D37E1CAF711ACA2B22 /* [CP] Embed Pods Frameworks */,
+				957118E253D60D999AD92FA5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -934,12 +968,30 @@
 			productReference = 8AF5F6D81C9A612B00C0D5E0 /* JWRemoteController Extension.appex */;
 			productType = "com.apple.product-type.watchkit2-extension";
 		};
+		B53A0DF11D8355CF00893252 /* JWVoiceControl */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B53A0E031D8355CF00893252 /* Build configuration list for PBXNativeTarget "JWVoiceControl" */;
+			buildPhases = (
+				B53A0DEE1D8355CF00893252 /* Sources */,
+				B53A0DEF1D8355CF00893252 /* Frameworks */,
+				B53A0DF01D8355CF00893252 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JWVoiceControl;
+			productName = JWVoiceControl;
+			productReference = B53A0DF21D8355CF00893252 /* JWVoiceControl.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		8A729A6F1C98ACA8000F03A9 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0800;
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = "Karim Mourra";
 				TargetAttributes = {
@@ -975,6 +1027,11 @@
 					8AF5F6D71C9A612B00C0D5E0 = {
 						CreatedOnToolsVersion = 7.2;
 					};
+					B53A0DF11D8355CF00893252 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = WX87M56X5N;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = 8A729A721C98ACA8000F03A9 /* Build configuration list for PBXProject "JWBestPracticeApps" */;
@@ -999,6 +1056,7 @@
 				8A37346F1D1DC2A80008FE59 /* JWRemoteCastPlayer */,
 				8A3734891D1DC2E70008FE59 /* JWRemoteCastController */,
 				8A3734951D1DC2E70008FE59 /* JWRemoteCastController Extension */,
+				B53A0DF11D8355CF00893252 /* JWVoiceControl */,
 			);
 		};
 /* End PBXProject section */
@@ -1115,17 +1173,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B53A0DF01D8355CF00893252 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B53A0DFF1D8355CF00893252 /* LaunchScreen.storyboard in Resources */,
+				B53A0DFC1D8355CF00893252 /* Assets.xcassets in Resources */,
+				B53A0DFA1D8355CF00893252 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		00D79D067345FAEF7B8DA5CC /* 📦 Check Pods Manifest.lock */ = {
+		00D79D067345FAEF7B8DA5CC /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1133,14 +1201,14 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		0126D5445CF6C21674DF35C0 /* 📦 Embed Pods Frameworks */ = {
+		0126D5445CF6C21674DF35C0 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1148,14 +1216,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JWRemoteCastPlayer/Pods-JWRemoteCastPlayer-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		037B8FCEBE5268BFA2AACFB2 /* 📦 Copy Pods Resources */ = {
+		037B8FCEBE5268BFA2AACFB2 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1163,14 +1231,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JWCasting/Pods-JWCasting-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		03C65EC9F6744AC2F0CDD3E4 /* 📦 Embed Pods Frameworks */ = {
+		03C65EC9F6744AC2F0CDD3E4 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1178,14 +1246,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JWCasting/Pods-JWCasting-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		2E6E72D37E1CAF711ACA2B22 /* 📦 Embed Pods Frameworks */ = {
+		2E6E72D37E1CAF711ACA2B22 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1193,14 +1261,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JWRemoteController Extension/Pods-JWRemoteController Extension-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		3172047F5E4CDE730F1C8E36 /* 📦 Check Pods Manifest.lock */ = {
+		3172047F5E4CDE730F1C8E36 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1208,14 +1276,14 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		371E68D98909341D478FC1E6 /* 📦 Check Pods Manifest.lock */ = {
+		371E68D98909341D478FC1E6 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1223,14 +1291,14 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		5719F25286ED1CDC29A85ACD /* 📦 Embed Pods Frameworks */ = {
+		5719F25286ED1CDC29A85ACD /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1238,14 +1306,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JWRemoteCastController Extension/Pods-JWRemoteCastController Extension-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		5A4341540D0B52EDE34034E7 /* 📦 Copy Pods Resources */ = {
+		5A4341540D0B52EDE34034E7 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1253,14 +1321,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JWAirPlay/Pods-JWAirPlay-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		5AC05EE046DAF3213B1AA9B1 /* 📦 Copy Pods Resources */ = {
+		5AC05EE046DAF3213B1AA9B1 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1268,14 +1336,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JWRemoteController/Pods-JWRemoteController-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		5B8EB63E3022D951CF175410 /* 📦 Check Pods Manifest.lock */ = {
+		5B8EB63E3022D951CF175410 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1283,14 +1351,14 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		73C5A63A476C9A7364C34BE0 /* 📦 Check Pods Manifest.lock */ = {
+		73C5A63A476C9A7364C34BE0 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1298,14 +1366,14 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		770E1BA7B7C214544BDA3C5E /* 📦 Copy Pods Resources */ = {
+		770E1BA7B7C214544BDA3C5E /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1313,14 +1381,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JWRemotePlayer/Pods-JWRemotePlayer-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		777AA6ACB02E60E836EC594F /* 📦 Check Pods Manifest.lock */ = {
+		777AA6ACB02E60E836EC594F /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1328,14 +1396,14 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		779035C0867212D9A6ADFDD0 /* 📦 Check Pods Manifest.lock */ = {
+		779035C0867212D9A6ADFDD0 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1343,14 +1411,14 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		913D57B68FE759D9DF023CCF /* 📦 Embed Pods Frameworks */ = {
+		913D57B68FE759D9DF023CCF /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1358,14 +1426,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JWBestPracticeApps/Pods-JWBestPracticeApps-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		957118E253D60D999AD92FA5 /* 📦 Copy Pods Resources */ = {
+		957118E253D60D999AD92FA5 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1373,14 +1441,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JWRemoteController Extension/Pods-JWRemoteController Extension-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		9CA3482367C439F0CDBB6E4B /* 📦 Embed Pods Frameworks */ = {
+		9CA3482367C439F0CDBB6E4B /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1388,14 +1456,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JWAirPlay/Pods-JWAirPlay-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		B9CEAAC4CF36C303A8B0143E /* 📦 Copy Pods Resources */ = {
+		B9CEAAC4CF36C303A8B0143E /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1403,14 +1471,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JWRemoteCastController/Pods-JWRemoteCastController-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		BF7C3D6BA8E0B1BF4B4FB54B /* 📦 Copy Pods Resources */ = {
+		BF7C3D6BA8E0B1BF4B4FB54B /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1418,14 +1486,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JWBestPracticeApps/Pods-JWBestPracticeApps-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C644EAE82B765E5CC4C8400E /* 📦 Copy Pods Resources */ = {
+		C644EAE82B765E5CC4C8400E /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1433,14 +1501,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JWRemoteCastPlayer/Pods-JWRemoteCastPlayer-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		D8C5D0DDCB9F57712020D253 /* 📦 Check Pods Manifest.lock */ = {
+		D8C5D0DDCB9F57712020D253 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1448,14 +1516,14 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		DF3E9EFCDCA122CBBF5C14F3 /* 📦 Copy Pods Resources */ = {
+		DF3E9EFCDCA122CBBF5C14F3 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1463,14 +1531,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JWRemoteCastController Extension/Pods-JWRemoteCastController Extension-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		DF721C5C13BF36C4E082FF7F /* 📦 Check Pods Manifest.lock */ = {
+		DF721C5C13BF36C4E082FF7F /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1478,14 +1546,14 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		F9C88D4CDF49BB9AF8573501 /* 📦 Embed Pods Frameworks */ = {
+		F9C88D4CDF49BB9AF8573501 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1573,6 +1641,15 @@
 				8AF5F6E41C9A612B00C0D5E0 /* ExtensionDelegate.m in Sources */,
 				8A5BA8A01C9A64A90002231F /* JWRemoteInterfaceController.m in Sources */,
 				8AF5F6E71C9A612B00C0D5E0 /* NotificationController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B53A0DEE1D8355CF00893252 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B53A0DF71D8355CF00893252 /* ViewController.swift in Sources */,
+				B53A0DF51D8355CF00893252 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1696,6 +1773,22 @@
 				8AF5F6CF1C9A612B00C0D5E0 /* Base */,
 			);
 			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+		B53A0DF81D8355CF00893252 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B53A0DF91D8355CF00893252 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B53A0DFD1D8355CF00893252 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B53A0DFE1D8355CF00893252 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -2097,6 +2190,45 @@
 			};
 			name = Release;
 		};
+		B53A0E011D8355CF00893252 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				DEVELOPMENT_TEAM = WX87M56X5N;
+				INFOPLIST_FILE = JWVoiceControl/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = JWPlayer.JWVoiceControl;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		B53A0E021D8355CF00893252 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				DEVELOPMENT_TEAM = WX87M56X5N;
+				INFOPLIST_FILE = JWVoiceControl/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = JWPlayer.JWVoiceControl;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -2189,6 +2321,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		B53A0E031D8355CF00893252 /* Build configuration list for PBXNativeTarget "JWVoiceControl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B53A0E011D8355CF00893252 /* Debug */,
+				B53A0E021D8355CF00893252 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
