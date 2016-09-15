@@ -3,6 +3,7 @@
 Contained in this repository is a sample app for the JW Player VR SDK for iOS.
 
 This demo is designed to work with version 0.1.0 of the JW Player VR SDK for iOS.
+You can download the JW Player VR SDK from our [developer portal](https://developer.jwplayer.com/ios-sdk/).
 
 ## Setting up this demo
 
