@@ -52,18 +52,14 @@ target 'JWRemoteCastController Extension' do
 
 end
 
-target ‘JWVoiceControl’ do
+target 'JWVoiceControl' do
 
 pod 'JWPlayer-SDK', '~> 2.0'
 pod 'google-cast-sdk', '<= 2.10.0.4070'
 
 end
 
-target ’SiriPlayerController’ do
-
-end
-
-target ’SiriPlayerControllerUI’ do
+target 'JWSiriVideoExtension' do
 
 end 
 
