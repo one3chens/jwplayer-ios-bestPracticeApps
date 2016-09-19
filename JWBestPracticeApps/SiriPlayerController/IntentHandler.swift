@@ -8,24 +8,51 @@
 
 import Intents
 
-// As an example, this class is set up to handle Message intents.
-// You will want to replace this or add other intents as appropriate.
-// The intents you wish to handle must be declared in the extension's Info.plist.
+class IntentHandler: INExtension, INStartPhotoPlaybackIntentHandling {
 
-// You can test your example integration by saying things to Siri like:
-// "Send a message using <myApp>"
-// "<myApp> John saying hello"
-// "Search for messages in <myApp>"
-
-class IntentHandler: INExtension, INSendMessageIntentHandling, INSearchForMessagesIntentHandling, INSetMessageAttributeIntentHandling {
-    
     override func handler(for intent: INIntent) -> Any {
-        // This is the default implementation.  If you want different objects to handle different intents,
-        // you can override this and return the handler you want for that particular intent.
-        
         return self
     }
     
+    /*!
+     @brief handling method
+     
+     @abstract Execute the task represented by the INStartPhotoPlaybackIntent that's passed in
+     @discussion This method is called to actually execute the intent. The app must return a response for this intent.
+     
+     @param  startPhotoPlaybackIntent The input intent
+     @param  completion The response handling block takes a INStartPhotoPlaybackIntentResponse containing the details of the result of having executed the intent
+     
+     @see  INStartPhotoPlaybackIntentResponse
+     */
+    public func handle(startPhotoPlayback intent: INStartPhotoPlaybackIntent, completion: (INStartPhotoPlaybackIntentResponse) -> Void) {
+        print("start playback")
+        let response = INStartPhotoPlaybackIntentResponse.init(code: .continueInApp, userActivity: nil)
+        completion(response)
+    }
+    
+    public func confirm(startPhotoPlayback intent: INStartPhotoPlaybackIntent, completion: (INStartPhotoPlaybackIntentResponse) -> Void) {
+        print("confirm playback")
+    }
+    
+    func resolveAlbumName(forStartPhotoPlayback intent: INStartPhotoPlaybackIntent, with completion: (INStringResolutionResult) -> Void) {
+        
+    }
+    
+    func resolvePeopleInPhoto(forStartPhotoPlayback intent: INStartPhotoPlaybackIntent, with completion: ([INPersonResolutionResult]) -> Void) {
+        
+    }
+    
+    func resolveLocationCreated(forStartPhotoPlayback intent: INStartPhotoPlaybackIntent, with completion: (INPlacemarkResolutionResult) -> Void) {
+        
+    }
+    
+    func resolveDateCreated(forStartPhotoPlayback intent: INStartPhotoPlaybackIntent, with completion: (INDateComponentsRangeResolutionResult) -> Void) {
+        
+    }
+
+    
+    /*
     // MARK: - INSendMessageIntentHandling
     
     // Implement resolution methods to provide additional information about your intent (optional).
@@ -120,5 +147,6 @@ class IntentHandler: INExtension, INSendMessageIntentHandling, INSearchForMessag
         let response = INSetMessageAttributeIntentResponse(code: .success, userActivity: userActivity)
         completion(response)
     }
+ */
 }
 

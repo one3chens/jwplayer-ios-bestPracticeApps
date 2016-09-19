@@ -7,13 +7,15 @@
 //
 
 import UIKit
-import JWBasicVideoViewController
+import Intents
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        INPreferences.requestSiriAuthorization { (authorizationStatus) in
+            print("Authorized \(authorizationStatus)")
+        }
     }
 
     override func didReceiveMemoryWarning() {
