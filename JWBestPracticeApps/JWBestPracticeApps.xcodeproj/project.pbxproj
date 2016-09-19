@@ -64,7 +64,6 @@
 		8A5BA8A61C9AF9890002231F /* JWAirPlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A5BA8A51C9AF9890002231F /* JWAirPlayViewController.m */; };
 		8A5BA8A81C9AFA3D0002231F /* JWBasicVideoViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A729B5C1C99ABD2000F03A9 /* JWBasicVideoViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8A5BA8A91C9AFA4D0002231F /* JWAirPlayViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A5BA8A41C9AF9890002231F /* JWAirPlayViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8A5BA8AA1C9AFA720002231F /* JWAirPlayViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A5BA8A41C9AF9890002231F /* JWAirPlayViewController.h */; };
 		8A5BA8AB1C9AFA7E0002231F /* JWBasicVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A729B5D1C99ABD2000F03A9 /* JWBasicVideoViewController.m */; };
 		8A5BA8AC1C9AFAB40002231F /* JWCastingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A729B861C99CD8B000F03A9 /* JWCastingViewController.m */; };
 		8A729A7C1C98ACA8000F03A9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A729A7B1C98ACA8000F03A9 /* main.m */; };
@@ -108,9 +107,7 @@
 		8AF5F6E71C9A612B00C0D5E0 /* NotificationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AF5F6E61C9A612B00C0D5E0 /* NotificationController.m */; };
 		8AF5F6E91C9A612B00C0D5E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8AF5F6E81C9A612B00C0D5E0 /* Assets.xcassets */; };
 		8AF5F6ED1C9A612B00C0D5E0 /* JWRemoteController.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 8AF5F6CC1C9A612B00C0D5E0 /* JWRemoteController.app */; };
-		AAB8C79B257E02C702163CC3 /* libPods-SiriPlayerController.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0811EFC620D82350FF7B1946 /* libPods-SiriPlayerController.a */; };
 		AB341B6EC61DFD6B46F068D6 /* libPods-JWBestPracticeApps.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BCE25B16DE011FFE47951517 /* libPods-JWBestPracticeApps.a */; };
-		B2E34F5EBF184BFB8C90F91C /* libPods-SiriPlayerControllerUI.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 82812C92FE3B7F62F5CE4A85 /* libPods-SiriPlayerControllerUI.a */; };
 		B5308C1F1D836979007D2A1F /* SwiftTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5308C1E1D836979007D2A1F /* SwiftTest.swift */; };
 		B5308C211D836A23007D2A1F /* JWBestPracticeApps-Bridging-Header.h in Headers */ = {isa = PBXBuildFile; fileRef = B5308C1D1D836978007D2A1F /* JWBestPracticeApps-Bridging-Header.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B53A0DF51D8355CF00893252 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53A0DF41D8355CF00893252 /* AppDelegate.swift */; };
@@ -121,12 +118,6 @@
 		B54424811D9048D900719197 /* JWBestPracticeApps-Bridging-Header.h in Headers */ = {isa = PBXBuildFile; fileRef = B5308C1D1D836978007D2A1F /* JWBestPracticeApps-Bridging-Header.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B54424831D90493100719197 /* JWBasicVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A729B5D1C99ABD2000F03A9 /* JWBasicVideoViewController.m */; };
 		B54424841D90493400719197 /* JWBasicVideoViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A729B5C1C99ABD2000F03A9 /* JWBasicVideoViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B556E70E1D84F3F500C65662 /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = B556E70D1D84F3F500C65662 /* IntentHandler.swift */; };
-		B556E7161D84F3F500C65662 /* IntentsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B556E7151D84F3F500C65662 /* IntentsUI.framework */; };
-		B556E7191D84F3F500C65662 /* IntentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B556E7181D84F3F500C65662 /* IntentViewController.swift */; };
-		B556E71C1D84F3F500C65662 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B556E71A1D84F3F500C65662 /* MainInterface.storyboard */; };
-		B556E7201D84F3F500C65662 /* SiriPlayerControllerUI.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = B556E7141D84F3F500C65662 /* SiriPlayerControllerUI.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		B556E7231D84F3F500C65662 /* SiriPlayerController.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = B556E70B1D84F3F500C65662 /* SiriPlayerController.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		B9EC2976A2A23D84B3790C88 /* libPods-JWVoiceControl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 75A9CECA1EB7767D6DA505E1 /* libPods-JWVoiceControl.a */; };
 		C24874D002C8E9721BA8E61F /* libPods-JWRemotePlayer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 36BCA1345113D7AE624BEB2D /* libPods-JWRemotePlayer.a */; };
 		D37413B333297461C0FD0791 /* libPods-JWRemoteController Extension.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 787B849139DF8B66FA89FA5C /* libPods-JWRemoteController Extension.a */; };
@@ -162,20 +153,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = 8AF5F6CB1C9A612B00C0D5E0;
 			remoteInfo = JWRemoteController;
-		};
-		B556E71E1D84F3F500C65662 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 8A729A6F1C98ACA8000F03A9 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B556E7131D84F3F500C65662;
-			remoteInfo = SiriPlayerControllerUI;
-		};
-		B556E7211D84F3F500C65662 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 8A729A6F1C98ACA8000F03A9 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B556E70A1D84F3F500C65662;
-			remoteInfo = SiriPlayerController;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -239,8 +216,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				B556E7231D84F3F500C65662 /* SiriPlayerController.appex in Embed App Extensions */,
-				B556E7201D84F3F500C65662 /* SiriPlayerControllerUI.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -369,14 +344,7 @@
 		B53A0DFB1D8355CF00893252 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B53A0DFE1D8355CF00893252 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B556E7061D84F37E00C65662 /* JWVoiceControl.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = JWVoiceControl.entitlements; sourceTree = "<group>"; };
-		B556E70B1D84F3F500C65662 /* SiriPlayerController.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SiriPlayerController.appex; sourceTree = BUILT_PRODUCTS_DIR; };
-		B556E70D1D84F3F500C65662 /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
-		B556E70F1D84F3F500C65662 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B556E7141D84F3F500C65662 /* SiriPlayerControllerUI.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SiriPlayerControllerUI.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		B556E7151D84F3F500C65662 /* IntentsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IntentsUI.framework; path = System/Library/Frameworks/IntentsUI.framework; sourceTree = SDKROOT; };
-		B556E7181D84F3F500C65662 /* IntentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentViewController.swift; sourceTree = "<group>"; };
-		B556E71B1D84F3F500C65662 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
-		B556E71D1D84F3F500C65662 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BCE25B16DE011FFE47951517 /* libPods-JWBestPracticeApps.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JWBestPracticeApps.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C34588F31A7DF0E79015A9C6 /* Pods-SiriPlayerController.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SiriPlayerController.release.xcconfig"; path = "Pods/Target Support Files/Pods-SiriPlayerController/Pods-SiriPlayerController.release.xcconfig"; sourceTree = "<group>"; };
 		C53086B079689F858B02A42A /* libPods-JWRemoteController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JWRemoteController.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -451,23 +419,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				B9EC2976A2A23D84B3790C88 /* libPods-JWVoiceControl.a in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B556E7081D84F3F500C65662 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AAB8C79B257E02C702163CC3 /* libPods-SiriPlayerController.a in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B556E7111D84F3F500C65662 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B556E7161D84F3F500C65662 /* IntentsUI.framework in Frameworks */,
-				B2E34F5EBF184BFB8C90F91C /* libPods-SiriPlayerControllerUI.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -622,8 +573,6 @@
 				8A9206371C9B4E67002797FA /* Watch App */,
 				8A3734871D1DC2B10008FE59 /* Watch Cast App */,
 				B53A0DF31D8355CF00893252 /* JWVoiceControl */,
-				B556E70C1D84F3F500C65662 /* SiriPlayerController */,
-				B556E7171D84F3F500C65662 /* SiriPlayerControllerUI */,
 				8A729A781C98ACA8000F03A9 /* Products */,
 				148A822693302715DF542B54 /* Pods */,
 				52AC3655A45B0438BEB4426C /* Frameworks */,
@@ -643,8 +592,6 @@
 				8A37348A1D1DC2E70008FE59 /* JWRemoteCastController.app */,
 				8A3734961D1DC2E70008FE59 /* JWRemoteCastController Extension.appex */,
 				B53A0DF21D8355CF00893252 /* JWVoiceControl.app */,
-				B556E70B1D84F3F500C65662 /* SiriPlayerController.appex */,
-				B556E7141D84F3F500C65662 /* SiriPlayerControllerUI.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -816,25 +763,6 @@
 			path = JWVoiceControl;
 			sourceTree = "<group>";
 		};
-		B556E70C1D84F3F500C65662 /* SiriPlayerController */ = {
-			isa = PBXGroup;
-			children = (
-				B556E70D1D84F3F500C65662 /* IntentHandler.swift */,
-				B556E70F1D84F3F500C65662 /* Info.plist */,
-			);
-			path = SiriPlayerController;
-			sourceTree = "<group>";
-		};
-		B556E7171D84F3F500C65662 /* SiriPlayerControllerUI */ = {
-			isa = PBXGroup;
-			children = (
-				B556E7181D84F3F500C65662 /* IntentViewController.swift */,
-				B556E71A1D84F3F500C65662 /* MainInterface.storyboard */,
-				B556E71D1D84F3F500C65662 /* Info.plist */,
-			);
-			path = SiriPlayerControllerUI;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -865,7 +793,6 @@
 			files = (
 				8AF5F65D1C99F18F00C0D5E0 /* JWBasicVideoViewController.h in Headers */,
 				B5308C211D836A23007D2A1F /* JWBestPracticeApps-Bridging-Header.h in Headers */,
-				8A5BA8AA1C9AFA720002231F /* JWAirPlayViewController.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -980,8 +907,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				B556E71F1D84F3F500C65662 /* PBXTargetDependency */,
-				B556E7221D84F3F500C65662 /* PBXTargetDependency */,
 			);
 			name = JWBestPracticeApps;
 			productName = JWBestPracticeApps;
@@ -1114,46 +1039,6 @@
 			productReference = B53A0DF21D8355CF00893252 /* JWVoiceControl.app */;
 			productType = "com.apple.product-type.application";
 		};
-		B556E70A1D84F3F500C65662 /* SiriPlayerController */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = B556E7271D84F3F500C65662 /* Build configuration list for PBXNativeTarget "SiriPlayerController" */;
-			buildPhases = (
-				DB7944B6E74E946179504654 /* [CP] Check Pods Manifest.lock */,
-				B556E7071D84F3F500C65662 /* Sources */,
-				B556E7081D84F3F500C65662 /* Frameworks */,
-				B556E7091D84F3F500C65662 /* Resources */,
-				D0EC913CD9471719C9AF59F9 /* [CP] Embed Pods Frameworks */,
-				D2DCAF7CBFE7E64280768395 /* [CP] Copy Pods Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = SiriPlayerController;
-			productName = SiriPlayerController;
-			productReference = B556E70B1D84F3F500C65662 /* SiriPlayerController.appex */;
-			productType = "com.apple.product-type.app-extension";
-		};
-		B556E7131D84F3F500C65662 /* SiriPlayerControllerUI */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = B556E7241D84F3F500C65662 /* Build configuration list for PBXNativeTarget "SiriPlayerControllerUI" */;
-			buildPhases = (
-				0F66AB5F7D04C39573A1403A /* [CP] Check Pods Manifest.lock */,
-				B556E7101D84F3F500C65662 /* Sources */,
-				B556E7111D84F3F500C65662 /* Frameworks */,
-				B556E7121D84F3F500C65662 /* Resources */,
-				5B09729629EC6249560A4A89 /* [CP] Embed Pods Frameworks */,
-				272236E9E4FF3EB43BB48BDE /* [CP] Copy Pods Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = SiriPlayerControllerUI;
-			productName = SiriPlayerControllerUI;
-			productReference = B556E7141D84F3F500C65662 /* SiriPlayerControllerUI.appex */;
-			productType = "com.apple.product-type.app-extension";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -1209,16 +1094,6 @@
 							};
 						};
 					};
-					B556E70A1D84F3F500C65662 = {
-						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = WX87M56X5N;
-						ProvisioningStyle = Automatic;
-					};
-					B556E7131D84F3F500C65662 = {
-						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = WX87M56X5N;
-						ProvisioningStyle = Automatic;
-					};
 				};
 			};
 			buildConfigurationList = 8A729A721C98ACA8000F03A9 /* Build configuration list for PBXProject "JWBestPracticeApps" */;
@@ -1244,8 +1119,6 @@
 				8A3734891D1DC2E70008FE59 /* JWRemoteCastController */,
 				8A3734951D1DC2E70008FE59 /* JWRemoteCastController Extension */,
 				B53A0DF11D8355CF00893252 /* JWVoiceControl */,
-				B556E70A1D84F3F500C65662 /* SiriPlayerController */,
-				B556E7131D84F3F500C65662 /* SiriPlayerControllerUI */,
 			);
 		};
 /* End PBXProject section */
@@ -1372,21 +1245,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B556E7091D84F3F500C65662 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B556E7121D84F3F500C65662 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B556E71C1D84F3F500C65662 /* MainInterface.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
@@ -1448,36 +1306,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JWCasting/Pods-JWCasting-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		0F66AB5F7D04C39573A1403A /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		272236E9E4FF3EB43BB48BDE /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SiriPlayerControllerUI/Pods-SiriPlayerControllerUI-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		2E6E72D37E1CAF711ACA2B22 /* [CP] Embed Pods Frameworks */ = {
@@ -1583,21 +1411,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JWRemoteController/Pods-JWRemoteController-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		5B09729629EC6249560A4A89 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SiriPlayerControllerUI/Pods-SiriPlayerControllerUI-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		5B8EB63E3022D951CF175410 /* [CP] Check Pods Manifest.lock */ = {
@@ -1780,21 +1593,6 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JWRemoteCastPlayer/Pods-JWRemoteCastPlayer-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		D0EC913CD9471719C9AF59F9 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SiriPlayerController/Pods-SiriPlayerController-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		D1BBAB93C2A2BAC331844240 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1810,37 +1608,7 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		D2DCAF7CBFE7E64280768395 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SiriPlayerController/Pods-SiriPlayerController-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		D8C5D0DDCB9F57712020D253 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		DB7944B6E74E946179504654 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1994,22 +1762,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B556E7071D84F3F500C65662 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B556E70E1D84F3F500C65662 /* IntentHandler.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B556E7101D84F3F500C65662 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B556E7191D84F3F500C65662 /* IntentViewController.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -2032,16 +1784,6 @@
 			isa = PBXTargetDependency;
 			target = 8AF5F6CB1C9A612B00C0D5E0 /* JWRemoteController */;
 			targetProxy = 8AF5F6EB1C9A612B00C0D5E0 /* PBXContainerItemProxy */;
-		};
-		B556E71F1D84F3F500C65662 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = B556E7131D84F3F500C65662 /* SiriPlayerControllerUI */;
-			targetProxy = B556E71E1D84F3F500C65662 /* PBXContainerItemProxy */;
-		};
-		B556E7221D84F3F500C65662 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = B556E70A1D84F3F500C65662 /* SiriPlayerController */;
-			targetProxy = B556E7211D84F3F500C65662 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -2156,14 +1898,6 @@
 				B53A0DFE1D8355CF00893252 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-		B556E71A1D84F3F500C65662 /* MainInterface.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B556E71B1D84F3F500C65662 /* Base */,
-			);
-			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -2368,7 +2102,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 43033E540B089A5B3BCDBCC6 /* Pods-JWBestPracticeApps.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -2392,7 +2125,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 969799C36851B711451E6914 /* Pods-JWBestPracticeApps.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -2634,88 +2366,6 @@
 			};
 			name = Release;
 		};
-		B556E7251D84F3F500C65662 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 30A3091CB473FF8DB7A7511A /* Pods-SiriPlayerControllerUI.debug.xcconfig */;
-			buildSettings = {
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_SUSPICIOUS_MOVES = YES;
-				DEVELOPMENT_TEAM = WX87M56X5N;
-				INFOPLIST_FILE = SiriPlayerControllerUI/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = JWPlayer.JWBestPracticeApps.SiriPlayerControllerUI;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
-			};
-			name = Debug;
-		};
-		B556E7261D84F3F500C65662 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 884998439C63B73C2EB23C8F /* Pods-SiriPlayerControllerUI.release.xcconfig */;
-			buildSettings = {
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_SUSPICIOUS_MOVES = YES;
-				DEVELOPMENT_TEAM = WX87M56X5N;
-				INFOPLIST_FILE = SiriPlayerControllerUI/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = JWPlayer.JWBestPracticeApps.SiriPlayerControllerUI;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 3.0;
-			};
-			name = Release;
-		};
-		B556E7281D84F3F500C65662 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = AFFC2FBEFC64CED35CE549C5 /* Pods-SiriPlayerController.debug.xcconfig */;
-			buildSettings = {
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_SUSPICIOUS_MOVES = YES;
-				DEVELOPMENT_TEAM = WX87M56X5N;
-				INFOPLIST_FILE = SiriPlayerController/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = JWPlayer.JWBestPracticeApps.SiriPlayerController;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
-			};
-			name = Debug;
-		};
-		B556E7291D84F3F500C65662 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C34588F31A7DF0E79015A9C6 /* Pods-SiriPlayerController.release.xcconfig */;
-			buildSettings = {
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_SUSPICIOUS_MOVES = YES;
-				DEVELOPMENT_TEAM = WX87M56X5N;
-				INFOPLIST_FILE = SiriPlayerController/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = JWPlayer.JWBestPracticeApps.SiriPlayerController;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 3.0;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -2814,24 +2464,6 @@
 			buildConfigurations = (
 				B53A0E011D8355CF00893252 /* Debug */,
 				B53A0E021D8355CF00893252 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		B556E7241D84F3F500C65662 /* Build configuration list for PBXNativeTarget "SiriPlayerControllerUI" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B556E7251D84F3F500C65662 /* Debug */,
-				B556E7261D84F3F500C65662 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		B556E7271D84F3F500C65662 /* Build configuration list for PBXNativeTarget "SiriPlayerController" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B556E7281D84F3F500C65662 /* Debug */,
-				B556E7291D84F3F500C65662 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
