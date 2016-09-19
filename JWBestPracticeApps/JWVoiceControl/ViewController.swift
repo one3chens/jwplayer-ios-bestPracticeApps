@@ -9,7 +9,7 @@
 import UIKit
 import Intents
 
-class ViewController: UIViewController {
+class ViewController: JWBasicVideoViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
