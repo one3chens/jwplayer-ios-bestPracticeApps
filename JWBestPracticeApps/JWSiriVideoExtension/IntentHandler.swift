@@ -17,22 +17,33 @@ import Intents
 // "<myApp> John saying hello"
 // "Search for messages in <myApp>"
 
-class IntentHandler: INExtension, INSendMessageIntentHandling, INSearchForMessagesIntentHandling, INSetMessageAttributeIntentHandling {
+class IntentHandler: INExtension, INStartPhotoPlaybackIntentHandling {
     
     override func handler(for intent: INIntent) -> Any {
         // This is the default implementation.  If you want different objects to handle different intents,
         // you can override this and return the handler you want for that particular intent.
-        
+        print("handler called")
         return self
     }
     
+    public func handle(startPhotoPlayback intent: INStartPhotoPlaybackIntent, completion: @escaping(INStartPhotoPlaybackIntentResponse) -> Void) {
+        print("handle startPhotoPlayback called")
+        completion(INStartPhotoPlaybackIntentResponse.init(code: INStartPhotoPlaybackIntentResponseCode.continueInApp, userActivity: nil))
+        
+    }
+    
+    func confirm(startPhotoPlayback intent: INStartPhotoPlaybackIntent, completion: @escaping(INStartPhotoPlaybackIntentResponse) -> Void) {
+        print("confirm startPhotoPlayback called")
+        completion(INStartPhotoPlaybackIntentResponse.init(code: INStartPhotoPlaybackIntentResponseCode.continueInApp, userActivity: nil))
+    }
     // MARK: - INSendMessageIntentHandling
     
     // Implement resolution methods to provide additional information about your intent (optional).
     func resolveRecipients(forSendMessage intent: INSendMessageIntent, with completion: @escaping ([INPersonResolutionResult]) -> Void) {
+        print("resolve recip")
         if let recipients = intent.recipients {
             
-            // If no recipients were provided we'll need to prompt for a value.
+//             If no recipients were provided we'll need to prompt for a value.
             if recipients.count == 0 {
                 completion([INPersonResolutionResult.needsValue()])
                 return
@@ -40,14 +51,14 @@ class IntentHandler: INExtension, INSendMessageIntentHandling, INSearchForMessag
             
             var resolutionResults = [INPersonResolutionResult]()
             for recipient in recipients {
-                let matchingContacts = [recipient] // Implement your contact matching logic here to create an array of matching contacts
+                let matchingContacts = [recipient]  //Implement your contact matching logic here to create an array of matching contacts
                 switch matchingContacts.count {
                 case 2  ... Int.max:
-                    // We need Siri's help to ask user to pick one from the matches.
+                     //We need Siri's help to ask user to pick one from the matches.
                     resolutionResults += [INPersonResolutionResult.disambiguation(with: matchingContacts)]
                     
                 case 1:
-                    // We have exactly one matching contact
+                     //We have exactly one matching contact
                     resolutionResults += [INPersonResolutionResult.success(with: recipient)]
                     
                 case 0:
@@ -64,6 +75,7 @@ class IntentHandler: INExtension, INSendMessageIntentHandling, INSearchForMessag
     }
     
     func resolveContent(forSendMessage intent: INSendMessageIntent, with completion: @escaping (INStringResolutionResult) -> Void) {
+        print("resolve content")
         if let text = intent.content, !text.isEmpty {
             completion(INStringResolutionResult.success(with: text))
         } else {
@@ -71,9 +83,10 @@ class IntentHandler: INExtension, INSendMessageIntentHandling, INSearchForMessag
         }
     }
     
-    // Once resolution is completed, perform validation on the intent and provide confirmation (optional).
+     //Once resolution is completed, perform validation on the intent and provide confirmation (optional).
     
     func confirm(sendMessage intent: INSendMessageIntent, completion: @escaping (INSendMessageIntentResponse) -> Void) {
+        print("confirm")
         // Verify user is authenticated and your app is ready to send a message.
         
         let userActivity = NSUserActivity(activityType: NSStringFromClass(INSendMessageIntent.self))
@@ -84,6 +97,7 @@ class IntentHandler: INExtension, INSendMessageIntentHandling, INSearchForMessag
     // Handle the completed intent (required).
     
     func handle(sendMessage intent: INSendMessageIntent, completion: @escaping (INSendMessageIntentResponse) -> Void) {
+        print("handle send")
         // Implement your application logic to send a message here.
         
         let userActivity = NSUserActivity(activityType: NSStringFromClass(INSendMessageIntent.self))
@@ -91,13 +105,13 @@ class IntentHandler: INExtension, INSendMessageIntentHandling, INSearchForMessag
         completion(response)
     }
     
-    // Implement handlers for each intent you wish to handle.  As an example for messages, you may wish to also handle searchForMessages and setMessageAttributes.
+     //Implement handlers for each intent you wish to handle.  As an example for messages, you may wish to also handle searchForMessages and setMessageAttributes.
     
     // MARK: - INSearchForMessagesIntentHandling
     
     func handle(searchForMessages intent: INSearchForMessagesIntent, completion: @escaping (INSearchForMessagesIntentResponse) -> Void) {
         // Implement your application logic to find a message that matches the information in the intent.
-        
+        print("handle search")
         let userActivity = NSUserActivity(activityType: NSStringFromClass(INSearchForMessagesIntent.self))
         let response = INSearchForMessagesIntentResponse(code: .success, userActivity: userActivity)
         // Initialize with found message's attributes
@@ -114,6 +128,7 @@ class IntentHandler: INExtension, INSendMessageIntentHandling, INSearchForMessag
     // MARK: - INSetMessageAttributeIntentHandling
     
     func handle(setMessageAttribute intent: INSetMessageAttributeIntent, completion: @escaping (INSetMessageAttributeIntentResponse) -> Void) {
+        print("handle set attribute")
         // Implement your application logic to set the message attribute here.
         
         let userActivity = NSUserActivity(activityType: NSStringFromClass(INSetMessageAttributeIntent.self))
