@@ -7,18 +7,34 @@
 		<dict>
 			<key>ParameterNames</key>
 			<array>
-				<string></string>
+				<string>INResumeWorkoutIntent.workoutName</string>
 			</array>
 			<key>ParameterVocabulary</key>
 			<array>
 				<dict>
 					<key>VocabularyItemIdentifier</key>
-					<string></string>
+					<string>play</string>
 					<key>VocabularyItemSynonyms</key>
 					<array>
 						<dict>
+							<key>VocabularyItemExamples</key>
+							<array>
+								<string>roll over for me</string>
+							</array>
 							<key>VocabularyItemPhrase</key>
-							<string></string>
+							<string>roll over</string>
+						</dict>
+						<dict>
+							<key>VocabularyItemPhrase</key>
+							<string>Resume play back</string>
+						</dict>
+						<dict>
+							<key>VocabularyItemExamples</key>
+							<array>
+								<string>Start play back on JW Voice Control</string>
+							</array>
+							<key>VocabularyItemPhrase</key>
+							<string>Start play back</string>
 						</dict>
 					</array>
 				</dict>
@@ -29,10 +45,13 @@
 	<array>
 		<dict>
 			<key>IntentName</key>
-			<string></string>
+			<string>INResumeWorkoutIntent</string>
 			<key>IntentExamples</key>
 			<array>
-				<string></string>
+				<string>Siri, resume play back on JW Voice Control</string>
+				<string>roll over for me using JW Voice Control</string>
+				<string>Siri, play play back on JW Voice Control</string>
+				<string>Siri, start my play back on JW Voice Control</string>
 			</array>
 		</dict>
 	</array>

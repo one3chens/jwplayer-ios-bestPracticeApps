@@ -28,7 +28,8 @@
 			<array/>
 			<key>IntentsSupported</key>
 			<array>
-				<string>INStartPhotoPlaybackIntent</string>
+				<string>INResumeWorkoutIntent</string>
+				<string>INPauseWorkoutIntent</string>
 			</array>
 		</dict>
 		<key>NSExtensionPointIdentifier</key>

@@ -116,6 +116,11 @@
 		B53A0DFA1D8355CF00893252 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B53A0DF81D8355CF00893252 /* Main.storyboard */; };
 		B53A0DFC1D8355CF00893252 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B53A0DFB1D8355CF00893252 /* Assets.xcassets */; };
 		B53A0DFF1D8355CF00893252 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B53A0DFD1D8355CF00893252 /* LaunchScreen.storyboard */; };
+		B53A73071D92F79C00EB804F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53A73061D92F79C00EB804F /* AppDelegate.swift */; };
+		B53A73091D92F79C00EB804F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53A73081D92F79C00EB804F /* ViewController.swift */; };
+		B53A730C1D92F79C00EB804F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B53A730A1D92F79C00EB804F /* Main.storyboard */; };
+		B53A730E1D92F79C00EB804F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B53A730D1D92F79C00EB804F /* Assets.xcassets */; };
+		B53A73111D92F79C00EB804F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B53A730F1D92F79C00EB804F /* LaunchScreen.storyboard */; };
 		B54424811D9048D900719197 /* JWBestPracticeApps-Bridging-Header.h in Headers */ = {isa = PBXBuildFile; fileRef = B5308C1D1D836978007D2A1F /* JWBestPracticeApps-Bridging-Header.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B54424831D90493100719197 /* JWBasicVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A729B5D1C99ABD2000F03A9 /* JWBasicVideoViewController.m */; };
 		B54424841D90493400719197 /* JWBasicVideoViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A729B5C1C99ABD2000F03A9 /* JWBasicVideoViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -357,6 +362,13 @@
 		B53A0DF91D8355CF00893252 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B53A0DFB1D8355CF00893252 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B53A0DFE1D8355CF00893252 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B53A73041D92F79C00EB804F /* Voicer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Voicer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B53A73061D92F79C00EB804F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B53A73081D92F79C00EB804F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B53A730B1D92F79C00EB804F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B53A730D1D92F79C00EB804F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B53A73101D92F79C00EB804F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B53A73121D92F79C00EB804F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B54424AC1D9060A700719197 /* JWSiriVideoExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = JWSiriVideoExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		B54424AE1D9060A700719197 /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
 		B54424B01D9060A700719197 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -438,6 +450,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				B9EC2976A2A23D84B3790C88 /* libPods-JWVoiceControl.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B53A73011D92F79C00EB804F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -604,6 +623,7 @@
 				8A3734871D1DC2B10008FE59 /* Watch Cast App */,
 				B53A0DF31D8355CF00893252 /* JWVoiceControl */,
 				B54424AD1D9060A700719197 /* JWSiriVideoExtension */,
+				B53A73051D92F79C00EB804F /* Voicer */,
 				8A729A781C98ACA8000F03A9 /* Products */,
 				148A822693302715DF542B54 /* Pods */,
 				52AC3655A45B0438BEB4426C /* Frameworks */,
@@ -624,6 +644,7 @@
 				8A3734961D1DC2E70008FE59 /* JWRemoteCastController Extension.appex */,
 				B53A0DF21D8355CF00893252 /* JWVoiceControl.app */,
 				B54424AC1D9060A700719197 /* JWSiriVideoExtension.appex */,
+				B53A73041D92F79C00EB804F /* Voicer.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -793,6 +814,19 @@
 				B53A0DFD1D8355CF00893252 /* LaunchScreen.storyboard */,
 			);
 			path = JWVoiceControl;
+			sourceTree = "<group>";
+		};
+		B53A73051D92F79C00EB804F /* Voicer */ = {
+			isa = PBXGroup;
+			children = (
+				B53A73061D92F79C00EB804F /* AppDelegate.swift */,
+				B53A73081D92F79C00EB804F /* ViewController.swift */,
+				B53A730A1D92F79C00EB804F /* Main.storyboard */,
+				B53A730D1D92F79C00EB804F /* Assets.xcassets */,
+				B53A730F1D92F79C00EB804F /* LaunchScreen.storyboard */,
+				B53A73121D92F79C00EB804F /* Info.plist */,
+			);
+			path = Voicer;
 			sourceTree = "<group>";
 		};
 		B54424AD1D9060A700719197 /* JWSiriVideoExtension */ = {
@@ -1082,6 +1116,23 @@
 			productReference = B53A0DF21D8355CF00893252 /* JWVoiceControl.app */;
 			productType = "com.apple.product-type.application";
 		};
+		B53A73031D92F79C00EB804F /* Voicer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B53A73151D92F79C00EB804F /* Build configuration list for PBXNativeTarget "Voicer" */;
+			buildPhases = (
+				B53A73001D92F79C00EB804F /* Sources */,
+				B53A73011D92F79C00EB804F /* Frameworks */,
+				B53A73021D92F79C00EB804F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Voicer;
+			productName = Voicer;
+			productReference = B53A73041D92F79C00EB804F /* Voicer.app */;
+			productType = "com.apple.product-type.application";
+		};
 		B54424AB1D9060A700719197 /* JWSiriVideoExtension */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = B54424B61D9060A700719197 /* Build configuration list for PBXNativeTarget "JWSiriVideoExtension" */;
@@ -1157,6 +1208,11 @@
 							};
 						};
 					};
+					B53A73031D92F79C00EB804F = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = WX87M56X5N;
+						ProvisioningStyle = Automatic;
+					};
 					B54424AB1D9060A700719197 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = WX87M56X5N;
@@ -1188,6 +1244,7 @@
 				8A3734951D1DC2E70008FE59 /* JWRemoteCastController Extension */,
 				B53A0DF11D8355CF00893252 /* JWVoiceControl */,
 				B54424AB1D9060A700719197 /* JWSiriVideoExtension */,
+				B53A73031D92F79C00EB804F /* Voicer */,
 			);
 		};
 /* End PBXProject section */
@@ -1311,6 +1368,16 @@
 				B53A0DFF1D8355CF00893252 /* LaunchScreen.storyboard in Resources */,
 				B53A0DFC1D8355CF00893252 /* Assets.xcassets in Resources */,
 				B53A0DFA1D8355CF00893252 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B53A73021D92F79C00EB804F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B53A73111D92F79C00EB804F /* LaunchScreen.storyboard in Resources */,
+				B53A730E1D92F79C00EB804F /* Assets.xcassets in Resources */,
+				B53A730C1D92F79C00EB804F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1884,6 +1951,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B53A73001D92F79C00EB804F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B53A73091D92F79C00EB804F /* ViewController.swift in Sources */,
+				B53A73071D92F79C00EB804F /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B54424A81D9060A700719197 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -2031,6 +2107,22 @@
 			isa = PBXVariantGroup;
 			children = (
 				B53A0DFE1D8355CF00893252 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		B53A730A1D92F79C00EB804F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B53A730B1D92F79C00EB804F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B53A730F1D92F79C00EB804F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B53A73101D92F79C00EB804F /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -2503,6 +2595,42 @@
 			};
 			name = Release;
 		};
+		B53A73131D92F79C00EB804F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				DEVELOPMENT_TEAM = WX87M56X5N;
+				INFOPLIST_FILE = Voicer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = JWPlayer.Voicer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		B53A73141D92F79C00EB804F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				DEVELOPMENT_TEAM = WX87M56X5N;
+				INFOPLIST_FILE = Voicer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = JWPlayer.Voicer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 		B54424B41D9060A700719197 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5D4E437DF2025D5D14A4C816 /* Pods-JWSiriVideoExtension.debug.xcconfig */;
@@ -2642,6 +2770,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		B53A73151D92F79C00EB804F /* Build configuration list for PBXNativeTarget "Voicer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B53A73131D92F79C00EB804F /* Debug */,
+				B53A73141D92F79C00EB804F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 		B54424B61D9060A700719197 /* Build configuration list for PBXNativeTarget "JWSiriVideoExtension" */ = {
 			isa = XCConfigurationList;

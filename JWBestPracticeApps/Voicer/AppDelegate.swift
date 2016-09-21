@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  JWVoiceControl
+//  Voicer
 //
-//  Created by Karim Mourra on 9/9/16.
+//  Created by JWP Admin on 9/21/16.
 //  Copyright © 2016 Karim Mourra. All rights reserved.
 //
 
@@ -13,13 +13,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-    private func application(_ application: UIApplication, continue userActivity: NSUserActivity, restorationHandler: ([Any]?) -> Void) -> Bool {
-        let interaction = userActivity.interaction
-            print("Worked \(interaction) \(interaction?.intent)")
-        
-        return true
-    }
+
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        // Override point for customization after application launch.
         return true
     }
 
