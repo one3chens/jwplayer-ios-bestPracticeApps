@@ -15,7 +15,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        return true
+    }
+    
+    func application(_ application: UIApplication, continue userActivity: NSUserActivity, restorationHandler: @escaping ([Any]?) -> Void) -> Bool {
+        let interaction = userActivity.interaction
+        print("Worked \(interaction) \(interaction?.intent)")
+        print("details \(userActivity.activityType) - \(userActivity.userInfo)")
         return true
     }
 

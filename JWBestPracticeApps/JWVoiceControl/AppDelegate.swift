@@ -13,7 +13,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-    private func application(_ application: UIApplication, continue userActivity: NSUserActivity, restorationHandler: ([Any]?) -> Void) -> Bool {
+    private func application(_ application: UIApplication, continue userActivity: NSUserActivity, restorationHandler: @escaping ([Any]?) -> Void) -> Bool {
         let interaction = userActivity.interaction
             print("Worked \(interaction) \(interaction?.intent)")
         
