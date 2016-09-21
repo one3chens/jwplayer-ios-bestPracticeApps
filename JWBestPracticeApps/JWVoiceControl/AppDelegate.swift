@@ -13,10 +13,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-    private func application(_ application: UIApplication, continue userActivity: NSUserActivity, restorationHandler: @escaping ([Any]?) -> Void) -> Bool {
+    func application(_ application: UIApplication, continue userActivity: NSUserActivity, restorationHandler: @escaping ([Any]?) -> Void) -> Bool {
         let interaction = userActivity.interaction
             print("Worked \(interaction) \(interaction?.intent)")
-        
+        let currentViewController = application.keyWindow?.rootViewController as? ViewController
+        currentViewController?.player.play()
+        let truth = currentViewController?.isKind(of: ViewController.self)
+        print("match \(truth)")
         return true
     }
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
