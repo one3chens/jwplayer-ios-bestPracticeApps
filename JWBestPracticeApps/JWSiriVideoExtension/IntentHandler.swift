@@ -28,13 +28,15 @@ class IntentHandler: INExtension, INStartPhotoPlaybackIntentHandling {
     
     public func handle(startPhotoPlayback intent: INStartPhotoPlaybackIntent, completion: @escaping(INStartPhotoPlaybackIntentResponse) -> Void) {
         print("handle startPhotoPlayback called")
-        completion(INStartPhotoPlaybackIntentResponse.init(code: INStartPhotoPlaybackIntentResponseCode.continueInApp, userActivity: nil))
+        let userActivity = NSUserActivity.init(activityType: "play")
+        completion(INStartPhotoPlaybackIntentResponse.init(code: INStartPhotoPlaybackIntentResponseCode.ready, userActivity: userActivity))
         
     }
     
     func confirm(startPhotoPlayback intent: INStartPhotoPlaybackIntent, completion: @escaping(INStartPhotoPlaybackIntentResponse) -> Void) {
         print("confirm startPhotoPlayback called")
-        completion(INStartPhotoPlaybackIntentResponse.init(code: INStartPhotoPlaybackIntentResponseCode.continueInApp, userActivity: nil))
+        let userActivity = NSUserActivity.init(activityType: "play")
+        completion(INStartPhotoPlaybackIntentResponse.init(code: INStartPhotoPlaybackIntentResponseCode.ready, userActivity: userActivity))
     }
     // MARK: - INSendMessageIntentHandling
     

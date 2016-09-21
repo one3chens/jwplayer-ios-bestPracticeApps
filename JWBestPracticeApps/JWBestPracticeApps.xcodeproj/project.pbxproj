@@ -121,7 +121,7 @@
 		B54424841D90493400719197 /* JWBasicVideoViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A729B5C1C99ABD2000F03A9 /* JWBasicVideoViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B54424AF1D9060A700719197 /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54424AE1D9060A700719197 /* IntentHandler.swift */; };
 		B54424B31D9060A700719197 /* JWSiriVideoExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = B54424AC1D9060A700719197 /* JWSiriVideoExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		B5A1A65A1D91DC3900E720E1 /* PlaybackHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A1A6591D91DC3900E720E1 /* PlaybackHandler.swift */; };
+		B5A1A65C1D91E70700E720E1 /* AppIntentVocabulary.plist in Resources */ = {isa = PBXBuildFile; fileRef = B5A1A65B1D91E70700E720E1 /* AppIntentVocabulary.plist */; };
 		B9EC2976A2A23D84B3790C88 /* libPods-JWVoiceControl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 75A9CECA1EB7767D6DA505E1 /* libPods-JWVoiceControl.a */; };
 		C24874D002C8E9721BA8E61F /* libPods-JWRemotePlayer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 36BCA1345113D7AE624BEB2D /* libPods-JWRemotePlayer.a */; };
 		D37413B333297461C0FD0791 /* libPods-JWRemoteController Extension.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 787B849139DF8B66FA89FA5C /* libPods-JWRemoteController Extension.a */; };
@@ -362,7 +362,7 @@
 		B54424B01D9060A700719197 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B556E7061D84F37E00C65662 /* JWVoiceControl.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = JWVoiceControl.entitlements; sourceTree = "<group>"; };
 		B556E7151D84F3F500C65662 /* IntentsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IntentsUI.framework; path = System/Library/Frameworks/IntentsUI.framework; sourceTree = SDKROOT; };
-		B5A1A6591D91DC3900E720E1 /* PlaybackHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaybackHandler.swift; sourceTree = "<group>"; };
+		B5A1A65B1D91E70700E720E1 /* AppIntentVocabulary.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = AppIntentVocabulary.plist; sourceTree = "<group>"; };
 		BCE25B16DE011FFE47951517 /* libPods-JWBestPracticeApps.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JWBestPracticeApps.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C34588F31A7DF0E79015A9C6 /* Pods-SiriPlayerController.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SiriPlayerController.release.xcconfig"; path = "Pods/Target Support Files/Pods-SiriPlayerController/Pods-SiriPlayerController.release.xcconfig"; sourceTree = "<group>"; };
 		C53086B079689F858B02A42A /* libPods-JWRemoteController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JWRemoteController.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -799,7 +799,7 @@
 			isa = PBXGroup;
 			children = (
 				B54424AE1D9060A700719197 /* IntentHandler.swift */,
-				B5A1A6591D91DC3900E720E1 /* PlaybackHandler.swift */,
+				B5A1A65B1D91E70700E720E1 /* AppIntentVocabulary.plist */,
 				B54424B01D9060A700719197 /* Info.plist */,
 			);
 			path = JWSiriVideoExtension;
@@ -1318,6 +1318,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5A1A65C1D91E70700E720E1 /* AppIntentVocabulary.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1888,7 +1889,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				B54424AF1D9060A700719197 /* IntentHandler.swift in Sources */,
-				B5A1A65A1D91DC3900E720E1 /* PlaybackHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
