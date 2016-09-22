@@ -7,21 +7,34 @@
 //
 
 import UIKit
+import Intents
+import AVFoundation
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        self.setUpBackgroundAudio()
         return true
     }
     
     func application(_ application: UIApplication, continue userActivity: NSUserActivity, restorationHandler: @escaping ([Any]?) -> Void) -> Bool {
         let interaction = userActivity.interaction
-        print("Worked \(interaction) \(interaction?.intent)")
-        print("details \(userActivity.activityType) - \(userActivity.userInfo)")
+        print("details \(userActivity.activityType)")
+        
+        let currentViewController = application.keyWindow?.rootViewController as? VoicerViewController
+        let theIntent = interaction?.intent
+        if theIntent is INPauseWorkoutIntent {
+            let pauseWorkoutIntent = theIntent as! INPauseWorkoutIntent
+            print("it's a INPauseWorkoutIntent + \(pauseWorkoutIntent.workoutName?.spokenPhrase)")
+            currentViewController?.handle(command: (pauseWorkoutIntent.workoutName?.spokenPhrase)!)
+        } else if theIntent is INResumeWorkoutIntent {
+            let resumeWorkoutIntent = theIntent as! INResumeWorkoutIntent
+            print("it's a INResumeWorkoutIntent + \(resumeWorkoutIntent.workoutName?.spokenPhrase)")
+            currentViewController?.handle(command: (resumeWorkoutIntent.workoutName?.spokenPhrase)!)
+        }
         return true
     }
 
@@ -46,7 +59,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
-
-
+    
+    func setUpBackgroundAudio() -> Void {
+        let audioSession = AVAudioSession.sharedInstance()
+        try? audioSession.setCategory(AVAudioSessionCategoryPlayback)
+        do {
+            try audioSession.setCategory(AVAudioSessionCategoryPlayback)
+        } catch {
+            print("failure setCategory(AVAudioSessionCategoryPlayback)")
+        }
+        try? audioSession.setActive(true)
+        do {
+            try audioSession.setActive(true)
+        } catch {
+            print("failure setActive(true)")
+        }
+    }
 }
 

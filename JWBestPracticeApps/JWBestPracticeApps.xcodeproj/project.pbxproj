@@ -1325,6 +1325,9 @@
 						DevelopmentTeam = WX87M56X5N;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
 							com.apple.Siri = {
 								enabled = 1;
 							};

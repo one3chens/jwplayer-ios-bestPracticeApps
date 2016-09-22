@@ -18,20 +18,13 @@ class VoicerViewController: JWRemoteCastPlayerViewController {
         }
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    public func handle(command: String) {
+        if command.lowercased() == "play" {
+            print("playing")
+            self.player.play()
+        } else if command.lowercased() == "pause" {
+            print("pausing")
+            self.player.pause()
+        }
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

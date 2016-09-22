@@ -16,10 +16,12 @@ class IntentHandler: INExtension, INPauseWorkoutIntentHandling, INResumeWorkoutI
     }
     
     func handle(pauseWorkout intent: INPauseWorkoutIntent, completion: @escaping(INPauseWorkoutIntentResponse) -> Void) {
-        print("handle pauseWorkout called \(intent.workoutName)")
+        let workoutName = intent.workoutName
+        print("pauseWorkout \n \(workoutName?.spokenPhrase)")
+        print("identifier \(workoutName?.identifier)")
         let userActivity = NSUserActivity.init(activityType: "pause")
-        userActivity.userInfo = NSDictionary.init(object: "rando", forKey: "randkey" as NSCopying) as? [AnyHashable : Any]
-        completion(INPauseWorkoutIntentResponse.init(code: INPauseWorkoutIntentResponseCode.continueInApp, userActivity: userActivity))
+//        userActivity.userInfo = NSDictionary.init(object: "rando", forKey: "randkey" as NSCopying) as? [AnyHashable : Any]
+        completion(INPauseWorkoutIntentResponse.init(code: INPauseWorkoutIntentResponseCode.ready, userActivity: userActivity))
     }
     
     func handle(resumeWorkout intent: INResumeWorkoutIntent, completion: @escaping(INResumeWorkoutIntentResponse) -> Void) {

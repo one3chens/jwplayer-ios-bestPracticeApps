@@ -13,8 +13,16 @@ class ViewController: JWBasicVideoViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        INPreferences.requestSiriAuthorization { (authorizationStatus) in
-            print("Authorized \(authorizationStatus)")
+        INPreferences.requestSiriAuthorization { (authorizationStatus) in}
+    }
+    
+    public func handle(command: String) {
+        if command == "play" {
+            print("playing")
+            self.player.play()
+        } else if command == "pause" {
+            print("pausing")
+            self.player.pause()
         }
     }
 }

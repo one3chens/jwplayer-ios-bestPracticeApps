@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Intents
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,11 +16,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, continue userActivity: NSUserActivity, restorationHandler: @escaping ([Any]?) -> Void) -> Bool {
         let interaction = userActivity.interaction
+        let intent = interaction?.intent as! INPauseWorkoutIntent
             print("Worked \(interaction) \(interaction?.intent)")
         let currentViewController = application.keyWindow?.rootViewController as? ViewController
-        currentViewController?.player.play()
-        let truth = currentViewController?.isKind(of: ViewController.self)
-        print("match \(truth)")
+//        currentViewController?.handle(command: (intent.workoutName?.spokenPhrase)!)
+        currentViewController?.handle(command: "play")
         return true
     }
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
