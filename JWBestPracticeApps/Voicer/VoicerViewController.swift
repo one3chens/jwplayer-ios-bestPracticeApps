@@ -18,15 +18,15 @@ class VoicerViewController: JWRemoteCastPlayerViewController {
         }
     }
 
-    public func handle(command: String) {
+    public func handle(command: String, quantity: UInt) {
         if command.lowercased() == "play" {
             print("playing")
             self.player.play()
         } else if command.lowercased() == "pause" {
             print("pausing")
             self.player.pause()
-        } else if command.lowercased() == "seek" {
-            self.player.seek(5)
+        } else if command.lowercased() == "seeking" {
+            self.player.seek(quantity)
         }
     }
 }

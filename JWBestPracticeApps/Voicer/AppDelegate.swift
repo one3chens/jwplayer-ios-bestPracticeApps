@@ -29,17 +29,34 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         if theIntent is INPauseWorkoutIntent {
             let pauseWorkoutIntent = theIntent as! INPauseWorkoutIntent
             print("it's a INPauseWorkoutIntent + \(pauseWorkoutIntent.workoutName?.spokenPhrase)")
-            currentViewController?.handle(command: (pauseWorkoutIntent.workoutName?.spokenPhrase)!)
+            currentViewController?.handle(command: (pauseWorkoutIntent.workoutName?.spokenPhrase)!, quantity: 0)
         } else if theIntent is INResumeWorkoutIntent {
             let resumeWorkoutIntent = theIntent as! INResumeWorkoutIntent
             print("it's a INResumeWorkoutIntent + \(resumeWorkoutIntent.workoutName?.spokenPhrase)")
-            currentViewController?.handle(command: (resumeWorkoutIntent.workoutName?.spokenPhrase)!)
+            currentViewController?.handle(command: (resumeWorkoutIntent.workoutName?.spokenPhrase)!, quantity: 0)
         } else if theIntent is INStartWorkoutIntent {
             let seekIntent = theIntent as! INStartWorkoutIntent
             print("seek to \(seekIntent.goalValue) \(seekIntent.workoutGoalUnitType)")
-            currentViewController?.handle(command: (seekIntent.workoutName?.spokenPhrase)!)
+            currentViewController?.handle(command: (seekIntent.workoutName?.spokenPhrase)!, quantity: UInt(seekIntent.goalValue!))
         }
         return true
+    }
+    
+    func convert(spokenPhrase: String) -> String
+    {
+        if spokenPhrase.lowercased() == "seek" {
+            return "seeking"
+        } else if spokenPhrase.lowercased() == "video" {
+            return "playing"
+//        } else if spokenPhrase.lowercased() {
+//            
+//        } else if spokenPhrase.lowercased() {
+//            
+//        } else if spokenPhrase.lowercased() {
+            
+        } else {
+            return ""
+        }
     }
 
     func applicationWillResignActive(_ application: UIApplication) {

@@ -14,26 +14,12 @@ class IntentHandler: INExtension, INPauseWorkoutIntentHandling, INResumeWorkoutI
         return self
     }
     
-    func handle(startWorkout intent: INStartWorkoutIntent, completion: @escaping (INStartWorkoutIntentResponse) -> Void) {
-        print("handle seek")
-        print("\nspoken: \(intent.workoutName?.spokenPhrase)")
-        let userActivity = NSUserActivity.init(activityType: "seek")
-//        userActivity.userInfo = ["intent": intent]
-        completion(INStartWorkoutIntentResponse.init(code: INStartWorkoutIntentResponseCode.continueInApp, userActivity: userActivity))
-    }
-    
-    func resolveGoalValue(forStartWorkout intent: INStartWorkoutIntent, with completion: @escaping (INDoubleResolutionResult) -> Void) {
-        print("resolve goal value \(intent.goalValue)")
-        if (intent.goalValue != nil) {
-            completion(INDoubleResolutionResult.success(with: intent.goalValue!))
-        } else {
-            completion(INDoubleResolutionResult.confirmationRequired(with: 5))
-        }
-    }
-    
     func resolveWorkoutName(forStartWorkout intent: INStartWorkoutIntent, with completion: @escaping (INSpeakableStringResolutionResult) -> Void) {
         print("\n=====resolve forStartWorkout")
         print("\nspoken: \(intent.workoutName?.spokenPhrase)")
+        print("\nidentifier1: \(intent.identifier)")
+        print("\nidentifier2: \(intent.workoutName?.identifier)")
+        
         if (intent.workoutName != nil) {
             print("****** workout name: \(intent.workoutName)")
             completion(INSpeakableStringResolutionResult.success(with: intent.workoutName!))
@@ -45,22 +31,40 @@ class IntentHandler: INExtension, INPauseWorkoutIntentHandling, INResumeWorkoutI
         }
     }
     
+    func resolveGoalValue(forStartWorkout intent: INStartWorkoutIntent, with completion: @escaping (INDoubleResolutionResult) -> Void) {
+        print("resolve goal value \(intent.goalValue)")
+        if (intent.goalValue != nil) {
+            completion(INDoubleResolutionResult.success(with: intent.goalValue!))
+        } else {
+            completion(INDoubleResolutionResult.confirmationRequired(with: 5))
+        }
+    }
+    
     func resolveWorkoutGoalUnitType(forStartWorkout intent: INStartWorkoutIntent, with completion: @escaping (INWorkoutGoalUnitTypeResolutionResult) -> Void) {
         let unitType = intent.workoutGoalUnitType.rawValue
         print("resolve goal unit: \(unitType)")//handle mintus and seconds
         completion(INWorkoutGoalUnitTypeResolutionResult.success(with: INWorkoutGoalUnitType.second))
     }
     
-//    func resolveIsOpenEnded(forStartWorkout intent: INStartWorkoutIntent, with completion: @escaping (INBooleanResolutionResult) -> Void) {
-//        
-//    }
-    
     func confirm(startWorkout intent: INStartWorkoutIntent, completion: @escaping (INStartWorkoutIntentResponse) -> Void) {
-        print("confirmation seek")
+        print("confirmation forStartWorkout")
         print("\nspoken: \(intent.workoutName?.spokenPhrase)")
+        
         let userActivity = NSUserActivity.init(activityType: "pause")
         completion(INStartWorkoutIntentResponse.init(code: INStartWorkoutIntentResponseCode.continueInApp, userActivity: userActivity))
     }
+    
+    func handle(startWorkout intent: INStartWorkoutIntent, completion: @escaping (INStartWorkoutIntentResponse) -> Void) {
+        print("handle forStartWorkout")
+        print("\nspoken: \(intent.workoutName?.spokenPhrase)")
+        let userActivity = NSUserActivity.init(activityType: "seek")
+//        userActivity.userInfo = ["intent": intent]
+        completion(INStartWorkoutIntentResponse.init(code: INStartWorkoutIntentResponseCode.continueInApp, userActivity: userActivity))
+    }
+    
+    //    func resolveIsOpenEnded(forStartWorkout intent: INStartWorkoutIntent, with completion: @escaping (INBooleanResolutionResult) -> Void) {
+    //
+    //    }
     
     func handle(pauseWorkout intent: INPauseWorkoutIntent, completion: @escaping(INPauseWorkoutIntentResponse) -> Void) {
         let workoutName = intent.workoutName

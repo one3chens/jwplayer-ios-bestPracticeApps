@@ -13,29 +13,7 @@
 			<array>
 				<dict>
 					<key>VocabularyItemIdentifier</key>
-					<string>elephant</string>
-					<key>VocabularyItemSynonyms</key>
-					<array>
-						<dict>
-							<key>VocabularyItemPhrase</key>
-							<string></string>
-						</dict>
-					</array>
-				</dict>
-				<dict>
-					<key>VocabularyItemIdentifier</key>
-					<string>easter</string>
-					<key>VocabularyItemSynonyms</key>
-					<array>
-						<dict>
-							<key>VocabularyItemPhrase</key>
-							<string></string>
-						</dict>
-					</array>
-				</dict>
-				<dict>
-					<key>VocabularyItemIdentifier</key>
-					<string>seek</string>
+					<string>seeking</string>
 					<key>VocabularyItemSynonyms</key>
 					<array>
 						<dict>
@@ -60,30 +38,36 @@
 						</dict>
 					</array>
 				</dict>
-			</array>
-		</dict>
-		<dict>
-			<key>ParameterVocabulary</key>
-			<array>
 				<dict>
 					<key>VocabularyItemIdentifier</key>
-					<string>pause</string>
+					<string>playing</string>
 					<key>VocabularyItemSynonyms</key>
 					<array>
 						<dict>
 							<key>VocabularyItemPhrase</key>
-							<string>elephant</string>
+							<string>video</string>
 						</dict>
 						<dict>
 							<key>VocabularyItemPhrase</key>
-							<string>generic</string>
+							<string>movie</string>
+						</dict>
+						<dict>
+							<key>VocabularyItemPhrase</key>
+							<string>playback</string>
 						</dict>
 					</array>
 				</dict>
-			</array>
-			<key>ParameterNames</key>
-			<array>
-				<string>INPauseWorkoutIntent.workoutName</string>
+				<dict>
+					<key>VocabularyItemIdentifier</key>
+					<string>casting</string>
+					<key>VocabularyItemSynonyms</key>
+					<array>
+						<dict>
+							<key>VocabularyItemPhrase</key>
+							<string></string>
+						</dict>
+					</array>
+				</dict>
 			</array>
 		</dict>
 	</array>
@@ -94,17 +78,9 @@
 			<string>INStartWorkoutIntent</string>
 			<key>IntentExamples</key>
 			<array>
-				<string>Siri start seek to 15 seconds</string>
+				<string>Siri start playing</string>
 				<string>Siri  start seeking to 5 seconds</string>
-				<string>Siri start seeking to 10 minutes</string>
-			</array>
-		</dict>
-		<dict>
-			<key>IntentName</key>
-			<string>INPauseWorkoutIntent</string>
-			<key>IntentExamples</key>
-			<array>
-				<string>Siri, flip open an elephant</string>
+				<string>Siri start casting</string>
 			</array>
 		</dict>
 	</array>
