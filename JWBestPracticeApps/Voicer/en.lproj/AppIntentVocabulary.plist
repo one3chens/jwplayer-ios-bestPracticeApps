@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ParameterVocabularies</key>
+	<array>
+		<dict>
+			<key>ParameterNames</key>
+			<array>
+				<string>INStartWorkoutIntent.workoutName</string>
+			</array>
+			<key>ParameterVocabulary</key>
+			<array>
+				<dict>
+					<key>VocabularyItemIdentifier</key>
+					<string>elephant</string>
+					<key>VocabularyItemSynonyms</key>
+					<array>
+						<dict>
+							<key>VocabularyItemPhrase</key>
+							<string></string>
+						</dict>
+					</array>
+				</dict>
+				<dict>
+					<key>VocabularyItemIdentifier</key>
+					<string>easter</string>
+					<key>VocabularyItemSynonyms</key>
+					<array>
+						<dict>
+							<key>VocabularyItemPhrase</key>
+							<string></string>
+						</dict>
+					</array>
+				</dict>
+				<dict>
+					<key>VocabularyItemIdentifier</key>
+					<string>seek</string>
+					<key>VocabularyItemSynonyms</key>
+					<array>
+						<dict>
+							<key>VocabularyItemPronunciation</key>
+							<string>sea king</string>
+							<key>VocabularyItemPhrase</key>
+							<string>seeking</string>
+							<key>VocabularyItemExamples</key>
+							<array>
+								<string>Siri start seeking to 15 seconds</string>
+							</array>
+						</dict>
+						<dict>
+							<key>VocabularyItemExamples</key>
+							<array>
+								<string>Siri start seek to 15 seconds</string>
+							</array>
+							<key>VocabularyItemPronunciation</key>
+							<string>seek</string>
+							<key>VocabularyItemPhrase</key>
+							<string>seek</string>
+						</dict>
+					</array>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>ParameterVocabulary</key>
+			<array>
+				<dict>
+					<key>VocabularyItemIdentifier</key>
+					<string>pause</string>
+					<key>VocabularyItemSynonyms</key>
+					<array>
+						<dict>
+							<key>VocabularyItemPhrase</key>
+							<string>elephant</string>
+						</dict>
+						<dict>
+							<key>VocabularyItemPhrase</key>
+							<string>generic</string>
+						</dict>
+					</array>
+				</dict>
+			</array>
+			<key>ParameterNames</key>
+			<array>
+				<string>INPauseWorkoutIntent.workoutName</string>
+			</array>
+		</dict>
+	</array>
+	<key>IntentPhrases</key>
+	<array>
+		<dict>
+			<key>IntentName</key>
+			<string>INStartWorkoutIntent</string>
+			<key>IntentExamples</key>
+			<array>
+				<string>Siri start seek to 15 seconds</string>
+				<string>Siri  start seeking to 5 seconds</string>
+				<string>Siri start seeking to 10 minutes</string>
+			</array>
+		</dict>
+		<dict>
+			<key>IntentName</key>
+			<string>INPauseWorkoutIntent</string>
+			<key>IntentExamples</key>
+			<array>
+				<string>Siri, flip open an elephant</string>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>
