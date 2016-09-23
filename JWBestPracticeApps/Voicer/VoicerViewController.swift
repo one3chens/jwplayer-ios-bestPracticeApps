@@ -25,6 +25,8 @@ class VoicerViewController: JWRemoteCastPlayerViewController {
         } else if command.lowercased() == "pause" {
             print("pausing")
             self.player.pause()
+        } else if command.lowercased() == "seek" {
+            self.player.seek(5)
         }
     }
 }

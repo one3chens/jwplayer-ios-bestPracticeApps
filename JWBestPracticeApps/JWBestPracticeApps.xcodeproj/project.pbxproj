@@ -143,8 +143,8 @@
 		B54F4F441D930B4D0026B7C7 /* VoicerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54F4F431D930B4D0026B7C7 /* VoicerViewController.swift */; };
 		B54F4F4C1D930BDC0026B7C7 /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54F4F4B1D930BDC0026B7C7 /* IntentHandler.swift */; };
 		B54F4F501D930BDC0026B7C7 /* VoicerExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = B54F4F491D930BDC0026B7C7 /* VoicerExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		B564675A1D93159700257AEC /* AppIntentVocabulary.plist in Resources */ = {isa = PBXBuildFile; fileRef = B56467591D93159700257AEC /* AppIntentVocabulary.plist */; };
 		B5A1A65C1D91E70700E720E1 /* AppIntentVocabulary.plist in Resources */ = {isa = PBXBuildFile; fileRef = B5A1A65B1D91E70700E720E1 /* AppIntentVocabulary.plist */; };
+		B5BC26A91D958BFF00F32770 /* AppIntentVocabulary.plist in Resources */ = {isa = PBXBuildFile; fileRef = B5BC26A71D958BFF00F32770 /* AppIntentVocabulary.plist */; };
 		B9EC2976A2A23D84B3790C88 /* libPods-JWVoiceControl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 75A9CECA1EB7767D6DA505E1 /* libPods-JWVoiceControl.a */; };
 		C24874D002C8E9721BA8E61F /* libPods-JWRemotePlayer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 36BCA1345113D7AE624BEB2D /* libPods-JWRemotePlayer.a */; };
 		D37413B333297461C0FD0791 /* libPods-JWRemoteController Extension.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 787B849139DF8B66FA89FA5C /* libPods-JWRemoteController Extension.a */; };
@@ -416,8 +416,8 @@
 		B54F4F4D1D930BDC0026B7C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B556E7061D84F37E00C65662 /* JWVoiceControl.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = JWVoiceControl.entitlements; sourceTree = "<group>"; };
 		B556E7151D84F3F500C65662 /* IntentsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IntentsUI.framework; path = System/Library/Frameworks/IntentsUI.framework; sourceTree = SDKROOT; };
-		B56467591D93159700257AEC /* AppIntentVocabulary.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = AppIntentVocabulary.plist; sourceTree = "<group>"; };
 		B5A1A65B1D91E70700E720E1 /* AppIntentVocabulary.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = AppIntentVocabulary.plist; sourceTree = "<group>"; };
+		B5BC26A81D958BFF00F32770 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = en; path = en.lproj/AppIntentVocabulary.plist; sourceTree = "<group>"; };
 		BCE25B16DE011FFE47951517 /* libPods-JWBestPracticeApps.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JWBestPracticeApps.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C34588F31A7DF0E79015A9C6 /* Pods-SiriPlayerController.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SiriPlayerController.release.xcconfig"; path = "Pods/Target Support Files/Pods-SiriPlayerController/Pods-SiriPlayerController.release.xcconfig"; sourceTree = "<group>"; };
 		C53086B079689F858B02A42A /* libPods-JWRemoteController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JWRemoteController.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -889,6 +889,7 @@
 				B53A730A1D92F79C00EB804F /* Main.storyboard */,
 				B53A730D1D92F79C00EB804F /* Assets.xcassets */,
 				B53A730F1D92F79C00EB804F /* LaunchScreen.storyboard */,
+				B5BC26A61D95883E00F32770 /* en.lproj */,
 			);
 			path = Voicer;
 			sourceTree = "<group>";
@@ -908,9 +909,16 @@
 			children = (
 				B54F4F4B1D930BDC0026B7C7 /* IntentHandler.swift */,
 				B54F4F4D1D930BDC0026B7C7 /* Info.plist */,
-				B56467591D93159700257AEC /* AppIntentVocabulary.plist */,
 			);
 			path = VoicerExtension;
+			sourceTree = "<group>";
+		};
+		B5BC26A61D95883E00F32770 /* en.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				B5BC26A71D958BFF00F32770 /* AppIntentVocabulary.plist */,
+			);
+			name = en.lproj;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1506,6 +1514,7 @@
 				B53A73111D92F79C00EB804F /* LaunchScreen.storyboard in Resources */,
 				B54F4F421D930AAC0026B7C7 /* cast_connecting2.png in Resources */,
 				B53A730E1D92F79C00EB804F /* Assets.xcassets in Resources */,
+				B5BC26A91D958BFF00F32770 /* AppIntentVocabulary.plist in Resources */,
 				B54F4F411D930AA90026B7C7 /* cast_connecting1.png in Resources */,
 				B54F4F3F1D930A9F0026B7C7 /* cast_on.png in Resources */,
 				B53A730C1D92F79C00EB804F /* Main.storyboard in Resources */,
@@ -1524,7 +1533,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B564675A1D93159700257AEC /* AppIntentVocabulary.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2371,6 +2379,14 @@
 				B53A73101D92F79C00EB804F /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		B5BC26A71D958BFF00F32770 /* AppIntentVocabulary.plist */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B5BC26A81D958BFF00F32770 /* en */,
+			);
+			name = AppIntentVocabulary.plist;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

@@ -28,6 +28,7 @@
 			<array/>
 			<key>IntentsSupported</key>
 			<array>
+				<string>INStartWorkoutIntent</string>
 				<string>INResumeWorkoutIntent</string>
 				<string>INPauseWorkoutIntent</string>
 			</array>
