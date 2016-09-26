@@ -8,7 +8,7 @@
 
 import Intents
 
-class IntentHandler: INExtension, INPauseWorkoutIntentHandling, INResumeWorkoutIntentHandling, INStartWorkoutIntentHandling {
+class IntentHandler: INExtension, INPauseWorkoutIntentHandling, INResumeWorkoutIntentHandling, INStartWorkoutIntentHandling, INEndWorkoutIntentHandling {
     
     override func handler(for intent: INIntent) -> Any {
         return self
@@ -37,9 +37,10 @@ class IntentHandler: INExtension, INPauseWorkoutIntentHandling, INResumeWorkoutI
             completion(INSpeakableStringResolutionResult.success(with: intent.workoutName!))
         } else {
             print("++++++ needs more info")
-            let seek = INSpeakableString.init(identifier: "1", spokenPhrase: "seek", pronunciationHint: "seec")
+            let seeking = INSpeakableString.init(identifier: "1", spokenPhrase: "seeking", pronunciationHint: "seec")
             let casting = INSpeakableString.init(identifier: "2", spokenPhrase: "casting", pronunciationHint: "cas ting")
-            completion(INSpeakableStringResolutionResult.disambiguation(with: [seek, casting]))
+            let playing = INSpeakableString.init(identifier: "3", spokenPhrase: "playing", pronunciationHint: "pley ing")
+            completion(INSpeakableStringResolutionResult.disambiguation(with: [seeking, casting, playing]))
         }
     }
     
@@ -66,6 +67,11 @@ class IntentHandler: INExtension, INPauseWorkoutIntentHandling, INResumeWorkoutI
 //        completion(INStartWorkoutIntentResponse.init(code: INStartWorkoutIntentResponseCode.continueInApp, userActivity: userActivity))
 //    }
     
+    func handle(endWorkout intent: INEndWorkoutIntent, completion: @escaping (INEndWorkoutIntentResponse) -> Void) {
+        let userActivity = NSUserActivity.init(activityType: "end")
+        completion(INEndWorkoutIntentResponse.init(code: INEndWorkoutIntentResponseCode.continueInApp, userActivity: userActivity))
+    }
+    
     func handle(startWorkout intent: INStartWorkoutIntent, completion: @escaping (INStartWorkoutIntentResponse) -> Void) {
         print("handle forStartWorkout")
         print("\nspoken: \(intent.workoutName?.spokenPhrase)")
@@ -86,25 +92,25 @@ class IntentHandler: INExtension, INPauseWorkoutIntentHandling, INResumeWorkoutI
         completion(INPauseWorkoutIntentResponse.init(code: INPauseWorkoutIntentResponseCode.continueInApp, userActivity: userActivity))
     }
     
-    func resolveWorkoutName(forPauseWorkout intent: INPauseWorkoutIntent, with completion: @escaping(INSpeakableStringResolutionResult) -> Void) {
-        print("resolve forPauseWorkout")
-        print("spoken: \(intent.workoutName?.spokenPhrase)")
-        if (intent.workoutName != nil) {
-            print("****** workOut name: \(intent.workoutName)")
-            completion(INSpeakableStringResolutionResult.success(with: intent.workoutName!))
-        } else {
-            print("++++++ needs more info")
-            let pause = INSpeakableString.init(identifier: "1", spokenPhrase: "pause", pronunciationHint: "paws")
-            let play = INSpeakableString.init(identifier: "2", spokenPhrase: "play", pronunciationHint: "play")
-            completion(INSpeakableStringResolutionResult.disambiguation(with: [pause, play]))
-        }
-    }
+//    func resolveWorkoutName(forPauseWorkout intent: INPauseWorkoutIntent, with completion: @escaping(INSpeakableStringResolutionResult) -> Void) {
+//        print("resolve forPauseWorkout")
+//        print("spoken: \(intent.workoutName?.spokenPhrase)")
+//        if (intent.workoutName != nil) {
+//            print("****** workOut name: \(intent.workoutName)")
+//            completion(INSpeakableStringResolutionResult.success(with: intent.workoutName!))
+//        } else {
+//            print("++++++ needs more info")
+//            let pause = INSpeakableString.init(identifier: "1", spokenPhrase: "pause", pronunciationHint: "paws")
+//            let play = INSpeakableString.init(identifier: "2", spokenPhrase: "play", pronunciationHint: "play")
+//            completion(INSpeakableStringResolutionResult.disambiguation(with: [pause, play]))
+//        }
+//    }
     
-    func confirm(pauseWorkout intent: INPauseWorkoutIntent, completion: @escaping(INPauseWorkoutIntentResponse) -> Void) {
-        print("confirm forPauseWorkout")
-        let userActivity = NSUserActivity.init(activityType: "pause")
-        completion(INPauseWorkoutIntentResponse.init(code: INPauseWorkoutIntentResponseCode.ready, userActivity: userActivity))
-    }
+//    func confirm(pauseWorkout intent: INPauseWorkoutIntent, completion: @escaping(INPauseWorkoutIntentResponse) -> Void) {
+//        print("confirm forPauseWorkout")
+//        let userActivity = NSUserActivity.init(activityType: "pause")
+//        completion(INPauseWorkoutIntentResponse.init(code: INPauseWorkoutIntentResponseCode.ready, userActivity: userActivity))
+//    }
     
     func handle(resumeWorkout intent: INResumeWorkoutIntent, completion: @escaping(INResumeWorkoutIntentResponse) -> Void) {
         print("handle resumeWorkout called \(intent.workoutName)")
@@ -112,12 +118,12 @@ class IntentHandler: INExtension, INPauseWorkoutIntentHandling, INResumeWorkoutI
         completion(INResumeWorkoutIntentResponse.init(code: INResumeWorkoutIntentResponseCode.continueInApp, userActivity: userActivity))
     }
     
-    func resolveWorkoutName(forResumeWorkout intent: INResumeWorkoutIntent, with completion: @escaping(INSpeakableStringResolutionResult) -> Void) {
-        print("resolve forResumeWorkout")
-    }
-    
-    func confirm(resumeWorkout intent: INResumeWorkoutIntent, completion: @escaping(INResumeWorkoutIntentResponse) -> Void) {
-        print("confirm forResumeWorkout")
-    }
+//    func resolveWorkoutName(forResumeWorkout intent: INResumeWorkoutIntent, with completion: @escaping(INSpeakableStringResolutionResult) -> Void) {
+//        print("resolve forResumeWorkout")
+//    }
+//    
+//    func confirm(resumeWorkout intent: INResumeWorkoutIntent, completion: @escaping(INResumeWorkoutIntentResponse) -> Void) {
+//        print("confirm forResumeWorkout")
+//    }
 }
 

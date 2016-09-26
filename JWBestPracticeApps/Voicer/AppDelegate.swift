@@ -23,8 +23,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, continue userActivity: NSUserActivity, restorationHandler: @escaping ([Any]?) -> Void) -> Bool {
         let interaction = userActivity.interaction
         print("details \(userActivity.activityType)")
+        let navigationController = application.keyWindow?.rootViewController as! UINavigationController
         
-        let currentViewController = application.keyWindow?.rootViewController as? VoicerViewController
+        let currentViewController = navigationController.childViewControllers[0] as? VoicerViewController
         let theIntent = interaction?.intent
         if theIntent is INPauseWorkoutIntent {
             let pauseWorkoutIntent = theIntent as! INPauseWorkoutIntent
@@ -43,6 +44,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             }
             print("seek to \(goalValue) \(seekIntent.workoutGoalUnitType)")
             currentViewController?.handle(command: (seekIntent.workoutName?.spokenPhrase)!, quantity: goalValue)
+        } else if theIntent is INEndWorkoutIntent {
+            let endWorkoutIntent = theIntent as! INEndWorkoutIntent
+            currentViewController?.handle(command: (endWorkoutIntent.workoutName?.spokenPhrase)!, quantity: 0)
         }
         return true
     }

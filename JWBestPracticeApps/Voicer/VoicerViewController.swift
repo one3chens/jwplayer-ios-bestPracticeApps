@@ -30,14 +30,22 @@ class VoicerViewController: JWRemoteCastPlayerViewController {
         } else if command.lowercased() == "seeking" {
             self.player.seek(quantity!)
         } else if command.lowercased() == "casting" {
-            print("casting called!!")
+            self.castController.disconnect()
         } else {
-            self.castController .connect(to: <#T##JWCastingDevice!#>)
+            let castingDevice = self.castingDeviceFrom(name: command)
+            self.castController.connect(to: castingDevice)
         }
     }
     
-    func castingDeviceFrom(name: String) -> Bool {
-        
+    func castingDeviceFrom(name: String) -> JWCastingDevice? {
+//        let castingDevices = self.userDefaults?.value(forKey: "castingDevices") as! [String]
+        for device in self.castController.availableDevices {
+            let castDevice = device as! JWCastingDevice
+            if castDevice.name == name {
+                return castDevice
+            }
+        }
+        return nil
     }
     
     override func onCastingDevicesAvailable(_ devices: [JWCastingDevice]!) {
@@ -58,7 +66,6 @@ class VoicerViewController: JWRemoteCastPlayerViewController {
         */
         print("\(castingDevices)")
         if castingDevices.count > 0 {
-            let userDefaults = UserDefaults.init(suiteName: "group.com.jwplayer.wormhole")
             self.userDefaults?.set(castingDevices, forKey: "castingDevices")
             self.userDefaults?.synchronize()
         }

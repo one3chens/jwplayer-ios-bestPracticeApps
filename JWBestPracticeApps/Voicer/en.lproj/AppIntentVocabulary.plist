@@ -7,6 +7,62 @@
 		<dict>
 			<key>ParameterNames</key>
 			<array>
+				<string>INResumeWorkoutIntent.workoutName</string>
+			</array>
+			<key>ParameterVocabulary</key>
+			<array>
+				<dict>
+					<key>VocabularyItemIdentifier</key>
+					<string>playing</string>
+					<key>VocabularyItemSynonyms</key>
+					<array>
+						<dict>
+							<key>VocabularyItemPhrase</key>
+							<string>playing</string>
+						</dict>
+						<dict>
+							<key>VocabularyItemPhrase</key>
+							<string>video</string>
+						</dict>
+						<dict>
+							<key>VocabularyItemPhrase</key>
+							<string>playback</string>
+						</dict>
+					</array>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>ParameterNames</key>
+			<array>
+				<string>INPauseWorkoutIntent.workoutName</string>
+			</array>
+			<key>ParameterVocabulary</key>
+			<array>
+				<dict>
+					<key>VocabularyItemIdentifier</key>
+					<string>playing</string>
+					<key>VocabularyItemSynonyms</key>
+					<array>
+						<dict>
+							<key>VocabularyItemPhrase</key>
+							<string>playing</string>
+						</dict>
+						<dict>
+							<key>VocabularyItemPhrase</key>
+							<string>video</string>
+						</dict>
+						<dict>
+							<key>VocabularyItemPhrase</key>
+							<string>playback</string>
+						</dict>
+					</array>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>ParameterNames</key>
+			<array>
 				<string>INStartWorkoutIntent.workoutName</string>
 			</array>
 			<key>ParameterVocabulary</key>
@@ -63,7 +119,7 @@
 				</dict>
 				<dict>
 					<key>VocabularyItemIdentifier</key>
-					<string>chrome cast</string>
+					<string>casting</string>
 					<key>VocabularyItemSynonyms</key>
 					<array>
 						<dict>
@@ -89,34 +145,41 @@
 						</dict>
 					</array>
 				</dict>
-				<dict>
-					<key>VocabularyItemIdentifier</key>
-					<string>jukebox</string>
-					<key>VocabularyItemSynonyms</key>
-					<array>
-						<dict>
-							<key>VocabularyItemPhrase</key>
-							<string>start jukebox</string>
-						</dict>
-					</array>
-				</dict>
 			</array>
 		</dict>
 		<dict>
 			<key>ParameterNames</key>
 			<array>
-				<string>INStartWorkoutIntent.goalValue</string>
+				<string>INEndWorkoutIntent.workoutName</string>
 			</array>
 			<key>ParameterVocabulary</key>
 			<array>
 				<dict>
-					<key>VocabularyItemIdentifier</key>
+					<key>New item</key>
 					<string></string>
+					<key>VocabularyItemIdentifier</key>
+					<string>casting</string>
 					<key>VocabularyItemSynonyms</key>
 					<array>
 						<dict>
 							<key>VocabularyItemPhrase</key>
-							<string></string>
+							<string>chrome cast</string>
+							<key>VocabularyItemPronunciation</key>
+							<string>crome cast</string>
+							<key>VocabularyItemExamples</key>
+							<array>
+								<string>Stop chrome cast</string>
+							</array>
+						</dict>
+						<dict>
+							<key>VocabularyItemPhrase</key>
+							<string>casting</string>
+							<key>VocabularyItemPronunciation</key>
+							<string>cas ting</string>
+							<key>VocabularyItemExamples</key>
+							<array>
+								<string>Stop casting</string>
+							</array>
 						</dict>
 					</array>
 				</dict>
