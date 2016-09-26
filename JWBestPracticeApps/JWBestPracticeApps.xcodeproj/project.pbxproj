@@ -112,11 +112,6 @@
 		AB341B6EC61DFD6B46F068D6 /* libPods-JWBestPracticeApps.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BCE25B16DE011FFE47951517 /* libPods-JWBestPracticeApps.a */; };
 		B5308C1F1D836979007D2A1F /* SwiftTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5308C1E1D836979007D2A1F /* SwiftTest.swift */; };
 		B5308C211D836A23007D2A1F /* JWBestPracticeApps-Bridging-Header.h in Headers */ = {isa = PBXBuildFile; fileRef = B5308C1D1D836978007D2A1F /* JWBestPracticeApps-Bridging-Header.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B53A0DF51D8355CF00893252 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53A0DF41D8355CF00893252 /* AppDelegate.swift */; };
-		B53A0DF71D8355CF00893252 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53A0DF61D8355CF00893252 /* ViewController.swift */; };
-		B53A0DFA1D8355CF00893252 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B53A0DF81D8355CF00893252 /* Main.storyboard */; };
-		B53A0DFC1D8355CF00893252 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B53A0DFB1D8355CF00893252 /* Assets.xcassets */; };
-		B53A0DFF1D8355CF00893252 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B53A0DFD1D8355CF00893252 /* LaunchScreen.storyboard */; };
 		B53A73071D92F79C00EB804F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53A73061D92F79C00EB804F /* AppDelegate.swift */; };
 		B53A730C1D92F79C00EB804F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B53A730A1D92F79C00EB804F /* Main.storyboard */; };
 		B53A730E1D92F79C00EB804F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B53A730D1D92F79C00EB804F /* Assets.xcassets */; };
@@ -133,7 +128,6 @@
 		B54424811D9048D900719197 /* JWBestPracticeApps-Bridging-Header.h in Headers */ = {isa = PBXBuildFile; fileRef = B5308C1D1D836978007D2A1F /* JWBestPracticeApps-Bridging-Header.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B54424831D90493100719197 /* JWBasicVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A729B5D1C99ABD2000F03A9 /* JWBasicVideoViewController.m */; };
 		B54424841D90493400719197 /* JWBasicVideoViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A729B5C1C99ABD2000F03A9 /* JWBasicVideoViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B54424AF1D9060A700719197 /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54424AE1D9060A700719197 /* IntentHandler.swift */; };
 		B54424B31D9060A700719197 /* JWSiriVideoExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = B54424AC1D9060A700719197 /* JWSiriVideoExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		B54F4F3E1D930A9C0026B7C7 /* cast_off.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A729B881C99D278000F03A9 /* cast_off.png */; };
 		B54F4F3F1D930A9F0026B7C7 /* cast_on.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A729B891C99D278000F03A9 /* cast_on.png */; };
@@ -143,7 +137,6 @@
 		B54F4F441D930B4D0026B7C7 /* VoicerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54F4F431D930B4D0026B7C7 /* VoicerViewController.swift */; };
 		B54F4F4C1D930BDC0026B7C7 /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54F4F4B1D930BDC0026B7C7 /* IntentHandler.swift */; };
 		B54F4F501D930BDC0026B7C7 /* VoicerExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = B54F4F491D930BDC0026B7C7 /* VoicerExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		B5A1A65C1D91E70700E720E1 /* AppIntentVocabulary.plist in Resources */ = {isa = PBXBuildFile; fileRef = B5A1A65B1D91E70700E720E1 /* AppIntentVocabulary.plist */; };
 		B5BC26A91D958BFF00F32770 /* AppIntentVocabulary.plist in Resources */ = {isa = PBXBuildFile; fileRef = B5BC26A71D958BFF00F32770 /* AppIntentVocabulary.plist */; };
 		B9EC2976A2A23D84B3790C88 /* libPods-JWVoiceControl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 75A9CECA1EB7767D6DA505E1 /* libPods-JWVoiceControl.a */; };
 		C24874D002C8E9721BA8E61F /* libPods-JWRemotePlayer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 36BCA1345113D7AE624BEB2D /* libPods-JWRemotePlayer.a */; };
@@ -396,11 +389,6 @@
 		B5308C1D1D836978007D2A1F /* JWBestPracticeApps-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JWBestPracticeApps-Bridging-Header.h"; sourceTree = "<group>"; };
 		B5308C1E1D836979007D2A1F /* SwiftTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftTest.swift; sourceTree = "<group>"; };
 		B53A0DF21D8355CF00893252 /* JWVoiceControl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JWVoiceControl.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		B53A0DF41D8355CF00893252 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B53A0DF61D8355CF00893252 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		B53A0DF91D8355CF00893252 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		B53A0DFB1D8355CF00893252 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		B53A0DFE1D8355CF00893252 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B53A73041D92F79C00EB804F /* Voicer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Voicer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B53A73061D92F79C00EB804F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B53A730B1D92F79C00EB804F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -408,15 +396,11 @@
 		B53A73101D92F79C00EB804F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B53A73161D92F87D00EB804F /* Voicer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Voicer.entitlements; sourceTree = "<group>"; };
 		B54424AC1D9060A700719197 /* JWSiriVideoExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = JWSiriVideoExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
-		B54424AE1D9060A700719197 /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
-		B54424B01D9060A700719197 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B54F4F431D930B4D0026B7C7 /* VoicerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VoicerViewController.swift; sourceTree = "<group>"; };
 		B54F4F491D930BDC0026B7C7 /* VoicerExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = VoicerExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		B54F4F4B1D930BDC0026B7C7 /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
 		B54F4F4D1D930BDC0026B7C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B556E7061D84F37E00C65662 /* JWVoiceControl.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = JWVoiceControl.entitlements; sourceTree = "<group>"; };
 		B556E7151D84F3F500C65662 /* IntentsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IntentsUI.framework; path = System/Library/Frameworks/IntentsUI.framework; sourceTree = SDKROOT; };
-		B5A1A65B1D91E70700E720E1 /* AppIntentVocabulary.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = AppIntentVocabulary.plist; sourceTree = "<group>"; };
 		B5BC26A81D958BFF00F32770 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = en; path = en.lproj/AppIntentVocabulary.plist; sourceTree = "<group>"; };
 		B5BC26AC1D97B25B00F32770 /* VoicerExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = VoicerExtension.entitlements; sourceTree = "<group>"; };
 		BCE25B16DE011FFE47951517 /* libPods-JWBestPracticeApps.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JWBestPracticeApps.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -684,8 +668,6 @@
 				8A729B2B1C98B5F2000F03A9 /* JWAirPlay */,
 				8A9206371C9B4E67002797FA /* Watch App */,
 				8A3734871D1DC2B10008FE59 /* Watch Cast App */,
-				B53A0DF31D8355CF00893252 /* JWVoiceControl */,
-				B54424AD1D9060A700719197 /* JWSiriVideoExtension */,
 				B53A73051D92F79C00EB804F /* Voicer */,
 				B54F4F4A1D930BDC0026B7C7 /* VoicerExtension */,
 				8A729A781C98ACA8000F03A9 /* Products */,
@@ -868,19 +850,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		B53A0DF31D8355CF00893252 /* JWVoiceControl */ = {
-			isa = PBXGroup;
-			children = (
-				B556E7061D84F37E00C65662 /* JWVoiceControl.entitlements */,
-				B53A0DF41D8355CF00893252 /* AppDelegate.swift */,
-				B53A0DF61D8355CF00893252 /* ViewController.swift */,
-				B53A0DF81D8355CF00893252 /* Main.storyboard */,
-				B53A0DFB1D8355CF00893252 /* Assets.xcassets */,
-				B53A0DFD1D8355CF00893252 /* LaunchScreen.storyboard */,
-			);
-			path = JWVoiceControl;
-			sourceTree = "<group>";
-		};
 		B53A73051D92F79C00EB804F /* Voicer */ = {
 			isa = PBXGroup;
 			children = (
@@ -893,16 +862,6 @@
 				B5BC26A61D95883E00F32770 /* en.lproj */,
 			);
 			path = Voicer;
-			sourceTree = "<group>";
-		};
-		B54424AD1D9060A700719197 /* JWSiriVideoExtension */ = {
-			isa = PBXGroup;
-			children = (
-				B54424AE1D9060A700719197 /* IntentHandler.swift */,
-				B5A1A65B1D91E70700E720E1 /* AppIntentVocabulary.plist */,
-				B54424B01D9060A700719197 /* Info.plist */,
-			);
-			path = JWSiriVideoExtension;
 			sourceTree = "<group>";
 		};
 		B54F4F4A1D930BDC0026B7C7 /* VoicerExtension */ = {
@@ -1509,9 +1468,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B53A0DFF1D8355CF00893252 /* LaunchScreen.storyboard in Resources */,
-				B53A0DFC1D8355CF00893252 /* Assets.xcassets in Resources */,
-				B53A0DFA1D8355CF00893252 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1535,7 +1491,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B5A1A65C1D91E70700E720E1 /* AppIntentVocabulary.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2192,9 +2147,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B53A0DF71D8355CF00893252 /* ViewController.swift in Sources */,
 				B54424831D90493100719197 /* JWBasicVideoViewController.m in Sources */,
-				B53A0DF51D8355CF00893252 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2215,7 +2168,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B54424AF1D9060A700719197 /* IntentHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2357,22 +2309,6 @@
 				8AF5F6CF1C9A612B00C0D5E0 /* Base */,
 			);
 			name = Interface.storyboard;
-			sourceTree = "<group>";
-		};
-		B53A0DF81D8355CF00893252 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B53A0DF91D8355CF00893252 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		B53A0DFD1D8355CF00893252 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B53A0DFE1D8355CF00893252 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 		B53A730A1D92F79C00EB804F /* Main.storyboard */ = {
@@ -2820,7 +2756,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F9EA2EBE0F8C75D865E5E2C7 /* Pods-JWVoiceControl.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -2846,7 +2781,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 94B87C1518023A33FFDA5824 /* Pods-JWVoiceControl.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;

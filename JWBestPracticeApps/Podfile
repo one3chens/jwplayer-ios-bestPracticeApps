@@ -52,17 +52,6 @@ target 'JWRemoteCastController Extension' do
 
 end
 
-target 'JWVoiceControl' do
-
-pod 'JWPlayer-SDK', '~> 2.0'
-pod 'google-cast-sdk', '<= 2.10.0.4070'
-
-end
-
-target 'JWSiriVideoExtension' do
-
-end 
-
 target ‘Voicer’ do
 
 pod 'JWPlayer-SDK', '~> 2.0'
