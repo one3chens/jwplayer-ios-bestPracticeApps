@@ -45,6 +45,10 @@
 					<array>
 						<dict>
 							<key>VocabularyItemPhrase</key>
+							<string>playing</string>
+						</dict>
+						<dict>
+							<key>VocabularyItemPhrase</key>
 							<string>video</string>
 						</dict>
 						<dict>
@@ -59,7 +63,55 @@
 				</dict>
 				<dict>
 					<key>VocabularyItemIdentifier</key>
-					<string>casting</string>
+					<string>chrome cast</string>
+					<key>VocabularyItemSynonyms</key>
+					<array>
+						<dict>
+							<key>VocabularyItemExamples</key>
+							<array>
+								<string>start casting</string>
+							</array>
+							<key>VocabularyItemPronunciation</key>
+							<string>cas ting</string>
+							<key>VocabularyItemPhrase</key>
+							<string>casting</string>
+						</dict>
+						<dict>
+							<key>VocabularyItemExamples</key>
+							<array>
+								<string>start chrome cast on JW</string>
+								<string>start chrome cast</string>
+							</array>
+							<key>VocabularyItemPronunciation</key>
+							<string>cro m ca st</string>
+							<key>VocabularyItemPhrase</key>
+							<string>chrome cast</string>
+						</dict>
+					</array>
+				</dict>
+				<dict>
+					<key>VocabularyItemIdentifier</key>
+					<string>jukebox</string>
+					<key>VocabularyItemSynonyms</key>
+					<array>
+						<dict>
+							<key>VocabularyItemPhrase</key>
+							<string>start jukebox</string>
+						</dict>
+					</array>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>ParameterNames</key>
+			<array>
+				<string>INStartWorkoutIntent.goalValue</string>
+			</array>
+			<key>ParameterVocabulary</key>
+			<array>
+				<dict>
+					<key>VocabularyItemIdentifier</key>
+					<string></string>
 					<key>VocabularyItemSynonyms</key>
 					<array>
 						<dict>
@@ -80,7 +132,7 @@
 			<array>
 				<string>Siri start playing</string>
 				<string>Siri  start seeking to 5 seconds</string>
-				<string>Siri start casting</string>
+				<string>Siri start chrome cast</string>
 			</array>
 		</dict>
 	</array>

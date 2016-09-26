@@ -418,6 +418,7 @@
 		B556E7151D84F3F500C65662 /* IntentsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IntentsUI.framework; path = System/Library/Frameworks/IntentsUI.framework; sourceTree = SDKROOT; };
 		B5A1A65B1D91E70700E720E1 /* AppIntentVocabulary.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = AppIntentVocabulary.plist; sourceTree = "<group>"; };
 		B5BC26A81D958BFF00F32770 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = en; path = en.lproj/AppIntentVocabulary.plist; sourceTree = "<group>"; };
+		B5BC26AC1D97B25B00F32770 /* VoicerExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = VoicerExtension.entitlements; sourceTree = "<group>"; };
 		BCE25B16DE011FFE47951517 /* libPods-JWBestPracticeApps.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JWBestPracticeApps.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C34588F31A7DF0E79015A9C6 /* Pods-SiriPlayerController.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SiriPlayerController.release.xcconfig"; path = "Pods/Target Support Files/Pods-SiriPlayerController/Pods-SiriPlayerController.release.xcconfig"; sourceTree = "<group>"; };
 		C53086B079689F858B02A42A /* libPods-JWRemoteController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JWRemoteController.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -907,6 +908,7 @@
 		B54F4F4A1D930BDC0026B7C7 /* VoicerExtension */ = {
 			isa = PBXGroup;
 			children = (
+				B5BC26AC1D97B25B00F32770 /* VoicerExtension.entitlements */,
 				B54F4F4B1D930BDC0026B7C7 /* IntentHandler.swift */,
 				B54F4F4D1D930BDC0026B7C7 /* Info.plist */,
 			);
@@ -1333,6 +1335,9 @@
 						DevelopmentTeam = WX87M56X5N;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
 							com.apple.BackgroundModes = {
 								enabled = 1;
 							};
@@ -1350,6 +1355,11 @@
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = WX87M56X5N;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -2944,6 +2954,7 @@
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CODE_SIGN_ENTITLEMENTS = VoicerExtension/VoicerExtension.entitlements;
 				DEVELOPMENT_TEAM = WX87M56X5N;
 				INFOPLIST_FILE = VoicerExtension/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -2964,6 +2975,7 @@
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CODE_SIGN_ENTITLEMENTS = VoicerExtension/VoicerExtension.entitlements;
 				DEVELOPMENT_TEAM = WX87M56X5N;
 				INFOPLIST_FILE = VoicerExtension/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;

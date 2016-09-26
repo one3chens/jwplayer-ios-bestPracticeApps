@@ -20,39 +20,51 @@ class IntentHandler: INExtension, INPauseWorkoutIntentHandling, INResumeWorkoutI
         print("\nidentifier1: \(intent.identifier)")
         print("\nidentifier2: \(intent.workoutName?.identifier)")
         
-        if (intent.workoutName != nil) {
+        if (intent.workoutName?.spokenPhrase == "casting") {
+            let userDefaults = UserDefaults.init(suiteName: "group.com.jwplayer.wormhole")
+            let castingDevices = userDefaults?.value(forKey: "castingDevices") as? [String?]
+            if (castingDevices == nil || castingDevices?.count == 0) {
+                completion(INSpeakableStringResolutionResult.success(with: intent.workoutName!))
+            }
+            var speakableCastingDevices = [INSpeakableString]()
+            for deviceName in castingDevices! {
+                let speakableDeviceName = INSpeakableString.init(identifier: deviceName!, spokenPhrase: deviceName!, pronunciationHint: nil)
+                speakableCastingDevices.append(speakableDeviceName)
+            }
+            completion(INSpeakableStringResolutionResult.disambiguation(with: speakableCastingDevices))
+        } else if (intent.workoutName != nil) {
             print("****** workout name: \(intent.workoutName)")
             completion(INSpeakableStringResolutionResult.success(with: intent.workoutName!))
         } else {
             print("++++++ needs more info")
             let seek = INSpeakableString.init(identifier: "1", spokenPhrase: "seek", pronunciationHint: "seec")
-            let rewind = INSpeakableString.init(identifier: "2", spokenPhrase: "rewind", pronunciationHint: "rewind")
-            completion(INSpeakableStringResolutionResult.disambiguation(with: [seek, rewind]))
+            let casting = INSpeakableString.init(identifier: "2", spokenPhrase: "casting", pronunciationHint: "cas ting")
+            completion(INSpeakableStringResolutionResult.disambiguation(with: [seek, casting]))
         }
     }
     
-    func resolveGoalValue(forStartWorkout intent: INStartWorkoutIntent, with completion: @escaping (INDoubleResolutionResult) -> Void) {
-        print("resolve goal value \(intent.goalValue)")
-        if (intent.goalValue != nil) {
-            completion(INDoubleResolutionResult.success(with: intent.goalValue!))
-        } else {
-            completion(INDoubleResolutionResult.confirmationRequired(with: 5))
-        }
-    }
+//    func resolveGoalValue(forStartWorkout intent: INStartWorkoutIntent, with completion: @escaping (INDoubleResolutionResult) -> Void) {
+//        print("resolve goal value \(intent.goalValue)")
+//        if (intent.goalValue != nil) {
+//            completion(INDoubleResolutionResult.success(with: intent.goalValue!))
+//        } else {
+//            completion(INDoubleResolutionResult.confirmationRequired(with: 5))
+//        }
+//    }
     
-    func resolveWorkoutGoalUnitType(forStartWorkout intent: INStartWorkoutIntent, with completion: @escaping (INWorkoutGoalUnitTypeResolutionResult) -> Void) {
-        let unitType = intent.workoutGoalUnitType.rawValue
-        print("resolve goal unit: \(unitType)")//handle mintus and seconds
-        completion(INWorkoutGoalUnitTypeResolutionResult.success(with: INWorkoutGoalUnitType.second))
-    }
+//    func resolveWorkoutGoalUnitType(forStartWorkout intent: INStartWorkoutIntent, with completion: @escaping (INWorkoutGoalUnitTypeResolutionResult) -> Void) {
+//        let unitType = intent.workoutGoalUnitType.rawValue
+//        print("resolve goal unit: \(unitType)")//handle mintus and seconds
+//        completion(INWorkoutGoalUnitTypeResolutionResult.success(with: INWorkoutGoalUnitType.second))
+//    }
     
-    func confirm(startWorkout intent: INStartWorkoutIntent, completion: @escaping (INStartWorkoutIntentResponse) -> Void) {
-        print("confirmation forStartWorkout")
-        print("\nspoken: \(intent.workoutName?.spokenPhrase)")
-        
-        let userActivity = NSUserActivity.init(activityType: "pause")
-        completion(INStartWorkoutIntentResponse.init(code: INStartWorkoutIntentResponseCode.continueInApp, userActivity: userActivity))
-    }
+//    func confirm(startWorkout intent: INStartWorkoutIntent, completion: @escaping (INStartWorkoutIntentResponse) -> Void) {
+//        print("confirmation forStartWorkout")
+//        print("\nspoken: \(intent.workoutName?.spokenPhrase)")
+//        
+//        let userActivity = NSUserActivity.init(activityType: "pause")
+//        completion(INStartWorkoutIntentResponse.init(code: INStartWorkoutIntentResponseCode.continueInApp, userActivity: userActivity))
+//    }
     
     func handle(startWorkout intent: INStartWorkoutIntent, completion: @escaping (INStartWorkoutIntentResponse) -> Void) {
         print("handle forStartWorkout")

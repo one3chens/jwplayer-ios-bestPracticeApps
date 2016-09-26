@@ -36,8 +36,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             currentViewController?.handle(command: (resumeWorkoutIntent.workoutName?.spokenPhrase)!, quantity: 0)
         } else if theIntent is INStartWorkoutIntent {
             let seekIntent = theIntent as! INStartWorkoutIntent
-            print("seek to \(seekIntent.goalValue) \(seekIntent.workoutGoalUnitType)")
-            currentViewController?.handle(command: (seekIntent.workoutName?.spokenPhrase)!, quantity: UInt(seekIntent.goalValue!))
+        
+            var goalValue = UInt(0)
+            if (seekIntent.goalValue != nil) {
+                goalValue = UInt(seekIntent.goalValue!)
+            }
+            print("seek to \(goalValue) \(seekIntent.workoutGoalUnitType)")
+            currentViewController?.handle(command: (seekIntent.workoutName?.spokenPhrase)!, quantity: goalValue)
         }
         return true
     }
