@@ -52,5 +52,11 @@ target 'JWRemoteCastController Extension' do
 
 end
 
+target 'JWFairPlayDrm’ do
+
+pod 'JWPlayer-SDK', '~> 2.0'
+
+end
+
 workspace 'JWBestPracticeApps'
 

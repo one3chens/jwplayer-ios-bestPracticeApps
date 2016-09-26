@@ -24,6 +24,11 @@
 			<key>orderHint</key>
 			<integer>1</integer>
 		</dict>
+		<key>JWFairPlayDrm.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>6</integer>
+		</dict>
 		<key>JWRemoteCastController (Notification).xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -95,6 +100,11 @@
 			<true/>
 		</dict>
 		<key>8A729B621C99B4A0000F03A9</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8AB3E07C1D99B3F8002A3CA7</key>
 		<dict>
 			<key>primary</key>
 			<true/>
