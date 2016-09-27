@@ -20,7 +20,7 @@ Each target adds a level of complexity to the base target, JWBestPracticeApps, w
 
 - The target named JWRemoteCastController is an Apple Watch app capable of casting the video being reproduced in the iOS App named JWRemoteCastPlayer to a Chrome Cast device.
 
-- The target named JWFairPlayDrm illustrates how to use our DRM implementation to play a FairPlay encrypted stream that was generously provided by EZDRM.
+- The target named JWFairPlayDrm illustrates how to use our DRM implementation to play a FairPlay encrypted stream.
 
 ### Initial Setup for JWBestPracticeApps:
 
