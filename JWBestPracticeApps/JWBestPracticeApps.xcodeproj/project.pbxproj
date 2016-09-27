@@ -308,7 +308,6 @@
 		8AB3E0841D99B3F8002A3CA7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8AB3E0861D99B3F8002A3CA7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8AB3E0891D99B3F8002A3CA7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		8AB3E08B1D99B3F8002A3CA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8AB3E0931D99B4BF002A3CA7 /* JWBestPracticeApps-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JWBestPracticeApps-Bridging-Header.h"; sourceTree = "<group>"; };
 		8AB3E0991D99B6B4002A3CA7 /* JWFairPlayDrmViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JWFairPlayDrmViewController.swift; sourceTree = "<group>"; };
 		8AF5F6CC1C9A612B00C0D5E0 /* JWRemoteController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JWRemoteController.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -695,7 +694,6 @@
 				8AB3E0831D99B3F8002A3CA7 /* Main.storyboard */,
 				8AB3E0861D99B3F8002A3CA7 /* Assets.xcassets */,
 				8AB3E0881D99B3F8002A3CA7 /* LaunchScreen.storyboard */,
-				8AB3E08B1D99B3F8002A3CA7 /* Info.plist */,
 			);
 			path = JWFairPlayDrm;
 			sourceTree = "<group>";
@@ -2202,11 +2200,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ANALYZER_NONNULL = YES;
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = NO;
-				INFOPLIST_FILE = JWFairPlayDrm/Info.plist;
+				INFOPLIST_FILE = JWBestPracticeApps/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = JWPlayer.JWFairPlayDrm;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "JWBestPracticeApps/JWBestPracticeApps-Bridging-Header.h";
 				SWIFT_OBJC_INTERFACE_HEADER_NAME = "JWBestPracticeApps/JWBestPracticeApps-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -2219,11 +2218,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ANALYZER_NONNULL = YES;
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = NO;
-				INFOPLIST_FILE = JWFairPlayDrm/Info.plist;
+				INFOPLIST_FILE = JWBestPracticeApps/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = JWPlayer.JWFairPlayDrm;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "JWBestPracticeApps/JWBestPracticeApps-Bridging-Header.h";
 				SWIFT_OBJC_INTERFACE_HEADER_NAME = "JWBestPracticeApps/JWBestPracticeApps-Bridging-Header.h";
 			};
 			name = Release;
