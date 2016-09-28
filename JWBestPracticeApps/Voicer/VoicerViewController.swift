@@ -10,46 +10,88 @@ import UIKit
 import Intents
 
 class VoicerViewController: JWRemoteCastPlayerViewController {
-
+    
     let userDefaults = UserDefaults.init(suiteName: "group.com.jwplayer.wormhole")
+    let playerSynonyms = ["player", "play", "playing", "playback", "video", "movie"]
+    let seekingSynonyms = ["seeking", "seek"]
+    let castingSynonyms = ["casting", "chrome cast"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
         INPreferences.requestSiriAuthorization { (authorizationStatus) in
         }
+        
+    }
+    
+    func prepareCustomVocabulary() {
+        
     }
     
     public func handle(intent: INIntent) {
         if intent is INPauseWorkoutIntent {
             let pauseIntent = intent as! INPauseWorkoutIntent
-            self.handle(command: (pauseIntent.workoutName?.spokenPhrase)!, quantity: nil)
+            self.handlePause(command: pauseIntent.workoutName?.spokenPhrase)
         } else if intent is INResumeWorkoutIntent {
             let resumeIntent = intent as! INResumeWorkoutIntent
-            self.handle(command: (resumeIntent.workoutName?.spokenPhrase)!, quantity: nil)
+            self.handleResume(command: resumeIntent.workoutName?.spokenPhrase)
         } else if intent is INStartWorkoutIntent {
-            let seekIntent = intent as! INStartWorkoutIntent
-            let seekPosition = UInt(seekIntent.goalValue!)
-            self.handle(command: (seekIntent.workoutName?.spokenPhrase)!, quantity: seekPosition)
+            let startIntent = intent as! INStartWorkoutIntent
+            let startGoal = startIntent.goalValue != nil ? UInt(startIntent.goalValue!) : 0
+            self.handleStart(command: (startIntent.workoutName?.spokenPhrase), quantity: startGoal)
         } else if intent is INEndWorkoutIntent {
             let endCastingIntent = intent as! INEndWorkoutIntent
-            self.handle(command: (endCastingIntent.workoutName?.spokenPhrase)!, quantity: 0)
+            self.handleStart(command: (endCastingIntent.workoutName?.spokenPhrase), quantity: 0)
         }
     }
-
-    func handle(command: String, quantity: UInt?) {
-        if command.lowercased() == "play" {
+    
+    func handleResume(command: String?) {
+        if self.keywordFrom(synonym: command!) == "player" {
             self.player.play()
-        } else if command.lowercased() == "pause" {
+        }
+    }
+    
+    func handlePause(command: String?) {
+        if self.keywordFrom(synonym: command!) == "player" {
             self.player.pause()
-        } else if command.lowercased() == "seeking" {
+        }
+    }
+    
+    func handleStart(command: String?, quantity: UInt?) {
+        if self.keywordFrom(synonym: command!) == "seeking" {
             self.player.seek(quantity!)
-        } else if command.lowercased() == "casting" {
-            self.castController.disconnect()
+        } else if self.keywordFrom(synonym: command!) == "player" {
+            self.player.play()
         } else {
-            let castingDevice = self.obtainCastingDevice(name: command)
-            if castingDevice != nil {
-                self.castController.connect(to: castingDevice)
-            }
+            self.castTo(deviceName: command!)
+        }
+    }
+    
+    func handleEnd(command: String?) {
+        if self.keywordFrom(synonym: command!) == "casting" {
+            self.castController.disconnect()
+        }
+    }
+    
+    // MARK: Helper Methods
+    
+    func keywordFrom(synonym: String)-> String? {
+        let playerSynonyms = ["player", "play", "playing", "playback", "video", "movie"]
+        let seekingSynonyms = ["seeking", "seek"]
+        let castingSynonyms = ["casting", "chrome cast"]
+        if playerSynonyms.contains(synonym) {
+            return "player"
+        } else if seekingSynonyms.contains(synonym) {
+            return "seeking"
+        } else if castingSynonyms.contains(synonym) {
+            return "casting"
+        }
+        return nil
+    }
+    
+    func castTo(deviceName: String) {
+        let castingDevice = self.obtainCastingDevice(name: deviceName)
+        if castingDevice != nil {
+            self.castController.connect(to: castingDevice)
         }
     }
     
@@ -79,25 +121,5 @@ class VoicerViewController: JWRemoteCastPlayerViewController {
             self.userDefaults?.set(castingDevices, forKey: "castingDevices")
             self.userDefaults?.synchronize()
         }
-    }
-    
-    override func onConnected(to device: JWCastingDevice!) {
-        super.onConnected(to: device)
-    }
-    
-    override func onCasting() {
-        super.onCasting()
-    }
-    
-    override func onCastingEnded(_ error: Error!) {
-        super.onCastingEnded(error)
-    }
-    
-    override func onCastingFailed(_ error: Error!) {
-        super.onCastingFailed(error)
-    }
-    
-    override func onDisconnected(fromCastingDevice error: Error!) {
-        super.onDisconnected(fromCastingDevice: error)
     }
 }
