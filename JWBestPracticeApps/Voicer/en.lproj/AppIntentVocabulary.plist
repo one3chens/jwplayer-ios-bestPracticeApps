@@ -265,6 +265,16 @@
 						<dict>
 							<key>VocabularyItemExamples</key>
 							<array>
+								<string>start cast</string>
+							</array>
+							<key>VocabularyItemPronunciation</key>
+							<string>kast</string>
+							<key>VocabularyItemPhrase</key>
+							<string>cast</string>
+						</dict>
+						<dict>
+							<key>VocabularyItemExamples</key>
+							<array>
 								<string>start casting</string>
 							</array>
 							<key>VocabularyItemPronunciation</key>
@@ -300,6 +310,16 @@
 					<key>VocabularyItemSynonyms</key>
 					<array>
 						<dict>
+							<key>VocabularyItemExamples</key>
+							<array>
+								<string>start cast</string>
+							</array>
+							<key>VocabularyItemPronunciation</key>
+							<string>kast</string>
+							<key>VocabularyItemPhrase</key>
+							<string>cast</string>
+						</dict>
+						<dict>
 							<key>VocabularyItemPhrase</key>
 							<string>chrome cast</string>
 							<key>VocabularyItemPronunciation</key>
@@ -332,7 +352,7 @@
 			<key>IntentExamples</key>
 			<array>
 				<string>Siri resume player</string>
-				<string>Siri  resume playback</string>
+				<string>Siri resume playback</string>
 				<string>Siri resume video</string>
 				<string>Siri resume movie</string>
 				<string>Siri resume playing</string>
@@ -344,7 +364,7 @@
 			<key>IntentExamples</key>
 			<array>
 				<string>Siri pause player</string>
-				<string>Siri  pause playback</string>
+				<string>Siri pause playback</string>
 				<string>Siri pause video</string>
 				<string>Siri pause movie</string>
 				<string>Siri pause playing</string>

@@ -14,17 +14,13 @@ class VoicerViewController: JWRemoteCastPlayerViewController {
     let userDefaults = UserDefaults.init(suiteName: "group.com.jwplayer.wormhole")
     let playerSynonyms = ["player", "play", "playing", "playback", "video", "movie"]
     let seekingSynonyms = ["seeking", "seek"]
-    let castingSynonyms = ["casting", "chrome cast"]
+    let castingSynonyms = ["casting", "chrome cast", "cast"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
         INPreferences.requestSiriAuthorization { (authorizationStatus) in
         }
-        
-    }
-    
-    func prepareCustomVocabulary() {
-        
+        self.prepareCustomVocabulary()
     }
     
     public func handle(intent: INIntent) {
@@ -40,7 +36,7 @@ class VoicerViewController: JWRemoteCastPlayerViewController {
             self.handleStart(command: (startIntent.workoutName?.spokenPhrase), quantity: startGoal)
         } else if intent is INEndWorkoutIntent {
             let endCastingIntent = intent as! INEndWorkoutIntent
-            self.handleStart(command: (endCastingIntent.workoutName?.spokenPhrase), quantity: 0)
+            self.handleEnd(command: endCastingIntent.workoutName?.spokenPhrase)
         }
     }
     
@@ -74,15 +70,18 @@ class VoicerViewController: JWRemoteCastPlayerViewController {
     
     // MARK: Helper Methods
     
+    func prepareCustomVocabulary() {
+        let workoutNames = NSOrderedSet(array: self.playerSynonyms + self.seekingSynonyms + self.castingSynonyms)
+        let vocabulary = INVocabulary.shared()
+        vocabulary.setVocabularyStrings(workoutNames, of: .workoutActivityName)
+    }
+    
     func keywordFrom(synonym: String)-> String? {
-        let playerSynonyms = ["player", "play", "playing", "playback", "video", "movie"]
-        let seekingSynonyms = ["seeking", "seek"]
-        let castingSynonyms = ["casting", "chrome cast"]
-        if playerSynonyms.contains(synonym) {
+        if self.playerSynonyms.contains(synonym) {
             return "player"
-        } else if seekingSynonyms.contains(synonym) {
+        } else if self.seekingSynonyms.contains(synonym) {
             return "seeking"
-        } else if castingSynonyms.contains(synonym) {
+        } else if self.castingSynonyms.contains(synonym) {
             return "casting"
         }
         return nil

@@ -18,7 +18,6 @@ class IntentHandler: INExtension, INStartWorkoutIntentHandling, INResumeWorkoutI
     
     func resolveWorkoutName(forStartWorkout intent: INStartWorkoutIntent, with completion: @escaping (INSpeakableStringResolutionResult) -> Void) {
         if intent.workoutName?.spokenPhrase == "casting" {
-            print("resolve casting")
             var disambiguationOptions: [INSpeakableString]
             let castingDeviceNames = self.userDefaults?.value(forKey: "castingDevices") as? [String?]
             if (castingDeviceNames == nil || castingDeviceNames?.count == 0) {
@@ -28,34 +27,37 @@ class IntentHandler: INExtension, INStartWorkoutIntentHandling, INResumeWorkoutI
             }
             completion(INSpeakableStringResolutionResult.disambiguation(with: disambiguationOptions))
         } else if intent.workoutName != nil {
-            print("resolve \(intent.workoutName!.spokenPhrase)")
             completion(INSpeakableStringResolutionResult.success(with: intent.workoutName!))
         } else {
-            print("resolve else")
             completion(INSpeakableStringResolutionResult.disambiguation(with: self.standardDisambiguationOptions()))
         }
     }
     
+    func resolveGoalValue(forStartWorkout intent: INStartWorkoutIntent, with completion: @escaping (INDoubleResolutionResult) -> Void) {
+        let goalValue = (intent.goalValue != nil) ? intent.goalValue! : Double(0)
+        completion(INDoubleResolutionResult.success(with: goalValue))
+    }
+    
+    func resolveWorkoutGoalUnitType(forStartWorkout intent: INStartWorkoutIntent, with completion: @escaping (INWorkoutGoalUnitTypeResolutionResult) -> Void) {
+        completion(INWorkoutGoalUnitTypeResolutionResult.success(with: intent.workoutGoalUnitType))
+    }
+    
     func handle(startWorkout intent: INStartWorkoutIntent, completion: @escaping (INStartWorkoutIntentResponse) -> Void) {
-        print("start")
         let userActivity = NSUserActivity.init(activityType: "start")
         completion(INStartWorkoutIntentResponse.init(code: INStartWorkoutIntentResponseCode.continueInApp, userActivity: userActivity))
     }
     
     func handle(resumeWorkout intent: INResumeWorkoutIntent, completion: @escaping(INResumeWorkoutIntentResponse) -> Void) {
-        print("resume")
         let userActivity = NSUserActivity.init(activityType: "resume")
         completion(INResumeWorkoutIntentResponse.init(code: INResumeWorkoutIntentResponseCode.continueInApp, userActivity: userActivity))
     }
     
     func handle(pauseWorkout intent: INPauseWorkoutIntent, completion: @escaping(INPauseWorkoutIntentResponse) -> Void) {
-        print("pause")
         let userActivity = NSUserActivity.init(activityType: "pause")
         completion(INPauseWorkoutIntentResponse.init(code: INPauseWorkoutIntentResponseCode.continueInApp, userActivity: userActivity))
     }
     
     func handle(endWorkout intent: INEndWorkoutIntent, completion: @escaping (INEndWorkoutIntentResponse) -> Void) {
-        print("end")
         let userActivity = NSUserActivity.init(activityType: "end")
         completion(INEndWorkoutIntentResponse.init(code: INEndWorkoutIntentResponseCode.continueInApp, userActivity: userActivity))
     }
