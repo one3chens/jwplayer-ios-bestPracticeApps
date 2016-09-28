@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		03F7161471F9D3F882B5C20B /* libPods-JWCasting.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 18B46F999BDD3032B9BCB1F4 /* libPods-JWCasting.a */; };
 		2F6660756A2BC13A41B87E12 /* libPods-JWRemoteCastController Extension.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F6F521C80198C3CF424CC542 /* libPods-JWRemoteCastController Extension.a */; };
-		3653A22E6235300063016517 /* libPods-JWSiriVideoExtension.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 11A199DDB685E2180A964D5C /* libPods-JWSiriVideoExtension.a */; };
 		5BFDE0F3954AAFFAC1F38A76 /* libPods-JWRemoteController.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C53086B079689F858B02A42A /* libPods-JWRemoteController.a */; };
 		5C3FFB15941ABE636744FD6B /* libPods-JWRemoteCastController.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0952719B40B38A7563CAD16F /* libPods-JWRemoteCastController.a */; };
 		5FC336DC91B9503D34A48A27 /* libPods-VoicerExtension.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 01A06EF1BFF97EDC16B19A95 /* libPods-VoicerExtension.a */; };
@@ -138,7 +137,6 @@
 		B54F4F4C1D930BDC0026B7C7 /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54F4F4B1D930BDC0026B7C7 /* IntentHandler.swift */; };
 		B54F4F501D930BDC0026B7C7 /* VoicerExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = B54F4F491D930BDC0026B7C7 /* VoicerExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		B5BC26A91D958BFF00F32770 /* AppIntentVocabulary.plist in Resources */ = {isa = PBXBuildFile; fileRef = B5BC26A71D958BFF00F32770 /* AppIntentVocabulary.plist */; };
-		B9EC2976A2A23D84B3790C88 /* libPods-JWVoiceControl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 75A9CECA1EB7767D6DA505E1 /* libPods-JWVoiceControl.a */; };
 		C24874D002C8E9721BA8E61F /* libPods-JWRemotePlayer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 36BCA1345113D7AE624BEB2D /* libPods-JWRemotePlayer.a */; };
 		D37413B333297461C0FD0791 /* libPods-JWRemoteController Extension.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 787B849139DF8B66FA89FA5C /* libPods-JWRemoteController Extension.a */; };
 		F6841AEF9C8AEA3DED8AA298 /* libPods-JWRemoteCastPlayer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 73D5AFFCD082D3F92A3671CF /* libPods-JWRemoteCastPlayer.a */; };
@@ -286,7 +284,6 @@
 		469A6375B85247D4516142AE /* Pods-JWRemoteController Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JWRemoteController Extension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JWRemoteController Extension/Pods-JWRemoteController Extension.debug.xcconfig"; sourceTree = "<group>"; };
 		56A46499C09525FA3C058938 /* Pods-JWAirPlay.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JWAirPlay.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JWAirPlay/Pods-JWAirPlay.debug.xcconfig"; sourceTree = "<group>"; };
 		5866385BBD927C92F367DB7C /* libPods-JWAirPlay.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JWAirPlay.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		5D4E437DF2025D5D14A4C816 /* Pods-JWSiriVideoExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JWSiriVideoExtension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JWSiriVideoExtension/Pods-JWSiriVideoExtension.debug.xcconfig"; sourceTree = "<group>"; };
 		73D5AFFCD082D3F92A3671CF /* libPods-JWRemoteCastPlayer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JWRemoteCastPlayer.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		75A9CECA1EB7767D6DA505E1 /* libPods-JWVoiceControl.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JWVoiceControl.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7749A5E7085C50853FC4FD3F /* Pods-JWRemoteCastController.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JWRemoteCastController.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JWRemoteCastController/Pods-JWRemoteCastController.debug.xcconfig"; sourceTree = "<group>"; };
@@ -380,7 +377,6 @@
 		8AF5F6E61C9A612B00C0D5E0 /* NotificationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationController.m; sourceTree = "<group>"; };
 		8AF5F6E81C9A612B00C0D5E0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8AF5F6F51C9A61DA00C0D5E0 /* JWRemoteTerminologyHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWRemoteTerminologyHelper.h; sourceTree = "<group>"; };
-		94B87C1518023A33FFDA5824 /* Pods-JWVoiceControl.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JWVoiceControl.release.xcconfig"; path = "Pods/Target Support Files/Pods-JWVoiceControl/Pods-JWVoiceControl.release.xcconfig"; sourceTree = "<group>"; };
 		969799C36851B711451E6914 /* Pods-JWBestPracticeApps.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JWBestPracticeApps.release.xcconfig"; path = "Pods/Target Support Files/Pods-JWBestPracticeApps/Pods-JWBestPracticeApps.release.xcconfig"; sourceTree = "<group>"; };
 		9EB18D2E0C98F9B2F6BD446A /* Pods-JWRemoteController.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JWRemoteController.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JWRemoteController/Pods-JWRemoteController.debug.xcconfig"; sourceTree = "<group>"; };
 		AE13619DC752730AA54E1307 /* Pods-JWRemoteCastController Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JWRemoteCastController Extension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JWRemoteCastController Extension/Pods-JWRemoteCastController Extension.debug.xcconfig"; sourceTree = "<group>"; };
@@ -415,9 +411,7 @@
 		DE458D874713A4FEA898FC11 /* Pods-JWAirPlay.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JWAirPlay.release.xcconfig"; path = "Pods/Target Support Files/Pods-JWAirPlay/Pods-JWAirPlay.release.xcconfig"; sourceTree = "<group>"; };
 		ED976D25D4013BA5D0829D0A /* libPods-Voicer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Voicer.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6F521C80198C3CF424CC542 /* libPods-JWRemoteCastController Extension.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JWRemoteCastController Extension.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		F9EA2EBE0F8C75D865E5E2C7 /* Pods-JWVoiceControl.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JWVoiceControl.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JWVoiceControl/Pods-JWVoiceControl.debug.xcconfig"; sourceTree = "<group>"; };
 		FC281FF062456D619081111F /* Pods-JWRemoteController Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JWRemoteController Extension.release.xcconfig"; path = "Pods/Target Support Files/Pods-JWRemoteController Extension/Pods-JWRemoteController Extension.release.xcconfig"; sourceTree = "<group>"; };
-		FF03D01CC3E606CED5C0612D /* Pods-JWSiriVideoExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JWSiriVideoExtension.release.xcconfig"; path = "Pods/Target Support Files/Pods-JWSiriVideoExtension/Pods-JWSiriVideoExtension.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -481,7 +475,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B9EC2976A2A23D84B3790C88 /* libPods-JWVoiceControl.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -497,7 +490,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3653A22E6235300063016517 /* libPods-JWSiriVideoExtension.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -549,14 +541,10 @@
 				8AB274596913835758B1017D /* Pods-JWRemoteCastController Extension.release.xcconfig */,
 				33F770C1ED73AB810248CB9C /* Pods-JWRemoteCastPlayer.debug.xcconfig */,
 				CACD41ACE46043F115BD3DDB /* Pods-JWRemoteCastPlayer.release.xcconfig */,
-				F9EA2EBE0F8C75D865E5E2C7 /* Pods-JWVoiceControl.debug.xcconfig */,
-				94B87C1518023A33FFDA5824 /* Pods-JWVoiceControl.release.xcconfig */,
 				AFFC2FBEFC64CED35CE549C5 /* Pods-SiriPlayerController.debug.xcconfig */,
 				C34588F31A7DF0E79015A9C6 /* Pods-SiriPlayerController.release.xcconfig */,
 				30A3091CB473FF8DB7A7511A /* Pods-SiriPlayerControllerUI.debug.xcconfig */,
 				884998439C63B73C2EB23C8F /* Pods-SiriPlayerControllerUI.release.xcconfig */,
-				5D4E437DF2025D5D14A4C816 /* Pods-JWSiriVideoExtension.debug.xcconfig */,
-				FF03D01CC3E606CED5C0612D /* Pods-JWSiriVideoExtension.release.xcconfig */,
 				3BB8C7391F58D5A50C6A715C /* Pods-Voicer.debug.xcconfig */,
 				CAEE03E2E9C059CB3701D739 /* Pods-Voicer.release.xcconfig */,
 				C9C71870F578D77EE7ED3305 /* Pods-VoicerExtension.debug.xcconfig */,
@@ -1152,12 +1140,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B53A0E031D8355CF00893252 /* Build configuration list for PBXNativeTarget "JWVoiceControl" */;
 			buildPhases = (
-				D1BBAB93C2A2BAC331844240 /* [CP] Check Pods Manifest.lock */,
 				B53A0DEE1D8355CF00893252 /* Sources */,
 				B53A0DEF1D8355CF00893252 /* Frameworks */,
 				B53A0DF01D8355CF00893252 /* Resources */,
-				3B50BFE82C5435D1676A3723 /* [CP] Embed Pods Frameworks */,
-				79A023DE5F875F68B5FB95B2 /* [CP] Copy Pods Resources */,
 				B5308C111D83624C007D2A1F /* Headers */,
 				B54424B71D9060A700719197 /* Embed App Extensions */,
 			);
@@ -1198,12 +1183,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B54424B61D9060A700719197 /* Build configuration list for PBXNativeTarget "JWSiriVideoExtension" */;
 			buildPhases = (
-				86AC8394C1191DA328E61ACD /* [CP] Check Pods Manifest.lock */,
 				B54424A81D9060A700719197 /* Sources */,
 				B54424A91D9060A700719197 /* Frameworks */,
 				B54424AA1D9060A700719197 /* Resources */,
-				8271B2A8A7D8D08CA8C63E27 /* [CP] Embed Pods Frameworks */,
-				36C4F57B76881120D8425B62 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -1609,21 +1591,6 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		36C4F57B76881120D8425B62 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JWSiriVideoExtension/Pods-JWSiriVideoExtension-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		371E68D98909341D478FC1E6 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1652,21 +1619,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Voicer/Pods-Voicer-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		3B50BFE82C5435D1676A3723 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JWVoiceControl/Pods-JWVoiceControl-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		40B1C5A04E3B3D57C2324B42 /* [CP] Embed Pods Frameworks */ = {
@@ -1819,51 +1771,6 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		79A023DE5F875F68B5FB95B2 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JWVoiceControl/Pods-JWVoiceControl-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		8271B2A8A7D8D08CA8C63E27 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JWSiriVideoExtension/Pods-JWSiriVideoExtension-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		86AC8394C1191DA328E61ACD /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
 		913D57B68FE759D9DF023CCF /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1952,21 +1859,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JWRemoteCastPlayer/Pods-JWRemoteCastPlayer-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		D1BBAB93C2A2BAC331844240 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		D8C5D0DDCB9F57712020D253 /* [CP] Check Pods Manifest.lock */ = {
@@ -2754,7 +2646,6 @@
 		};
 		B53A0E011D8355CF00893252 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F9EA2EBE0F8C75D865E5E2C7 /* Pods-JWVoiceControl.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -2779,7 +2670,6 @@
 		};
 		B53A0E021D8355CF00893252 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 94B87C1518023A33FFDA5824 /* Pods-JWVoiceControl.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -2845,7 +2735,6 @@
 		};
 		B54424B41D9060A700719197 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5D4E437DF2025D5D14A4C816 /* Pods-JWSiriVideoExtension.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -2865,7 +2754,6 @@
 		};
 		B54424B51D9060A700719197 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FF03D01CC3E606CED5C0612D /* Pods-JWSiriVideoExtension.release.xcconfig */;
 			buildSettings = {
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;

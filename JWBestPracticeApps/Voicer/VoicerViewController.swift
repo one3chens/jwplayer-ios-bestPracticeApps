@@ -2,7 +2,7 @@
 //  VoicerViewController.swift
 //  JWBestPracticeApps
 //
-//  Created by JWP Admin on 9/21/16.
+//  Created by Karim Mourra on 9/21/16.
 //  Copyright © 2016 Karim Mourra. All rights reserved.
 //
 
@@ -16,29 +16,44 @@ class VoicerViewController: JWRemoteCastPlayerViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         INPreferences.requestSiriAuthorization { (authorizationStatus) in
-            print("Authorized \(authorizationStatus)")
+        }
+    }
+    
+    public func handle(intent: INIntent) {
+        if intent is INPauseWorkoutIntent {
+            let pauseIntent = intent as! INPauseWorkoutIntent
+            self.handle(command: (pauseIntent.workoutName?.spokenPhrase)!, quantity: nil)
+        } else if intent is INResumeWorkoutIntent {
+            let resumeIntent = intent as! INResumeWorkoutIntent
+            self.handle(command: (resumeIntent.workoutName?.spokenPhrase)!, quantity: nil)
+        } else if intent is INStartWorkoutIntent {
+            let seekIntent = intent as! INStartWorkoutIntent
+            let seekPosition = UInt(seekIntent.goalValue!)
+            self.handle(command: (seekIntent.workoutName?.spokenPhrase)!, quantity: seekPosition)
+        } else if intent is INEndWorkoutIntent {
+            let endCastingIntent = intent as! INEndWorkoutIntent
+            self.handle(command: (endCastingIntent.workoutName?.spokenPhrase)!, quantity: 0)
         }
     }
 
-    public func handle(command: String, quantity: UInt?) {
+    func handle(command: String, quantity: UInt?) {
         if command.lowercased() == "play" {
-            print("playing")
             self.player.play()
         } else if command.lowercased() == "pause" {
-            print("pausing")
             self.player.pause()
         } else if command.lowercased() == "seeking" {
             self.player.seek(quantity!)
         } else if command.lowercased() == "casting" {
             self.castController.disconnect()
         } else {
-            let castingDevice = self.castingDeviceFrom(name: command)
-            self.castController.connect(to: castingDevice)
+            let castingDevice = self.obtainCastingDevice(name: command)
+            if castingDevice != nil {
+                self.castController.connect(to: castingDevice)
+            }
         }
     }
     
-    func castingDeviceFrom(name: String) -> JWCastingDevice? {
-//        let castingDevices = self.userDefaults?.value(forKey: "castingDevices") as! [String]
+    func obtainCastingDevice(name: String) -> JWCastingDevice? {
         for device in self.castController.availableDevices {
             let castDevice = device as! JWCastingDevice
             if castDevice.name == name {
@@ -48,8 +63,9 @@ class VoicerViewController: JWRemoteCastPlayerViewController {
         return nil
     }
     
+    // MARK: Cast Delegate Methods
+    
     override func onCastingDevicesAvailable(_ devices: [JWCastingDevice]!) {
-        print("onCastingDevicesAvailable")
         super.onCastingDevicesAvailable(devices)
         self.prepareCastingDevices()
     }
@@ -59,12 +75,6 @@ class VoicerViewController: JWRemoteCastPlayerViewController {
         for device in self.castController.availableDevices {
             castingDevices.append((device as! JWCastingDevice).name)
         }
-        /*
-        let vocabulary = INVocabulary.shared()
-        let orderedDevices = NSOrderedSet(array: castingDevices)
-        vocabulary.setVocabularyStrings(orderedDevices, of: INVocabularyStringType.workoutActivityName)
-        */
-        print("\(castingDevices)")
         if castingDevices.count > 0 {
             self.userDefaults?.set(castingDevices, forKey: "castingDevices")
             self.userDefaults?.synchronize()
@@ -89,6 +99,5 @@ class VoicerViewController: JWRemoteCastPlayerViewController {
     
     override func onDisconnected(fromCastingDevice error: Error!) {
         super.onDisconnected(fromCastingDevice: error)
-        
     }
 }

@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  Voicer
 //
-//  Created by JWP Admin on 9/21/16.
+//  Created by Karim Mourra on 9/21/16.
 //  Copyright © 2016 Karim Mourra. All rights reserved.
 //
 
@@ -16,94 +16,47 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        self.setUpBackgroundAudio()
+        self.enableBackgroundAudio()
         return true
     }
     
-    func application(_ application: UIApplication, continue userActivity: NSUserActivity, restorationHandler: @escaping ([Any]?) -> Void) -> Bool {
-        let interaction = userActivity.interaction
-        print("details \(userActivity.activityType)")
-        let navigationController = application.keyWindow?.rootViewController as! UINavigationController
-        
-        let currentViewController = navigationController.childViewControllers[0] as? VoicerViewController
-        let theIntent = interaction?.intent
-        if theIntent is INPauseWorkoutIntent {
-            let pauseWorkoutIntent = theIntent as! INPauseWorkoutIntent
-            print("it's a INPauseWorkoutIntent + \(pauseWorkoutIntent.workoutName?.spokenPhrase)")
-            currentViewController?.handle(command: (pauseWorkoutIntent.workoutName?.spokenPhrase)!, quantity: 0)
-        } else if theIntent is INResumeWorkoutIntent {
-            let resumeWorkoutIntent = theIntent as! INResumeWorkoutIntent
-            print("it's a INResumeWorkoutIntent + \(resumeWorkoutIntent.workoutName?.spokenPhrase)")
-            currentViewController?.handle(command: (resumeWorkoutIntent.workoutName?.spokenPhrase)!, quantity: 0)
-        } else if theIntent is INStartWorkoutIntent {
-            let seekIntent = theIntent as! INStartWorkoutIntent
-        
-            var goalValue = UInt(0)
-            if (seekIntent.goalValue != nil) {
-                goalValue = UInt(seekIntent.goalValue!)
-            }
-            print("seek to \(goalValue) \(seekIntent.workoutGoalUnitType)")
-            currentViewController?.handle(command: (seekIntent.workoutName?.spokenPhrase)!, quantity: goalValue)
-        } else if theIntent is INEndWorkoutIntent {
-            let endWorkoutIntent = theIntent as! INEndWorkoutIntent
-            currentViewController?.handle(command: (endWorkoutIntent.workoutName?.spokenPhrase)!, quantity: 0)
-        }
-        return true
-    }
-    
-    func convert(spokenPhrase: String) -> String
-    {
-        if spokenPhrase.lowercased() == "seek" {
-            return "seeking"
-        } else if spokenPhrase.lowercased() == "video" {
-            return "playing"
-//        } else if spokenPhrase.lowercased() {
-//            
-//        } else if spokenPhrase.lowercased() {
-//            
-//        } else if spokenPhrase.lowercased() {
-            
-        } else {
-            return ""
-        }
-    }
-
-    func applicationWillResignActive(_ application: UIApplication) {
-        // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
-        // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.
-    }
-
-    func applicationDidEnterBackground(_ application: UIApplication) {
-        // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
-        // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
-    }
-
-    func applicationWillEnterForeground(_ application: UIApplication) {
-        // Called as part of the transition from the background to the active state; here you can undo many of the changes made on entering the background.
-    }
-
-    func applicationDidBecomeActive(_ application: UIApplication) {
-        // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
-    }
-
-    func applicationWillTerminate(_ application: UIApplication) {
-        // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
-    }
-    
-    func setUpBackgroundAudio() -> Void {
+    func enableBackgroundAudio() -> Void {
         let audioSession = AVAudioSession.sharedInstance()
         try? audioSession.setCategory(AVAudioSessionCategoryPlayback)
         do {
             try audioSession.setCategory(AVAudioSessionCategoryPlayback)
         } catch {
-            print("failure setCategory(AVAudioSessionCategoryPlayback)")
+            print("failure")
         }
         try? audioSession.setActive(true)
         do {
             try audioSession.setActive(true)
         } catch {
-            print("failure setActive(true)")
+            print("failure")
         }
+    }
+    
+    func application(_ application: UIApplication, continue userActivity: NSUserActivity, restorationHandler: @escaping ([Any]?) -> Void) -> Bool {
+        let navigationController = application.keyWindow?.rootViewController as! UINavigationController
+        let currentVoicerViewController = navigationController.childViewControllers[0] as? VoicerViewController
+        let userIntent = userActivity.interaction?.intent
+        currentVoicerViewController?.handle(intent: userIntent!)
+        return true
+    }
+
+    func applicationWillResignActive(_ application: UIApplication) {
+    }
+
+    func applicationDidEnterBackground(_ application: UIApplication) {
+    }
+
+    func applicationWillEnterForeground(_ application: UIApplication) {
+    }
+
+    func applicationDidBecomeActive(_ application: UIApplication) {
+    }
+
+    func applicationWillTerminate(_ application: UIApplication) {
     }
 }
 
