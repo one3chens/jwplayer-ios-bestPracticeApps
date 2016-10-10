@@ -6,7 +6,7 @@
 //  Copyright © 2016 Karim Mourra. All rights reserved.
 //
 
-class JWFairPlayDrmViewController: JWBasicVideoViewController, JWDrmDataSource, NSURLSessionDelegate {
+class JWFairPlayDrmViewController: JWBasicVideoViewController, JWDrmDataSource, URLSessionDelegate {
     
     let encryptedFile = "http://fps.ezdrm.com/demo/video/ezdrm.m3u8"
     
@@ -19,22 +19,14 @@ class JWFairPlayDrmViewController: JWBasicVideoViewController, JWDrmDataSource, 
         self.player.load(encryptedFile)
     }
     
-    func fetchContentIdentifierForRequest(_ loadingRequestURL: NSURL!, forEncryption encryption: JWEncryption, withCompletion completion: ((NSData?) -> Void)!) {
-        if encryption == JWFairPlay {
-            let assetId = loadingRequestURL.parameterString
-            let asssetIdData = NSData.init(bytes: (assetId?.cStringUsingEncoding(NSUTF8StringEncoding))!, length: (assetId?.lengthOfBytesUsingEncoding(NSUTF8StringEncoding))!)
-            completion(asssetIdData)
-        }
-    }
-    
-    func fetchAppIdentifierForRequest(_ loadingRequestURL: NSURL!, forEncryption encryption: JWEncryption, withCompletion completion: ((NSData?) -> Void)!) {
+    func fetchAppIdentifier(forRequest loadingRequestURL: URL!, for encryption: JWEncryption, withCompletion completion: ((Data?) -> Void)!) {
         if encryption == JWFairPlay {
             let request = NSMutableURLRequest.init()
-            request.URL = NSURL.init(string: "http://fps.ezdrm.com/demo/video/eleisure.cer")
-            request.HTTPMethod = "GET"
-            let configuration = NSURLSessionConfiguration.defaultSessionConfiguration()
-            let session = NSURLSession.init(configuration: configuration, delegate: self, delegateQueue: nil)
-            let getDataTask = session.dataTaskWithRequest(request, completionHandler: { (data, response, error) in
+            request.url = NSURL.init(string: "http://fps.ezdrm.com/demo/video/eleisure.cer") as URL?
+            request.httpMethod = "GET"
+            let configuration = URLSessionConfiguration.default
+            let session = URLSession.init(configuration: configuration, delegate: self, delegateQueue: nil)
+            let getDataTask = session.dataTask(with: request as URLRequest, completionHandler: { (data, response, error) in
                 completion(data)
                 session.finishTasksAndInvalidate()
             })
@@ -42,18 +34,27 @@ class JWFairPlayDrmViewController: JWBasicVideoViewController, JWDrmDataSource, 
         }
     }
     
-    func fetchContentKeyWithRequest(_ requestBytes: NSData!, forEncryption encryption: JWEncryption, withCompletion completion: ((NSData?, NSDate?, String?) -> Void)!) {
+    func fetchContentIdentifier(forRequest loadingRequestURL: URL!, for encryption: JWEncryption, withCompletion completion: ((Data?) -> Void)!) {
+        if encryption == JWFairPlay {
+            var assetId = loadingRequestURL.path
+            assetId = assetId.substring(from: assetId.index(after: assetId.characters.index(of: ";")!))
+            let asssetIdData = NSData.init(bytes: (assetId.cString(using: String.Encoding.utf8))!, length: (assetId.lengthOfBytes(using: String.Encoding.utf8)))
+            completion(asssetIdData as Data)
+        }
+    }
+    
+    func fetchContentKey(withRequest requestBytes: Data!, for encryption: JWEncryption, withCompletion completion: ((Data?, Date?, String?) -> Void)!) {
         if encryption == JWFairPlay {
             let currentTime = NSTimeIntervalSince1970 * 1000
             let keyServerAddress = String.init(format: "http://fps.ezdrm.com/api/licenses/09cc0377-6dd4-40cb-b09d-b582236e70fe?p1=\(currentTime)")
             let ksmURL = NSURL.init(string: keyServerAddress)
-            let request = NSMutableURLRequest.init(URL: ksmURL!)
-            request.HTTPMethod = "POST"
+            let request = NSMutableURLRequest.init(url: ksmURL! as URL)
+            request.httpMethod = "POST"
             request.setValue("application/octet-stream", forHTTPHeaderField: "Content-type")
-            request.HTTPBody = requestBytes
-            let configuration = NSURLSessionConfiguration.defaultSessionConfiguration()
-            let session = NSURLSession.init(configuration: configuration, delegate: self, delegateQueue: nil)
-            let postDataTask = session.dataTaskWithRequest(request, completionHandler: { (data, response, error) in
+            request.httpBody = requestBytes as Data?
+            let configuration = URLSessionConfiguration.default
+            let session = URLSession.init(configuration: configuration, delegate: self, delegateQueue: nil)
+            let postDataTask = session.dataTask(with: request as URLRequest, completionHandler: { (data, response, error) in
                 completion(data, nil, nil)
             })
             postDataTask.resume()
