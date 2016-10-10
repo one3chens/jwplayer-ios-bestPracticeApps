@@ -6,6 +6,11 @@
 #define JWBestPracticeApps_Bridging_Header_h
 
 #import "JWBasicVideoViewController.h"
+<<<<<<< HEAD
 #import "JWRemoteCastPlayerViewController.h"
 
 #endif /* JWBestPracticeApps_Bridging_Header_h */
+=======
+
+#endif /* JWBestPracticeApps_Bridging_Header_h */
+>>>>>>> master

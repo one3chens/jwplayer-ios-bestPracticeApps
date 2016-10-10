@@ -15,6 +15,10 @@ SPEC CHECKSUMS:
   google-cast-sdk: 1911d498a11a8fbb7a91ce0e0f50cf0d4fe6e3b6
   JWPlayer-SDK: a165970c3ae346918c167fb85de9eba47d28cee8
 
+<<<<<<< HEAD
 PODFILE CHECKSUM: ff3f840e75bbba1914eb9efb45bc2a5ecf737426
+=======
+PODFILE CHECKSUM: 9622b951a21603d934e92f45e4c6966b61d4feb4
+>>>>>>> master
 
 COCOAPODS: 1.0.1

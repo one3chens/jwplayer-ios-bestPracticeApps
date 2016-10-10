@@ -1,7 +1,15 @@
 # JW Player iOS Best Practice Apps
 
-This repository is used to present Objective-C code which can be used to achieve custom functionality with your JW Player. 
-The JWBestPracticeApps XCode project is composed of several targets which can be run as separate iOS applications. 
+This repository contains samples relating to the JW Player SDK for iOS.
+
+The following projects can be found within this repository:
+
+- [JWBestPracticeApps](#jwbestpracticeapps)
+- [JWPlayer-VR-Developer-Demo](#jwplayer-vr-developer-demo)
+
+## JWBestPracticeApps
+
+The JWBestPracticeApps XCode project is composed of several targets which can be run as separate iOS applications.
 Each target adds a level of complexity to the base target, JWBestPracticeApps, which creates a basic JW Player with minimal customization. In each target, classes inherit from classes of more basic targets, allowing us to present relevant code in a clear way and spare you the redundancy.
 
 - The target named JWAirPlay presents the necessary code to add an AirPlay button to your app, and cast the video via AirPlay.
@@ -12,13 +20,15 @@ Each target adds a level of complexity to the base target, JWBestPracticeApps, w
 
 - The target named JWRemoteCastController is an Apple Watch app capable of casting the video being reproduced in the iOS App named JWRemoteCastPlayer to a Chrome Cast device.
 
-## Initial Setup:
+- The target named JWFairPlayDrm illustrates how to use our DRM implementation to play a FairPlay encrypted stream.
 
-### Via CocoaPods
+### Initial Setup for JWBestPracticeApps:
+
+#### Via CocoaPods
 
 The JW Player iOS SDK as well as the Google Cast SDK required for JWCasting can be retrieved using CocoaPods. Using your command line, navigate to the JWBestPracticeApps folder and run 'pod install'. When installation is complete, please use the xcworkspace, not the xcodeproj. Remember to add your JWPlayer key to the info.plist in the JWBestPracticeApps target.
 
-### Via Manual Framework installation
+#### Via Manual Framework installation
 
 Import the JW Player iOS SDK to the project, add your JWPlayer key to the info.plist in the JWBestPracticeApps target and link the JWPlayer iOS SDK. To avoid importing the JW Player iOS SDK to each target, import it once to the JWBestPracticeApps target and set its Target Membership to each target, as seen in the following screenshot:
 
@@ -30,4 +40,11 @@ For targets that require casting to Google ChromeCast, you must import a Google 
 
 **Note**: The demo apps in this repository are intended to be used with **version 2.4** of the JW Player iOS SDK.
 
-**Feedback**: Was this repository helpful? How can we improve it? Please send your feedback to support+sdk@jwplayer.com.
+## JWPlayer-VR-Developer-Demo
+
+The JWPlayer-VR-Developer-Demo project showcases how the JW Player VR SDK can be used to allow 360 video playback within your apps.
+
+For setup instructions see the JWPlayer-VR-Developer-Demo [README](./JWPlayer-VR-Developer-Demo/README.md).
+
+## **Feedback**:
+Was this repository helpful? How can we improve it? Please send your feedback to support+sdk@jwplayer.com.
