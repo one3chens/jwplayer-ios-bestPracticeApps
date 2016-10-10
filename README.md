@@ -22,6 +22,8 @@ Each target adds a level of complexity to the base target, JWBestPracticeApps, w
 
 - The target named JWFairPlayDrm illustrates how to use our DRM implementation to play a FairPlay encrypted stream.
 
+- The target named Voicer provides the code necessary to control the player's playback and casting with voice control using Siri.
+
 ### Initial Setup for JWBestPracticeApps:
 
 #### Via CocoaPods
