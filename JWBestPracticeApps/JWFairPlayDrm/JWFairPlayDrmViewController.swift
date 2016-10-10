@@ -19,7 +19,7 @@ class JWFairPlayDrmViewController: JWBasicVideoViewController, JWDrmDataSource, 
         self.player.load(encryptedFile)
     }
     
-    func fetchContentIdentifierForRequest(loadingRequestURL: NSURL!, forEncryption encryption: JWEncryption, withCompletion completion: ((NSData!) -> Void)!) {
+    func fetchContentIdentifierForRequest(_ loadingRequestURL: NSURL!, forEncryption encryption: JWEncryption, withCompletion completion: ((NSData?) -> Void)!) {
         if encryption == JWFairPlay {
             let assetId = loadingRequestURL.parameterString
             let asssetIdData = NSData.init(bytes: (assetId?.cStringUsingEncoding(NSUTF8StringEncoding))!, length: (assetId?.lengthOfBytesUsingEncoding(NSUTF8StringEncoding))!)
@@ -27,7 +27,7 @@ class JWFairPlayDrmViewController: JWBasicVideoViewController, JWDrmDataSource, 
         }
     }
     
-    func fetchAppIdentifierForRequest(loadingRequestURL: NSURL!, forEncryption encryption: JWEncryption, withCompletion completion: ((NSData!) -> Void)!) {
+    func fetchAppIdentifierForRequest(_ loadingRequestURL: NSURL!, forEncryption encryption: JWEncryption, withCompletion completion: ((NSData?) -> Void)!) {
         if encryption == JWFairPlay {
             let request = NSMutableURLRequest.init()
             request.URL = NSURL.init(string: "http://fps.ezdrm.com/demo/video/eleisure.cer")
@@ -42,7 +42,7 @@ class JWFairPlayDrmViewController: JWBasicVideoViewController, JWDrmDataSource, 
         }
     }
     
-    func fetchContentKeyWithRequest(requestBytes: NSData!, forEncryption encryption: JWEncryption, withCompletion completion: ((NSData!, NSDate!, String!) -> Void)!) {
+    func fetchContentKeyWithRequest(_ requestBytes: NSData!, forEncryption encryption: JWEncryption, withCompletion completion: ((NSData?, NSDate?, String?) -> Void)!) {
         if encryption == JWFairPlay {
             let currentTime = NSTimeIntervalSince1970 * 1000
             let keyServerAddress = String.init(format: "http://fps.ezdrm.com/api/licenses/09cc0377-6dd4-40cb-b09d-b582236e70fe?p1=\(currentTime)")
