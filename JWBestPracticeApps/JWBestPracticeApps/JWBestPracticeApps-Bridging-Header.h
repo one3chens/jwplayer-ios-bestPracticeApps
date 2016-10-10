@@ -6,5 +6,7 @@
 #define JWBestPracticeApps_Bridging_Header_h
 
 #import "JWBasicVideoViewController.h"
+#import "JWRemoteCastPlayerViewController.h"
 
 #endif /* JWBestPracticeApps_Bridging_Header_h */
+

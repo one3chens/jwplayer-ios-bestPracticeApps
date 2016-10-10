@@ -51,27 +51,33 @@
 
 -(void)onPlay
 {
-    [self.session sendMessage:@{JWRCallbackMessage: JWROnPlayCallback}
-                 replyHandler:^(NSDictionary<NSString *,id> * _Nonnull replyMessage) {}
-                 errorHandler:^(NSError * _Nonnull error) {}];
+    if (self.session.isReachable) {
+        [self.session sendMessage:@{JWRCallbackMessage: JWROnPlayCallback}
+                     replyHandler:^(NSDictionary<NSString *,id> * _Nonnull replyMessage) {}
+                     errorHandler:^(NSError * _Nonnull error) {}];
+    }
 }
 
 -(void)onPause
 {
-    [self.session sendMessage:@{JWRCallbackMessage: JWROnPauseCallback}
-                 replyHandler:^(NSDictionary<NSString *,id> * _Nonnull replyMessage) {}
-                 errorHandler:^(NSError * _Nonnull error) {}];
+    if (self.session.isReachable) {
+        [self.session sendMessage:@{JWRCallbackMessage: JWROnPauseCallback}
+                     replyHandler:^(NSDictionary<NSString *,id> * _Nonnull replyMessage) {}
+                     errorHandler:^(NSError * _Nonnull error) {}];
+    }
 }
 
 -(void)onTime:(double)position ofDuration:(double)duration
 {
-    NSDictionary *onTimeMessage = @{JWRCallbackMessage: JWROnTimeCallback,
-                                    JWROnTimePosition: @(position),
-                                    JWROnTimeDuration: @(duration)};
-    
-    [self.session sendMessage: onTimeMessage
-                 replyHandler:^(NSDictionary<NSString *,id> * _Nonnull replyMessage) {}
-                 errorHandler:^(NSError * _Nonnull error) {}];
+    if (self.session.isReachable) {
+        NSDictionary *onTimeMessage = @{JWRCallbackMessage: JWROnTimeCallback,
+                                        JWROnTimePosition: @(position),
+                                        JWROnTimeDuration: @(duration)};
+        
+        [self.session sendMessage: onTimeMessage
+                     replyHandler:^(NSDictionary<NSString *,id> * _Nonnull replyMessage) {}
+                     errorHandler:^(NSError * _Nonnull error) {}];
+    }
 }
 
 @end

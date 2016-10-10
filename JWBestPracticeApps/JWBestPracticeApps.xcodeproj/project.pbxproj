@@ -11,6 +11,7 @@
 		2F6660756A2BC13A41B87E12 /* libPods-JWRemoteCastController Extension.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F6F521C80198C3CF424CC542 /* libPods-JWRemoteCastController Extension.a */; };
 		5BFDE0F3954AAFFAC1F38A76 /* libPods-JWRemoteController.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C53086B079689F858B02A42A /* libPods-JWRemoteController.a */; };
 		5C3FFB15941ABE636744FD6B /* libPods-JWRemoteCastController.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0952719B40B38A7563CAD16F /* libPods-JWRemoteCastController.a */; };
+		5FC336DC91B9503D34A48A27 /* libPods-VoicerExtension.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 01A06EF1BFF97EDC16B19A95 /* libPods-VoicerExtension.a */; };
 		6A3FDDF5A53F2DEFB671A1BF /* libPods-JWFairPlayDrm.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A82FE764E14945D77A25969 /* libPods-JWFairPlayDrm.a */; };
 		8A3734741D1DC2A80008FE59 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A3734731D1DC2A80008FE59 /* main.m */; };
 		8A3734771D1DC2A80008FE59 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A3734761D1DC2A80008FE59 /* AppDelegate.m */; };
@@ -24,7 +25,6 @@
 		8A3734A71D1DC2E70008FE59 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A3734A61D1DC2E70008FE59 /* Assets.xcassets */; };
 		8A3734AB1D1DC2E70008FE59 /* JWRemoteCastController.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 8A37348A1D1DC2E70008FE59 /* JWRemoteCastController.app */; };
 		8A3734BF1D1DCEBC0008FE59 /* JWRemoteTerminologyHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 8AF5F6F51C9A61DA00C0D5E0 /* JWRemoteTerminologyHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8A3734C31D1DD6E30008FE59 /* JWRemoteCastPlayerViewController.h in Sources */ = {isa = PBXBuildFile; fileRef = 8A3734B41D1DC3820008FE59 /* JWRemoteCastPlayerViewController.h */; };
 		8A3734C61D1DD7A60008FE59 /* JWRemoteCastPlayerViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A3734B41D1DC3820008FE59 /* JWRemoteCastPlayerViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8A3734C71D1DD7D00008FE59 /* JWCastingViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A729B851C99CD8B000F03A9 /* JWCastingViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8A3734C81D1DD7E00008FE59 /* JWRemotePlayerViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A729B7A1C99B576000F03A9 /* JWRemotePlayerViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -118,9 +118,38 @@
 		8AF5F6E91C9A612B00C0D5E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8AF5F6E81C9A612B00C0D5E0 /* Assets.xcassets */; };
 		8AF5F6ED1C9A612B00C0D5E0 /* JWRemoteController.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 8AF5F6CC1C9A612B00C0D5E0 /* JWRemoteController.app */; };
 		AB341B6EC61DFD6B46F068D6 /* libPods-JWBestPracticeApps.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BCE25B16DE011FFE47951517 /* libPods-JWBestPracticeApps.a */; };
+		B5308C1F1D836979007D2A1F /* SwiftTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5308C1E1D836979007D2A1F /* SwiftTest.swift */; };
+		B53A73071D92F79C00EB804F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53A73061D92F79C00EB804F /* AppDelegate.swift */; };
+		B53A730C1D92F79C00EB804F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B53A730A1D92F79C00EB804F /* Main.storyboard */; };
+		B53A730E1D92F79C00EB804F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B53A730D1D92F79C00EB804F /* Assets.xcassets */; };
+		B53A73111D92F79C00EB804F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B53A730F1D92F79C00EB804F /* LaunchScreen.storyboard */; };
+		B53A73181D92F8CE00EB804F /* JWBasicVideoViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A729B5C1C99ABD2000F03A9 /* JWBasicVideoViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B53A73191D92F8D300EB804F /* JWBestPracticeApps-Bridging-Header.h in Headers */ = {isa = PBXBuildFile; fileRef = B5308C1D1D836978007D2A1F /* JWBestPracticeApps-Bridging-Header.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B53A731A1D92F90C00EB804F /* JWRemoteCastPlayerViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A3734B41D1DC3820008FE59 /* JWRemoteCastPlayerViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B53A731B1D92FB5400EB804F /* JWBasicVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A729B5D1C99ABD2000F03A9 /* JWBasicVideoViewController.m */; };
+		B53A731C1D92FB6900EB804F /* JWRemoteCastPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A3734B51D1DC3820008FE59 /* JWRemoteCastPlayerViewController.m */; };
+		B53A731D1D92FB9000EB804F /* JWCastingViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A729B851C99CD8B000F03A9 /* JWCastingViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B53A731E1D92FB9700EB804F /* JWCastingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A729B861C99CD8B000F03A9 /* JWCastingViewController.m */; };
+		B53A731F1D92FBA600EB804F /* JWRemotePlayerViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A729B7A1C99B576000F03A9 /* JWRemotePlayerViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B53A73201D92FBB200EB804F /* JWRemotePlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A729B7B1C99B576000F03A9 /* JWRemotePlayerViewController.m */; };
+		B54424811D9048D900719197 /* JWBestPracticeApps-Bridging-Header.h in Headers */ = {isa = PBXBuildFile; fileRef = B5308C1D1D836978007D2A1F /* JWBestPracticeApps-Bridging-Header.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B54424831D90493100719197 /* JWBasicVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A729B5D1C99ABD2000F03A9 /* JWBasicVideoViewController.m */; };
+		B54424841D90493400719197 /* JWBasicVideoViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A729B5C1C99ABD2000F03A9 /* JWBasicVideoViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B54424B31D9060A700719197 /* JWSiriVideoExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = B54424AC1D9060A700719197 /* JWSiriVideoExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		B54F4F3E1D930A9C0026B7C7 /* cast_off.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A729B881C99D278000F03A9 /* cast_off.png */; };
+		B54F4F3F1D930A9F0026B7C7 /* cast_on.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A729B891C99D278000F03A9 /* cast_on.png */; };
+		B54F4F401D930AA60026B7C7 /* cast_connecting0.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A729B8A1C99D278000F03A9 /* cast_connecting0.png */; };
+		B54F4F411D930AA90026B7C7 /* cast_connecting1.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A729B8B1C99D278000F03A9 /* cast_connecting1.png */; };
+		B54F4F421D930AAC0026B7C7 /* cast_connecting2.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A729B8C1C99D278000F03A9 /* cast_connecting2.png */; };
+		B54F4F441D930B4D0026B7C7 /* VoicerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54F4F431D930B4D0026B7C7 /* VoicerViewController.swift */; };
+		B54F4F4C1D930BDC0026B7C7 /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54F4F4B1D930BDC0026B7C7 /* IntentHandler.swift */; };
+		B54F4F501D930BDC0026B7C7 /* VoicerExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = B54F4F491D930BDC0026B7C7 /* VoicerExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		B5BC26A91D958BFF00F32770 /* AppIntentVocabulary.plist in Resources */ = {isa = PBXBuildFile; fileRef = B5BC26A71D958BFF00F32770 /* AppIntentVocabulary.plist */; };
+		B5BC26B21DAC20E500F32770 /* info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B5BC26B11DAC20E500F32770 /* info.plist */; };
 		C24874D002C8E9721BA8E61F /* libPods-JWRemotePlayer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 36BCA1345113D7AE624BEB2D /* libPods-JWRemotePlayer.a */; };
 		D37413B333297461C0FD0791 /* libPods-JWRemoteController Extension.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 787B849139DF8B66FA89FA5C /* libPods-JWRemoteController Extension.a */; };
 		F6841AEF9C8AEA3DED8AA298 /* libPods-JWRemoteCastPlayer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 73D5AFFCD082D3F92A3671CF /* libPods-JWRemoteCastPlayer.a */; };
+		F7D9E4EAF6CE0AC1BAC24774 /* libPods-Voicer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ED976D25D4013BA5D0829D0A /* libPods-Voicer.a */; };
 		FD9F7946BEE377EE83454E7D /* libPods-JWAirPlay.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5866385BBD927C92F367DB7C /* libPods-JWAirPlay.a */; };
 /* End PBXBuildFile section */
 
@@ -152,6 +181,20 @@
 			proxyType = 1;
 			remoteGlobalIDString = 8AF5F6CB1C9A612B00C0D5E0;
 			remoteInfo = JWRemoteController;
+		};
+		B54424B11D9060A700719197 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8A729A6F1C98ACA8000F03A9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B54424AB1D9060A700719197;
+			remoteInfo = JWSiriVideoExtension;
+		};
+		B54F4F4E1D930BDC0026B7C7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8A729A6F1C98ACA8000F03A9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B54F4F481D930BDC0026B7C7;
+			remoteInfo = VoicerExtension;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -209,25 +252,55 @@
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B54424B71D9060A700719197 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				B54424B31D9060A700719197 /* JWSiriVideoExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B54F4F541D930BDC0026B7C7 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				B54F4F501D930BDC0026B7C7 /* VoicerExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		01A06EF1BFF97EDC16B19A95 /* libPods-VoicerExtension.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-VoicerExtension.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		05D9449F562C9B71FFCC02D0 /* Pods-JWCasting.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JWCasting.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JWCasting/Pods-JWCasting.debug.xcconfig"; sourceTree = "<group>"; };
+		0811EFC620D82350FF7B1946 /* libPods-SiriPlayerController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SiriPlayerController.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0952719B40B38A7563CAD16F /* libPods-JWRemoteCastController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JWRemoteCastController.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		11A199DDB685E2180A964D5C /* libPods-JWSiriVideoExtension.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JWSiriVideoExtension.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		18B46F999BDD3032B9BCB1F4 /* libPods-JWCasting.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JWCasting.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		22C2C3C040DFF795E877393C /* Pods-JWRemotePlayer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JWRemotePlayer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JWRemotePlayer/Pods-JWRemotePlayer.debug.xcconfig"; sourceTree = "<group>"; };
 		25CB234896380D6434A8A9B2 /* Pods-JWRemoteController.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JWRemoteController.release.xcconfig"; path = "Pods/Target Support Files/Pods-JWRemoteController/Pods-JWRemoteController.release.xcconfig"; sourceTree = "<group>"; };
+		30A3091CB473FF8DB7A7511A /* Pods-SiriPlayerControllerUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SiriPlayerControllerUI.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SiriPlayerControllerUI/Pods-SiriPlayerControllerUI.debug.xcconfig"; sourceTree = "<group>"; };
 		33F770C1ED73AB810248CB9C /* Pods-JWRemoteCastPlayer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JWRemoteCastPlayer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JWRemoteCastPlayer/Pods-JWRemoteCastPlayer.debug.xcconfig"; sourceTree = "<group>"; };
 		36BCA1345113D7AE624BEB2D /* libPods-JWRemotePlayer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JWRemotePlayer.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3BB8C7391F58D5A50C6A715C /* Pods-Voicer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Voicer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Voicer/Pods-Voicer.debug.xcconfig"; sourceTree = "<group>"; };
 		43033E540B089A5B3BCDBCC6 /* Pods-JWBestPracticeApps.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JWBestPracticeApps.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JWBestPracticeApps/Pods-JWBestPracticeApps.debug.xcconfig"; sourceTree = "<group>"; };
 		469A6375B85247D4516142AE /* Pods-JWRemoteController Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JWRemoteController Extension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JWRemoteController Extension/Pods-JWRemoteController Extension.debug.xcconfig"; sourceTree = "<group>"; };
 		56A46499C09525FA3C058938 /* Pods-JWAirPlay.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JWAirPlay.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JWAirPlay/Pods-JWAirPlay.debug.xcconfig"; sourceTree = "<group>"; };
 		5866385BBD927C92F367DB7C /* libPods-JWAirPlay.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JWAirPlay.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		73D5AFFCD082D3F92A3671CF /* libPods-JWRemoteCastPlayer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JWRemoteCastPlayer.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		750AB9C59D746DEF6A70DCF9 /* Pods-JWFairPlayDrm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JWFairPlayDrm.release.xcconfig"; path = "Pods/Target Support Files/Pods-JWFairPlayDrm/Pods-JWFairPlayDrm.release.xcconfig"; sourceTree = "<group>"; };
+		75A9CECA1EB7767D6DA505E1 /* libPods-JWVoiceControl.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JWVoiceControl.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7749A5E7085C50853FC4FD3F /* Pods-JWRemoteCastController.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JWRemoteCastController.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JWRemoteCastController/Pods-JWRemoteCastController.debug.xcconfig"; sourceTree = "<group>"; };
 		787B849139DF8B66FA89FA5C /* libPods-JWRemoteController Extension.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JWRemoteController Extension.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A82FE764E14945D77A25969 /* libPods-JWFairPlayDrm.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JWFairPlayDrm.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		82812C92FE3B7F62F5CE4A85 /* libPods-SiriPlayerControllerUI.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SiriPlayerControllerUI.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		884998439C63B73C2EB23C8F /* Pods-SiriPlayerControllerUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SiriPlayerControllerUI.release.xcconfig"; path = "Pods/Target Support Files/Pods-SiriPlayerControllerUI/Pods-SiriPlayerControllerUI.release.xcconfig"; sourceTree = "<group>"; };
 		8A3734701D1DC2A80008FE59 /* JWRemoteCastPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JWRemoteCastPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A3734731D1DC2A80008FE59 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8A3734751D1DC2A80008FE59 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -327,12 +400,36 @@
 		A37E790C732ABB5BBCB8FC62 /* Pods-JWFairPlayDrm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JWFairPlayDrm.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JWFairPlayDrm/Pods-JWFairPlayDrm.debug.xcconfig"; sourceTree = "<group>"; };
 		AE13619DC752730AA54E1307 /* Pods-JWRemoteCastController Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JWRemoteCastController Extension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JWRemoteCastController Extension/Pods-JWRemoteCastController Extension.debug.xcconfig"; sourceTree = "<group>"; };
 		AFA47BF6BEBC875452177758 /* Pods-JWRemoteCastController.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JWRemoteCastController.release.xcconfig"; path = "Pods/Target Support Files/Pods-JWRemoteCastController/Pods-JWRemoteCastController.release.xcconfig"; sourceTree = "<group>"; };
+		AFFC2FBEFC64CED35CE549C5 /* Pods-SiriPlayerController.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SiriPlayerController.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SiriPlayerController/Pods-SiriPlayerController.debug.xcconfig"; sourceTree = "<group>"; };
+		B5308C1D1D836978007D2A1F /* JWBestPracticeApps-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JWBestPracticeApps-Bridging-Header.h"; sourceTree = "<group>"; };
+		B5308C1E1D836979007D2A1F /* SwiftTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftTest.swift; sourceTree = "<group>"; };
+		B53A0DF21D8355CF00893252 /* JWVoiceControl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JWVoiceControl.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B53A73041D92F79C00EB804F /* Voicer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Voicer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B53A73061D92F79C00EB804F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B53A730B1D92F79C00EB804F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B53A730D1D92F79C00EB804F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B53A73101D92F79C00EB804F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B53A73161D92F87D00EB804F /* Voicer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Voicer.entitlements; sourceTree = "<group>"; };
+		B54424AC1D9060A700719197 /* JWSiriVideoExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = JWSiriVideoExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		B54F4F431D930B4D0026B7C7 /* VoicerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VoicerViewController.swift; sourceTree = "<group>"; };
+		B54F4F491D930BDC0026B7C7 /* VoicerExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = VoicerExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		B54F4F4B1D930BDC0026B7C7 /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
+		B54F4F4D1D930BDC0026B7C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B556E7151D84F3F500C65662 /* IntentsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IntentsUI.framework; path = System/Library/Frameworks/IntentsUI.framework; sourceTree = SDKROOT; };
+		B5BC26A81D958BFF00F32770 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = en; path = en.lproj/AppIntentVocabulary.plist; sourceTree = "<group>"; };
+		B5BC26AC1D97B25B00F32770 /* VoicerExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = VoicerExtension.entitlements; sourceTree = "<group>"; };
+		B5BC26B11DAC20E500F32770 /* info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = info.plist; sourceTree = "<group>"; };
 		BCE25B16DE011FFE47951517 /* libPods-JWBestPracticeApps.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JWBestPracticeApps.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C34588F31A7DF0E79015A9C6 /* Pods-SiriPlayerController.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SiriPlayerController.release.xcconfig"; path = "Pods/Target Support Files/Pods-SiriPlayerController/Pods-SiriPlayerController.release.xcconfig"; sourceTree = "<group>"; };
 		C53086B079689F858B02A42A /* libPods-JWRemoteController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JWRemoteController.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9C71870F578D77EE7ED3305 /* Pods-VoicerExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VoicerExtension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VoicerExtension/Pods-VoicerExtension.debug.xcconfig"; sourceTree = "<group>"; };
 		CACD41ACE46043F115BD3DDB /* Pods-JWRemoteCastPlayer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JWRemoteCastPlayer.release.xcconfig"; path = "Pods/Target Support Files/Pods-JWRemoteCastPlayer/Pods-JWRemoteCastPlayer.release.xcconfig"; sourceTree = "<group>"; };
+		CAEE03E2E9C059CB3701D739 /* Pods-Voicer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Voicer.release.xcconfig"; path = "Pods/Target Support Files/Pods-Voicer/Pods-Voicer.release.xcconfig"; sourceTree = "<group>"; };
 		D105B1FA43E9E53897B57083 /* Pods-JWCasting.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JWCasting.release.xcconfig"; path = "Pods/Target Support Files/Pods-JWCasting/Pods-JWCasting.release.xcconfig"; sourceTree = "<group>"; };
+		D59BC06D560A3A8E3DE9E3C3 /* Pods-VoicerExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VoicerExtension.release.xcconfig"; path = "Pods/Target Support Files/Pods-VoicerExtension/Pods-VoicerExtension.release.xcconfig"; sourceTree = "<group>"; };
 		D7032B38C013D2CF344515F5 /* Pods-JWRemotePlayer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JWRemotePlayer.release.xcconfig"; path = "Pods/Target Support Files/Pods-JWRemotePlayer/Pods-JWRemotePlayer.release.xcconfig"; sourceTree = "<group>"; };
 		DE458D874713A4FEA898FC11 /* Pods-JWAirPlay.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JWAirPlay.release.xcconfig"; path = "Pods/Target Support Files/Pods-JWAirPlay/Pods-JWAirPlay.release.xcconfig"; sourceTree = "<group>"; };
+		ED976D25D4013BA5D0829D0A /* libPods-Voicer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Voicer.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6F521C80198C3CF424CC542 /* libPods-JWRemoteCastController Extension.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JWRemoteCastController Extension.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC281FF062456D619081111F /* Pods-JWRemoteController Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JWRemoteController Extension.release.xcconfig"; path = "Pods/Target Support Files/Pods-JWRemoteController Extension/Pods-JWRemoteController Extension.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -402,6 +499,36 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B53A0DEF1D8355CF00893252 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B53A73011D92F79C00EB804F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7D9E4EAF6CE0AC1BAC24774 /* libPods-Voicer.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B54424A91D9060A700719197 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B54F4F461D930BDC0026B7C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5FC336DC91B9503D34A48A27 /* libPods-VoicerExtension.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CF9B3ABE814B0C3D19B478B0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -442,6 +569,14 @@
 				8AB274596913835758B1017D /* Pods-JWRemoteCastController Extension.release.xcconfig */,
 				33F770C1ED73AB810248CB9C /* Pods-JWRemoteCastPlayer.debug.xcconfig */,
 				CACD41ACE46043F115BD3DDB /* Pods-JWRemoteCastPlayer.release.xcconfig */,
+				AFFC2FBEFC64CED35CE549C5 /* Pods-SiriPlayerController.debug.xcconfig */,
+				C34588F31A7DF0E79015A9C6 /* Pods-SiriPlayerController.release.xcconfig */,
+				30A3091CB473FF8DB7A7511A /* Pods-SiriPlayerControllerUI.debug.xcconfig */,
+				884998439C63B73C2EB23C8F /* Pods-SiriPlayerControllerUI.release.xcconfig */,
+				3BB8C7391F58D5A50C6A715C /* Pods-Voicer.debug.xcconfig */,
+				CAEE03E2E9C059CB3701D739 /* Pods-Voicer.release.xcconfig */,
+				C9C71870F578D77EE7ED3305 /* Pods-VoicerExtension.debug.xcconfig */,
+				D59BC06D560A3A8E3DE9E3C3 /* Pods-VoicerExtension.release.xcconfig */,
 				A37E790C732ABB5BBCB8FC62 /* Pods-JWFairPlayDrm.debug.xcconfig */,
 				750AB9C59D746DEF6A70DCF9 /* Pods-JWFairPlayDrm.release.xcconfig */,
 			);
@@ -460,6 +595,13 @@
 				0952719B40B38A7563CAD16F /* libPods-JWRemoteCastController.a */,
 				F6F521C80198C3CF424CC542 /* libPods-JWRemoteCastController Extension.a */,
 				73D5AFFCD082D3F92A3671CF /* libPods-JWRemoteCastPlayer.a */,
+				75A9CECA1EB7767D6DA505E1 /* libPods-JWVoiceControl.a */,
+				B556E7151D84F3F500C65662 /* IntentsUI.framework */,
+				0811EFC620D82350FF7B1946 /* libPods-SiriPlayerController.a */,
+				82812C92FE3B7F62F5CE4A85 /* libPods-SiriPlayerControllerUI.a */,
+				11A199DDB685E2180A964D5C /* libPods-JWSiriVideoExtension.a */,
+				ED976D25D4013BA5D0829D0A /* libPods-Voicer.a */,
+				01A06EF1BFF97EDC16B19A95 /* libPods-VoicerExtension.a */,
 				7A82FE764E14945D77A25969 /* libPods-JWFairPlayDrm.a */,
 			);
 			name = Frameworks;
@@ -545,6 +687,8 @@
 				8A729B2B1C98B5F2000F03A9 /* JWAirPlay */,
 				8A9206371C9B4E67002797FA /* Watch App */,
 				8A3734871D1DC2B10008FE59 /* Watch Cast App */,
+				B53A73051D92F79C00EB804F /* Voicer */,
+				B54F4F4A1D930BDC0026B7C7 /* VoicerExtension */,
 				8AB3E07E1D99B3F8002A3CA7 /* JWFairPlayDrm */,
 				8A729A781C98ACA8000F03A9 /* Products */,
 				148A822693302715DF542B54 /* Pods */,
@@ -564,6 +708,10 @@
 				8A3734701D1DC2A80008FE59 /* JWRemoteCastPlayer.app */,
 				8A37348A1D1DC2E70008FE59 /* JWRemoteCastController.app */,
 				8A3734961D1DC2E70008FE59 /* JWRemoteCastController Extension.appex */,
+				B53A0DF21D8355CF00893252 /* JWVoiceControl.app */,
+				B54424AC1D9060A700719197 /* JWSiriVideoExtension.appex */,
+				B53A73041D92F79C00EB804F /* Voicer.app */,
+				B54F4F491D930BDC0026B7C7 /* VoicerExtension.appex */,
 				8AB3E07D1D99B3F8002A3CA7 /* JWFairPlayDrm.app */,
 			);
 			name = Products;
@@ -576,12 +724,14 @@
 				8A729A7E1C98ACA8000F03A9 /* AppDelegate.m */,
 				8A729B5C1C99ABD2000F03A9 /* JWBasicVideoViewController.h */,
 				8A729B5D1C99ABD2000F03A9 /* JWBasicVideoViewController.m */,
+				B5308C1E1D836979007D2A1F /* SwiftTest.swift */,
 				8A729A831C98ACA8000F03A9 /* Main.storyboard */,
 				8A729A861C98ACA8000F03A9 /* Assets.xcassets */,
 				8A729A881C98ACA8000F03A9 /* LaunchScreen.storyboard */,
 				8A729A8B1C98ACA8000F03A9 /* Info.plist */,
 				8AB3E0931D99B4BF002A3CA7 /* JWBestPracticeApps-Bridging-Header.h */,
 				8A729A7A1C98ACA8000F03A9 /* Supporting Files */,
+				B5308C1D1D836978007D2A1F /* JWBestPracticeApps-Bridging-Header.h */,
 			);
 			path = JWBestPracticeApps;
 			sourceTree = "<group>";
@@ -721,6 +871,7 @@
 				8AF5F6E51C9A612B00C0D5E0 /* NotificationController.h */,
 				8AF5F6E61C9A612B00C0D5E0 /* NotificationController.m */,
 				8AF5F6E81C9A612B00C0D5E0 /* Assets.xcassets */,
+				B5BC26B11DAC20E500F32770 /* info.plist */,
 				8AF5F6DD1C9A612B00C0D5E0 /* Supporting Files */,
 			);
 			path = "JWRemoteController Extension";
@@ -732,6 +883,38 @@
 				8AF5F6DE1C9A612B00C0D5E0 /* PushNotificationPayload.apns */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B53A73051D92F79C00EB804F /* Voicer */ = {
+			isa = PBXGroup;
+			children = (
+				B53A73161D92F87D00EB804F /* Voicer.entitlements */,
+				B53A73061D92F79C00EB804F /* AppDelegate.swift */,
+				B54F4F431D930B4D0026B7C7 /* VoicerViewController.swift */,
+				B53A730A1D92F79C00EB804F /* Main.storyboard */,
+				B53A730D1D92F79C00EB804F /* Assets.xcassets */,
+				B53A730F1D92F79C00EB804F /* LaunchScreen.storyboard */,
+				B5BC26A61D95883E00F32770 /* en.lproj */,
+			);
+			path = Voicer;
+			sourceTree = "<group>";
+		};
+		B54F4F4A1D930BDC0026B7C7 /* VoicerExtension */ = {
+			isa = PBXGroup;
+			children = (
+				B5BC26AC1D97B25B00F32770 /* VoicerExtension.entitlements */,
+				B54F4F4B1D930BDC0026B7C7 /* IntentHandler.swift */,
+				B54F4F4D1D930BDC0026B7C7 /* Info.plist */,
+			);
+			path = VoicerExtension;
+			sourceTree = "<group>";
+		};
+		B5BC26A61D95883E00F32770 /* en.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				B5BC26A71D958BFF00F32770 /* AppIntentVocabulary.plist */,
+			);
+			name = en.lproj;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -795,6 +978,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B5308C111D83624C007D2A1F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B54424841D90493400719197 /* JWBasicVideoViewController.h in Headers */,
+				B54424811D9048D900719197 /* JWBestPracticeApps-Bridging-Header.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B53A73171D92F8C300EB804F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B53A731D1D92FB9000EB804F /* JWCastingViewController.h in Headers */,
+				B53A731F1D92FBA600EB804F /* JWRemotePlayerViewController.h in Headers */,
+				B53A73191D92F8D300EB804F /* JWBestPracticeApps-Bridging-Header.h in Headers */,
+				B53A73181D92F8CE00EB804F /* JWBasicVideoViewController.h in Headers */,
+				B53A731A1D92F90C00EB804F /* JWRemoteCastPlayerViewController.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
@@ -802,14 +1006,14 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8A3734861D1DC2A80008FE59 /* Build configuration list for PBXNativeTarget "JWRemoteCastPlayer" */;
 			buildPhases = (
-				777AA6ACB02E60E836EC594F /* 📦 Check Pods Manifest.lock */,
+				777AA6ACB02E60E836EC594F /* [CP] Check Pods Manifest.lock */,
 				8A37346C1D1DC2A80008FE59 /* Sources */,
 				8A37346D1D1DC2A80008FE59 /* Frameworks */,
 				8A37346E1D1DC2A80008FE59 /* Resources */,
 				8A3734B31D1DC2E70008FE59 /* Embed Watch Content */,
 				8A3734BE1D1DCEAC0008FE59 /* Headers */,
-				0126D5445CF6C21674DF35C0 /* 📦 Embed Pods Frameworks */,
-				C644EAE82B765E5CC4C8400E /* 📦 Copy Pods Resources */,
+				0126D5445CF6C21674DF35C0 /* [CP] Embed Pods Frameworks */,
+				C644EAE82B765E5CC4C8400E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -825,11 +1029,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8A3734B01D1DC2E70008FE59 /* Build configuration list for PBXNativeTarget "JWRemoteCastController" */;
 			buildPhases = (
-				00D79D067345FAEF7B8DA5CC /* 📦 Check Pods Manifest.lock */,
+				00D79D067345FAEF7B8DA5CC /* [CP] Check Pods Manifest.lock */,
 				8A3734881D1DC2E70008FE59 /* Resources */,
 				8A3734AF1D1DC2E70008FE59 /* Embed App Extensions */,
 				CF9B3ABE814B0C3D19B478B0 /* Frameworks */,
-				B9CEAAC4CF36C303A8B0143E /* 📦 Copy Pods Resources */,
+				B9CEAAC4CF36C303A8B0143E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -845,12 +1049,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8A3734AC1D1DC2E70008FE59 /* Build configuration list for PBXNativeTarget "JWRemoteCastController Extension" */;
 			buildPhases = (
-				779035C0867212D9A6ADFDD0 /* 📦 Check Pods Manifest.lock */,
+				779035C0867212D9A6ADFDD0 /* [CP] Check Pods Manifest.lock */,
 				8A3734921D1DC2E70008FE59 /* Sources */,
 				8A3734931D1DC2E70008FE59 /* Frameworks */,
 				8A3734941D1DC2E70008FE59 /* Resources */,
-				5719F25286ED1CDC29A85ACD /* 📦 Embed Pods Frameworks */,
-				DF3E9EFCDCA122CBBF5C14F3 /* 📦 Copy Pods Resources */,
+				5719F25286ED1CDC29A85ACD /* [CP] Embed Pods Frameworks */,
+				DF3E9EFCDCA122CBBF5C14F3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -865,14 +1069,14 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8A729A8E1C98ACA8000F03A9 /* Build configuration list for PBXNativeTarget "JWBestPracticeApps" */;
 			buildPhases = (
-				73C5A63A476C9A7364C34BE0 /* 📦 Check Pods Manifest.lock */,
+				73C5A63A476C9A7364C34BE0 /* [CP] Check Pods Manifest.lock */,
 				8A729A731C98ACA8000F03A9 /* Sources */,
 				8A729A741C98ACA8000F03A9 /* Frameworks */,
 				8A729A751C98ACA8000F03A9 /* Resources */,
 				8AF5F65B1C99F15400C0D5E0 /* Headers */,
 				8AF5F65C1C99F17A00C0D5E0 /* CopyFiles */,
-				913D57B68FE759D9DF023CCF /* 📦 Embed Pods Frameworks */,
-				BF7C3D6BA8E0B1BF4B4FB54B /* 📦 Copy Pods Resources */,
+				913D57B68FE759D9DF023CCF /* [CP] Embed Pods Frameworks */,
+				BF7C3D6BA8E0B1BF4B4FB54B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -887,13 +1091,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8A729B231C98B5A6000F03A9 /* Build configuration list for PBXNativeTarget "JWCasting" */;
 			buildPhases = (
-				D8C5D0DDCB9F57712020D253 /* 📦 Check Pods Manifest.lock */,
+				D8C5D0DDCB9F57712020D253 /* [CP] Check Pods Manifest.lock */,
 				8A729B0B1C98B5A6000F03A9 /* Sources */,
 				8A729B0C1C98B5A6000F03A9 /* Frameworks */,
 				8A729B0D1C98B5A6000F03A9 /* Resources */,
 				8AF5F65E1C99F1EE00C0D5E0 /* Headers */,
-				03C65EC9F6744AC2F0CDD3E4 /* 📦 Embed Pods Frameworks */,
-				037B8FCEBE5268BFA2AACFB2 /* 📦 Copy Pods Resources */,
+				03C65EC9F6744AC2F0CDD3E4 /* [CP] Embed Pods Frameworks */,
+				037B8FCEBE5268BFA2AACFB2 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -908,13 +1112,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8A729B3E1C98B5F2000F03A9 /* Build configuration list for PBXNativeTarget "JWAirPlay" */;
 			buildPhases = (
-				371E68D98909341D478FC1E6 /* 📦 Check Pods Manifest.lock */,
+				371E68D98909341D478FC1E6 /* [CP] Check Pods Manifest.lock */,
 				8A729B261C98B5F2000F03A9 /* Sources */,
 				8A729B271C98B5F2000F03A9 /* Frameworks */,
 				8A729B281C98B5F2000F03A9 /* Resources */,
 				8A5BA8A71C9AFA370002231F /* Headers */,
-				9CA3482367C439F0CDBB6E4B /* 📦 Embed Pods Frameworks */,
-				5A4341540D0B52EDE34034E7 /* 📦 Copy Pods Resources */,
+				9CA3482367C439F0CDBB6E4B /* [CP] Embed Pods Frameworks */,
+				5A4341540D0B52EDE34034E7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -929,14 +1133,14 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8A729B771C99B4A1000F03A9 /* Build configuration list for PBXNativeTarget "JWRemotePlayer" */;
 			buildPhases = (
-				3172047F5E4CDE730F1C8E36 /* 📦 Check Pods Manifest.lock */,
+				3172047F5E4CDE730F1C8E36 /* [CP] Check Pods Manifest.lock */,
 				8A729B5F1C99B4A0000F03A9 /* Sources */,
 				8A729B601C99B4A0000F03A9 /* Frameworks */,
 				8A729B611C99B4A0000F03A9 /* Resources */,
 				8AF5F6621C99F4FF00C0D5E0 /* Headers */,
 				8AF5F6B51C9A56F200C0D5E0 /* Embed Watch Content */,
-				F9C88D4CDF49BB9AF8573501 /* 📦 Embed Pods Frameworks */,
-				770E1BA7B7C214544BDA3C5E /* 📦 Copy Pods Resources */,
+				F9C88D4CDF49BB9AF8573501 /* [CP] Embed Pods Frameworks */,
+				770E1BA7B7C214544BDA3C5E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -952,13 +1156,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8AB3E08E1D99B3F8002A3CA7 /* Build configuration list for PBXNativeTarget "JWFairPlayDrm" */;
 			buildPhases = (
-				5A6FA26D1C7E37EEB005EDB1 /* 📦 Check Pods Manifest.lock */,
+				100F27D4EFE6A74C8C50154F /* [CP] Check Pods Manifest.lock */,
 				8AB3E0791D99B3F8002A3CA7 /* Sources */,
 				8AB3E07A1D99B3F8002A3CA7 /* Frameworks */,
 				8AB3E07B1D99B3F8002A3CA7 /* Resources */,
-				1179EB8D11C466911CC31C97 /* 📦 Embed Pods Frameworks */,
-				CE9E425C3CE246183FF44886 /* 📦 Copy Pods Resources */,
 				8AB3E0951D99B65D002A3CA7 /* Headers */,
+				3A9524839AB253EE4FBCE6E5 /* [CP] Embed Pods Frameworks */,
+				0C44A21A84A7D89E1FF7409B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -973,11 +1177,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8AF5F6F21C9A612B00C0D5E0 /* Build configuration list for PBXNativeTarget "JWRemoteController" */;
 			buildPhases = (
-				DF721C5C13BF36C4E082FF7F /* 📦 Check Pods Manifest.lock */,
+				DF721C5C13BF36C4E082FF7F /* [CP] Check Pods Manifest.lock */,
 				8AF5F6CA1C9A612B00C0D5E0 /* Resources */,
 				8AF5F6F11C9A612B00C0D5E0 /* Embed App Extensions */,
 				DE52F8BFBF4E79028A7DA29D /* Frameworks */,
-				5AC05EE046DAF3213B1AA9B1 /* 📦 Copy Pods Resources */,
+				5AC05EE046DAF3213B1AA9B1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -993,12 +1197,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8AF5F6EE1C9A612B00C0D5E0 /* Build configuration list for PBXNativeTarget "JWRemoteController Extension" */;
 			buildPhases = (
-				5B8EB63E3022D951CF175410 /* 📦 Check Pods Manifest.lock */,
+				5B8EB63E3022D951CF175410 /* [CP] Check Pods Manifest.lock */,
 				8AF5F6D41C9A612B00C0D5E0 /* Sources */,
 				8AF5F6D51C9A612B00C0D5E0 /* Frameworks */,
 				8AF5F6D61C9A612B00C0D5E0 /* Resources */,
-				2E6E72D37E1CAF711ACA2B22 /* 📦 Embed Pods Frameworks */,
-				957118E253D60D999AD92FA5 /* 📦 Copy Pods Resources */,
+				2E6E72D37E1CAF711ACA2B22 /* [CP] Embed Pods Frameworks */,
+				957118E253D60D999AD92FA5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -1009,30 +1213,116 @@
 			productReference = 8AF5F6D81C9A612B00C0D5E0 /* JWRemoteController Extension.appex */;
 			productType = "com.apple.product-type.watchkit2-extension";
 		};
+		B53A0DF11D8355CF00893252 /* JWVoiceControl */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B53A0E031D8355CF00893252 /* Build configuration list for PBXNativeTarget "JWVoiceControl" */;
+			buildPhases = (
+				B53A0DEE1D8355CF00893252 /* Sources */,
+				B53A0DEF1D8355CF00893252 /* Frameworks */,
+				B53A0DF01D8355CF00893252 /* Resources */,
+				B5308C111D83624C007D2A1F /* Headers */,
+				B54424B71D9060A700719197 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B54424B21D9060A700719197 /* PBXTargetDependency */,
+			);
+			name = JWVoiceControl;
+			productName = JWVoiceControl;
+			productReference = B53A0DF21D8355CF00893252 /* JWVoiceControl.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B53A73031D92F79C00EB804F /* Voicer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B53A73151D92F79C00EB804F /* Build configuration list for PBXNativeTarget "Voicer" */;
+			buildPhases = (
+				4C2993613FCFA059B56DA62B /* [CP] Check Pods Manifest.lock */,
+				B53A73001D92F79C00EB804F /* Sources */,
+				B53A73011D92F79C00EB804F /* Frameworks */,
+				B53A73021D92F79C00EB804F /* Resources */,
+				B53A73171D92F8C300EB804F /* Headers */,
+				027B88E4A19EB1EC7D0A855E /* [CP] Embed Pods Frameworks */,
+				3914663E2EFC2A06D5627D4D /* [CP] Copy Pods Resources */,
+				B54F4F541D930BDC0026B7C7 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B54F4F4F1D930BDC0026B7C7 /* PBXTargetDependency */,
+			);
+			name = Voicer;
+			productName = Voicer;
+			productReference = B53A73041D92F79C00EB804F /* Voicer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B54424AB1D9060A700719197 /* JWSiriVideoExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B54424B61D9060A700719197 /* Build configuration list for PBXNativeTarget "JWSiriVideoExtension" */;
+			buildPhases = (
+				B54424A81D9060A700719197 /* Sources */,
+				B54424A91D9060A700719197 /* Frameworks */,
+				B54424AA1D9060A700719197 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JWSiriVideoExtension;
+			productName = JWSiriVideoExtension;
+			productReference = B54424AC1D9060A700719197 /* JWSiriVideoExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		B54F4F481D930BDC0026B7C7 /* VoicerExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B54F4F511D930BDC0026B7C7 /* Build configuration list for PBXNativeTarget "VoicerExtension" */;
+			buildPhases = (
+				F2AB95F88895DD1DD9341E66 /* [CP] Check Pods Manifest.lock */,
+				B54F4F451D930BDC0026B7C7 /* Sources */,
+				B54F4F461D930BDC0026B7C7 /* Frameworks */,
+				B54F4F471D930BDC0026B7C7 /* Resources */,
+				40B1C5A04E3B3D57C2324B42 /* [CP] Embed Pods Frameworks */,
+				F5F49146238CCB55500BAC5F /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VoicerExtension;
+			productName = VoicerExtension;
+			productReference = B54F4F491D930BDC0026B7C7 /* VoicerExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		8A729A6F1C98ACA8000F03A9 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0730;
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "Karim Mourra";
 				TargetAttributes = {
 					8A37346F1D1DC2A80008FE59 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = WX87M56X5N;
 					};
 					8A3734891D1DC2E70008FE59 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = WX87M56X5N;
 					};
 					8A3734951D1DC2E70008FE59 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = WX87M56X5N;
 					};
 					8A729A761C98ACA8000F03A9 = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = WX87M56X5N;
+						LastSwiftMigration = 0800;
 					};
 					8A729B0E1C98B5A6000F03A9 = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = WX87M56X5N;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 0;
@@ -1041,18 +1331,65 @@
 					};
 					8A729B291C98B5F2000F03A9 = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = WX87M56X5N;
 					};
 					8A729B621C99B4A0000F03A9 = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = WX87M56X5N;
 					};
 					8AB3E07C1D99B3F8002A3CA7 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = WX87M56X5N;
+						LastSwiftMigration = 0800;
 					};
 					8AF5F6CB1C9A612B00C0D5E0 = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = WX87M56X5N;
 					};
 					8AF5F6D71C9A612B00C0D5E0 = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = WX87M56X5N;
+					};
+					B53A0DF11D8355CF00893252 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = WX87M56X5N;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Siri = {
+								enabled = 1;
+							};
+						};
+					};
+					B53A73031D92F79C00EB804F = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = WX87M56X5N;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Siri = {
+								enabled = 1;
+							};
+						};
+					};
+					B54424AB1D9060A700719197 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = WX87M56X5N;
+						ProvisioningStyle = Automatic;
+					};
+					B54F4F481D930BDC0026B7C7 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = WX87M56X5N;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -1078,6 +1415,10 @@
 				8A37346F1D1DC2A80008FE59 /* JWRemoteCastPlayer */,
 				8A3734891D1DC2E70008FE59 /* JWRemoteCastController */,
 				8A3734951D1DC2E70008FE59 /* JWRemoteCastController Extension */,
+				B53A0DF11D8355CF00893252 /* JWVoiceControl */,
+				B54424AB1D9060A700719197 /* JWSiriVideoExtension */,
+				B53A73031D92F79C00EB804F /* Voicer */,
+				B54F4F481D930BDC0026B7C7 /* VoicerExtension */,
 				8AB3E07C1D99B3F8002A3CA7 /* JWFairPlayDrm */,
 			);
 		};
@@ -1201,21 +1542,59 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5BC26B21DAC20E500F32770 /* info.plist in Resources */,
 				8AF5F6E91C9A612B00C0D5E0 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B53A0DF01D8355CF00893252 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B53A73021D92F79C00EB804F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B54F4F3E1D930A9C0026B7C7 /* cast_off.png in Resources */,
+				B54F4F401D930AA60026B7C7 /* cast_connecting0.png in Resources */,
+				B53A73111D92F79C00EB804F /* LaunchScreen.storyboard in Resources */,
+				B54F4F421D930AAC0026B7C7 /* cast_connecting2.png in Resources */,
+				B53A730E1D92F79C00EB804F /* Assets.xcassets in Resources */,
+				B5BC26A91D958BFF00F32770 /* AppIntentVocabulary.plist in Resources */,
+				B54F4F411D930AA90026B7C7 /* cast_connecting1.png in Resources */,
+				B54F4F3F1D930A9F0026B7C7 /* cast_on.png in Resources */,
+				B53A730C1D92F79C00EB804F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B54424AA1D9060A700719197 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B54F4F471D930BDC0026B7C7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		00D79D067345FAEF7B8DA5CC /* 📦 Check Pods Manifest.lock */ = {
+		00D79D067345FAEF7B8DA5CC /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1223,14 +1602,14 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		0126D5445CF6C21674DF35C0 /* 📦 Embed Pods Frameworks */ = {
+		0126D5445CF6C21674DF35C0 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1238,14 +1617,29 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JWRemoteCastPlayer/Pods-JWRemoteCastPlayer-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		037B8FCEBE5268BFA2AACFB2 /* 📦 Copy Pods Resources */ = {
+		027B88E4A19EB1EC7D0A855E /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Copy Pods Resources";
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Voicer/Pods-Voicer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		037B8FCEBE5268BFA2AACFB2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1253,14 +1647,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JWCasting/Pods-JWCasting-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		03C65EC9F6744AC2F0CDD3E4 /* 📦 Embed Pods Frameworks */ = {
+		03C65EC9F6744AC2F0CDD3E4 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1268,299 +1662,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JWCasting/Pods-JWCasting-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		1179EB8D11C466911CC31C97 /* 📦 Embed Pods Frameworks */ = {
+		0C44A21A84A7D89E1FF7409B /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JWFairPlayDrm/Pods-JWFairPlayDrm-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		2E6E72D37E1CAF711ACA2B22 /* 📦 Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "📦 Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JWRemoteController Extension/Pods-JWRemoteController Extension-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		3172047F5E4CDE730F1C8E36 /* 📦 Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "📦 Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		371E68D98909341D478FC1E6 /* 📦 Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "📦 Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		5719F25286ED1CDC29A85ACD /* 📦 Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "📦 Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JWRemoteCastController Extension/Pods-JWRemoteCastController Extension-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		5A4341540D0B52EDE34034E7 /* 📦 Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "📦 Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JWAirPlay/Pods-JWAirPlay-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		5A6FA26D1C7E37EEB005EDB1 /* 📦 Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "📦 Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		5AC05EE046DAF3213B1AA9B1 /* 📦 Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "📦 Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JWRemoteController/Pods-JWRemoteController-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		5B8EB63E3022D951CF175410 /* 📦 Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "📦 Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		73C5A63A476C9A7364C34BE0 /* 📦 Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "📦 Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		770E1BA7B7C214544BDA3C5E /* 📦 Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "📦 Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JWRemotePlayer/Pods-JWRemotePlayer-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		777AA6ACB02E60E836EC594F /* 📦 Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "📦 Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		779035C0867212D9A6ADFDD0 /* 📦 Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "📦 Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		913D57B68FE759D9DF023CCF /* 📦 Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "📦 Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JWBestPracticeApps/Pods-JWBestPracticeApps-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		957118E253D60D999AD92FA5 /* 📦 Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "📦 Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JWRemoteController Extension/Pods-JWRemoteController Extension-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		9CA3482367C439F0CDBB6E4B /* 📦 Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "📦 Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JWAirPlay/Pods-JWAirPlay-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		B9CEAAC4CF36C303A8B0143E /* 📦 Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "📦 Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JWRemoteCastController/Pods-JWRemoteCastController-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		BF7C3D6BA8E0B1BF4B4FB54B /* 📦 Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "📦 Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JWBestPracticeApps/Pods-JWBestPracticeApps-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C644EAE82B765E5CC4C8400E /* 📦 Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "📦 Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JWRemoteCastPlayer/Pods-JWRemoteCastPlayer-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		CE9E425C3CE246183FF44886 /* 📦 Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "📦 Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1568,14 +1677,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JWFairPlayDrm/Pods-JWFairPlayDrm-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		D8C5D0DDCB9F57712020D253 /* 📦 Check Pods Manifest.lock */ = {
+		100F27D4EFE6A74C8C50154F /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1583,14 +1692,344 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		DF3E9EFCDCA122CBBF5C14F3 /* 📦 Copy Pods Resources */ = {
+		2E6E72D37E1CAF711ACA2B22 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Copy Pods Resources";
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JWRemoteController Extension/Pods-JWRemoteController Extension-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3172047F5E4CDE730F1C8E36 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		371E68D98909341D478FC1E6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		3914663E2EFC2A06D5627D4D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Voicer/Pods-Voicer-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3A9524839AB253EE4FBCE6E5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JWFairPlayDrm/Pods-JWFairPlayDrm-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		40B1C5A04E3B3D57C2324B42 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VoicerExtension/Pods-VoicerExtension-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4C2993613FCFA059B56DA62B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5719F25286ED1CDC29A85ACD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JWRemoteCastController Extension/Pods-JWRemoteCastController Extension-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5A4341540D0B52EDE34034E7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JWAirPlay/Pods-JWAirPlay-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5AC05EE046DAF3213B1AA9B1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JWRemoteController/Pods-JWRemoteController-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5B8EB63E3022D951CF175410 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		73C5A63A476C9A7364C34BE0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		770E1BA7B7C214544BDA3C5E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JWRemotePlayer/Pods-JWRemotePlayer-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		777AA6ACB02E60E836EC594F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		779035C0867212D9A6ADFDD0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		913D57B68FE759D9DF023CCF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JWBestPracticeApps/Pods-JWBestPracticeApps-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		957118E253D60D999AD92FA5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JWRemoteController Extension/Pods-JWRemoteController Extension-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9CA3482367C439F0CDBB6E4B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JWAirPlay/Pods-JWAirPlay-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B9CEAAC4CF36C303A8B0143E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JWRemoteCastController/Pods-JWRemoteCastController-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BF7C3D6BA8E0B1BF4B4FB54B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JWBestPracticeApps/Pods-JWBestPracticeApps-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C644EAE82B765E5CC4C8400E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JWRemoteCastPlayer/Pods-JWRemoteCastPlayer-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D8C5D0DDCB9F57712020D253 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DF3E9EFCDCA122CBBF5C14F3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1598,14 +2037,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JWRemoteCastController Extension/Pods-JWRemoteCastController Extension-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		DF721C5C13BF36C4E082FF7F /* 📦 Check Pods Manifest.lock */ = {
+		DF721C5C13BF36C4E082FF7F /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1613,14 +2052,44 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		F9C88D4CDF49BB9AF8573501 /* 📦 Embed Pods Frameworks */ = {
+		F2AB95F88895DD1DD9341E66 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Embed Pods Frameworks";
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F5F49146238CCB55500BAC5F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VoicerExtension/Pods-VoicerExtension-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F9C88D4CDF49BB9AF8573501 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1638,7 +2107,6 @@
 				8A3734D91D1DD9B80008FE59 /* JWBasicVideoViewController.m in Sources */,
 				8A3734D71D1DD9960008FE59 /* JWRemotePlayerViewController.m in Sources */,
 				8A3734D61D1DD9800008FE59 /* JWRemoteCastPlayerViewController.m in Sources */,
-				8A3734C31D1DD6E30008FE59 /* JWRemoteCastPlayerViewController.h in Sources */,
 				8A3734D81D1DD9A50008FE59 /* JWCastingViewController.m in Sources */,
 				8A3734771D1DC2A80008FE59 /* AppDelegate.m in Sources */,
 				8A3734741D1DC2A80008FE59 /* main.m in Sources */,
@@ -1664,6 +2132,7 @@
 				8A729B5E1C99ABD2000F03A9 /* JWBasicVideoViewController.m in Sources */,
 				8A729A7F1C98ACA8000F03A9 /* AppDelegate.m in Sources */,
 				8A729A7C1C98ACA8000F03A9 /* main.m in Sources */,
+				B5308C1F1D836979007D2A1F /* SwiftTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1721,6 +2190,42 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B53A0DEE1D8355CF00893252 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B54424831D90493100719197 /* JWBasicVideoViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B53A73001D92F79C00EB804F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B54F4F441D930B4D0026B7C7 /* VoicerViewController.swift in Sources */,
+				B53A73201D92FBB200EB804F /* JWRemotePlayerViewController.m in Sources */,
+				B53A731C1D92FB6900EB804F /* JWRemoteCastPlayerViewController.m in Sources */,
+				B53A731B1D92FB5400EB804F /* JWBasicVideoViewController.m in Sources */,
+				B53A73071D92F79C00EB804F /* AppDelegate.swift in Sources */,
+				B53A731E1D92FB9700EB804F /* JWCastingViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B54424A81D9060A700719197 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B54F4F451D930BDC0026B7C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B54F4F4C1D930BDC0026B7C7 /* IntentHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -1743,6 +2248,16 @@
 			isa = PBXTargetDependency;
 			target = 8AF5F6CB1C9A612B00C0D5E0 /* JWRemoteController */;
 			targetProxy = 8AF5F6EB1C9A612B00C0D5E0 /* PBXContainerItemProxy */;
+		};
+		B54424B21D9060A700719197 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B54424AB1D9060A700719197 /* JWSiriVideoExtension */;
+			targetProxy = B54424B11D9060A700719197 /* PBXContainerItemProxy */;
+		};
+		B54F4F4F1D930BDC0026B7C7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B54F4F481D930BDC0026B7C7 /* VoicerExtension */;
+			targetProxy = B54F4F4E1D930BDC0026B7C7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1859,6 +2374,30 @@
 			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
+		B53A730A1D92F79C00EB804F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B53A730B1D92F79C00EB804F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B53A730F1D92F79C00EB804F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B53A73101D92F79C00EB804F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		B5BC26A71D958BFF00F32770 /* AppIntentVocabulary.plist */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B5BC26A81D958BFF00F32770 /* en */,
+			);
+			name = AppIntentVocabulary.plist;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -1868,6 +2407,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ANALYZER_NONNULL = YES;
+				DEVELOPMENT_TEAM = WX87M56X5N;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = JWBestPracticeApps/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
@@ -1883,6 +2423,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ANALYZER_NONNULL = YES;
+				DEVELOPMENT_TEAM = WX87M56X5N;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = JWBestPracticeApps/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
@@ -1897,6 +2438,7 @@
 			baseConfigurationReference = AE13619DC752730AA54E1307 /* Pods-JWRemoteCastController Extension.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ANALYZER_NONNULL = YES;
+				DEVELOPMENT_TEAM = WX87M56X5N;
 				ENABLE_BITCODE = YES;
 				INFOPLIST_FILE = "JWRemoteCastController Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
@@ -1914,6 +2456,7 @@
 			baseConfigurationReference = 8AB274596913835758B1017D /* Pods-JWRemoteCastController Extension.release.xcconfig */;
 			buildSettings = {
 				CLANG_ANALYZER_NONNULL = YES;
+				DEVELOPMENT_TEAM = WX87M56X5N;
 				ENABLE_BITCODE = YES;
 				INFOPLIST_FILE = "JWRemoteCastController Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
@@ -1932,6 +2475,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ANALYZER_NONNULL = YES;
+				DEVELOPMENT_TEAM = WX87M56X5N;
 				ENABLE_BITCODE = YES;
 				IBSC_MODULE = JWRemoteCastController_Extension;
 				INFOPLIST_FILE = JWRemoteCastController/Info.plist;
@@ -1950,6 +2494,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ANALYZER_NONNULL = YES;
+				DEVELOPMENT_TEAM = WX87M56X5N;
 				ENABLE_BITCODE = YES;
 				IBSC_MODULE = JWRemoteCastController_Extension;
 				INFOPLIST_FILE = JWRemoteCastController/Info.plist;
@@ -1975,8 +2520,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -2005,6 +2552,8 @@
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "$(inherited)";
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "JWBestPracticeApps/JWBestPracticeApps-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -2022,8 +2571,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -2045,6 +2596,9 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "$(inherited)";
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "JWBestPracticeApps/JWBestPracticeApps-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -2057,6 +2611,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = WX87M56X5N;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -2068,6 +2623,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "JWBestPracticeApps/JWBestPracticeApps-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -2078,6 +2634,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = WX87M56X5N;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -2088,6 +2645,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = JWPlayer.JWBestPracticeApps;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "JWBestPracticeApps/JWBestPracticeApps-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -2096,6 +2654,7 @@
 			baseConfigurationReference = 05D9449F562C9B71FFCC02D0 /* Pods-JWCasting.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = WX87M56X5N;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = JWBestPracticeApps/Info.plist;
@@ -2112,6 +2671,7 @@
 			baseConfigurationReference = D105B1FA43E9E53897B57083 /* Pods-JWCasting.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = WX87M56X5N;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = JWBestPracticeApps/Info.plist;
@@ -2128,6 +2688,7 @@
 			baseConfigurationReference = 56A46499C09525FA3C058938 /* Pods-JWAirPlay.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = WX87M56X5N;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -2145,6 +2706,7 @@
 			baseConfigurationReference = DE458D874713A4FEA898FC11 /* Pods-JWAirPlay.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = WX87M56X5N;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -2163,6 +2725,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = WX87M56X5N;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -2181,6 +2744,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = WX87M56X5N;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -2197,9 +2761,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A37E790C732ABB5BBCB8FC62 /* Pods-JWFairPlayDrm.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ANALYZER_NONNULL = YES;
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = NO;
+				DEVELOPMENT_TEAM = WX87M56X5N;
 				INFOPLIST_FILE = JWBestPracticeApps/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -2208,6 +2773,7 @@
 				SWIFT_OBJC_BRIDGING_HEADER = "JWBestPracticeApps/JWBestPracticeApps-Bridging-Header.h";
 				SWIFT_OBJC_INTERFACE_HEADER_NAME = "JWBestPracticeApps/JWBestPracticeApps-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -2215,9 +2781,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 750AB9C59D746DEF6A70DCF9 /* Pods-JWFairPlayDrm.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ANALYZER_NONNULL = YES;
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = NO;
+				DEVELOPMENT_TEAM = WX87M56X5N;
 				INFOPLIST_FILE = JWBestPracticeApps/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -2225,6 +2792,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "JWBestPracticeApps/JWBestPracticeApps-Bridging-Header.h";
 				SWIFT_OBJC_INTERFACE_HEADER_NAME = "JWBestPracticeApps/JWBestPracticeApps-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -2233,6 +2801,7 @@
 			baseConfigurationReference = 469A6375B85247D4516142AE /* Pods-JWRemoteController Extension.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = WX87M56X5N;
 				ENABLE_BITCODE = YES;
 				INFOPLIST_FILE = "JWRemoteController Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
@@ -2250,6 +2819,7 @@
 			baseConfigurationReference = FC281FF062456D619081111F /* Pods-JWRemoteController Extension.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = WX87M56X5N;
 				ENABLE_BITCODE = YES;
 				INFOPLIST_FILE = "JWRemoteController Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
@@ -2268,6 +2838,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = WX87M56X5N;
 				ENABLE_BITCODE = YES;
 				IBSC_MODULE = JWRemoteController_Extension;
 				INFOPLIST_FILE = JWRemoteController/Info.plist;
@@ -2286,6 +2857,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = WX87M56X5N;
 				ENABLE_BITCODE = YES;
 				IBSC_MODULE = JWRemoteController_Extension;
 				INFOPLIST_FILE = JWRemoteController/Info.plist;
@@ -2295,6 +2867,171 @@
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Release;
+		};
+		B53A0E011D8355CF00893252 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CODE_SIGN_ENTITLEMENTS = JWVoiceControl/JWVoiceControl.entitlements;
+				DEVELOPMENT_TEAM = WX87M56X5N;
+				INFOPLIST_FILE = JWBestPracticeApps/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = JWPlayer.JWVoiceControl;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_INCLUDE_PATHS = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "JWBestPracticeApps/JWBestPracticeApps-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		B53A0E021D8355CF00893252 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CODE_SIGN_ENTITLEMENTS = JWVoiceControl/JWVoiceControl.entitlements;
+				DEVELOPMENT_TEAM = WX87M56X5N;
+				INFOPLIST_FILE = JWBestPracticeApps/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = JWPlayer.JWVoiceControl;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INCLUDE_PATHS = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "JWBestPracticeApps/JWBestPracticeApps-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		B53A73131D92F79C00EB804F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3BB8C7391F58D5A50C6A715C /* Pods-Voicer.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CODE_SIGN_ENTITLEMENTS = Voicer/Voicer.entitlements;
+				DEVELOPMENT_TEAM = WX87M56X5N;
+				INFOPLIST_FILE = JWBestPracticeApps/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = JWPlayer.Voicer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		B53A73141D92F79C00EB804F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CAEE03E2E9C059CB3701D739 /* Pods-Voicer.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CODE_SIGN_ENTITLEMENTS = Voicer/Voicer.entitlements;
+				DEVELOPMENT_TEAM = WX87M56X5N;
+				INFOPLIST_FILE = JWBestPracticeApps/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = JWPlayer.Voicer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		B54424B41D9060A700719197 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				DEVELOPMENT_TEAM = WX87M56X5N;
+				INFOPLIST_FILE = JWSiriVideoExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = JWPlayer.JWVoiceControl.JWSiriVideoExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		B54424B51D9060A700719197 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				DEVELOPMENT_TEAM = WX87M56X5N;
+				INFOPLIST_FILE = JWSiriVideoExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = JWPlayer.JWVoiceControl.JWSiriVideoExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		B54F4F521D930BDC0026B7C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C9C71870F578D77EE7ED3305 /* Pods-VoicerExtension.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CODE_SIGN_ENTITLEMENTS = VoicerExtension/VoicerExtension.entitlements;
+				DEVELOPMENT_TEAM = WX87M56X5N;
+				INFOPLIST_FILE = VoicerExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = JWPlayer.Voicer.VoicerExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		B54F4F531D930BDC0026B7C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D59BC06D560A3A8E3DE9E3C3 /* Pods-VoicerExtension.release.xcconfig */;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CODE_SIGN_ENTITLEMENTS = VoicerExtension/VoicerExtension.entitlements;
+				DEVELOPMENT_TEAM = WX87M56X5N;
+				INFOPLIST_FILE = VoicerExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = JWPlayer.Voicer.VoicerExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -2396,6 +3133,42 @@
 			buildConfigurations = (
 				8AF5F6F31C9A612B00C0D5E0 /* Debug */,
 				8AF5F6F41C9A612B00C0D5E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B53A0E031D8355CF00893252 /* Build configuration list for PBXNativeTarget "JWVoiceControl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B53A0E011D8355CF00893252 /* Debug */,
+				B53A0E021D8355CF00893252 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B53A73151D92F79C00EB804F /* Build configuration list for PBXNativeTarget "Voicer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B53A73131D92F79C00EB804F /* Debug */,
+				B53A73141D92F79C00EB804F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B54424B61D9060A700719197 /* Build configuration list for PBXNativeTarget "JWSiriVideoExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B54424B41D9060A700719197 /* Debug */,
+				B54424B51D9060A700719197 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B54F4F511D930BDC0026B7C7 /* Build configuration list for PBXNativeTarget "VoicerExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B54F4F521D930BDC0026B7C7 /* Debug */,
+				B54F4F531D930BDC0026B7C7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

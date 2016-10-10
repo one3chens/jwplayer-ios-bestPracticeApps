@@ -52,7 +52,18 @@ target 'JWRemoteCastController Extension' do
 
 end
 
-target 'JWFairPlayDrm’ do
+target 'Voicer' do
+
+pod 'JWPlayer-SDK', '~> 2.0'
+pod 'google-cast-sdk', '<= 2.10.0.4070'
+
+end
+
+target 'VoicerExtension' do
+
+end 
+
+target 'JWFairPlayDrm' do
 
 pod 'JWPlayer-SDK', '~> 2.0'
 pod 'google-cast-sdk', '<= 2.10.0.4070'
