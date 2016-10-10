@@ -12,4 +12,6 @@ To call Siri hold the home button. You can command Siri to open the app by sayin
 - start casting: "Start casting".
 - disconnect casting: "Finish casting".
 
-**Note**: Only works on iOS 10 and above due to SiriKit dependency.
+**Note**: 
+- Only works on iOS 10 and above due to SiriKit dependency.
+- Siri cannot be called on a simulator.
